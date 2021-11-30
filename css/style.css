@@ -319,12 +319,12 @@ div#carrousel-repas figure {
   width: 600%;
   margin: 0;
   padding: 0;
-  font-size: 0;
+  font-size: 24px;
   text-align: center;
 	animation: 30s slidy infinite;
 }
 
-div#carrousel-repas figure img {
+div#carrousel-repas figure img, .repas-txt {
 	width: 16.6%;
 	height: auto;
 	float: left;
@@ -342,7 +342,7 @@ div#carrousel-boissons figure {
   width: 600%;
   margin: 0;
   padding: 0;
-  font-size: 0;
+  font-size: 24px;
   text-align: center;
 	animation: 30s slidy infinite;
 }
