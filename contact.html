@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a class="dropdown-item" href="index.html">Accueil</a></li>
-            <li><a class="dropdown-item" href="residentes.html">Les Résidentes</a></li>
-            <li><a class="dropdown-item" href="menus.html">Les Menus</a></li>
-            <li><a class="dropdown-item" href="parrainages.html">Les Parrainages</a></li>
-            <li><a class="dropdown-item" href="boutique.html">La boutique</a></li>
-            <li><a class="dropdown-item" href="#">Contact</a></li>
-        </ul>
-    </nav>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Contactez-nous</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a class="dropdown-item" href="index.html">Accueil</a></li>
+        <li><a class="dropdown-item" href="residentes.html">Les Résidentes</a></li>
+        <li><a class="dropdown-item" href="menus.html">Les Menus</a></li>
+        <li><a class="dropdown-item" href="parrainages.html">Les Parrainages</a></li>
+        <li><a class="dropdown-item" href="boutique.html">La boutique</a></li>
+        <li><a class="dropdown-item" href="contact.html"</a></li>
+    </ul>
+    </header>
+    <p>Retrouvez-vous à notre point de vente habituel du lundi au samedi de 7h à 20h sans interruption !</p>
+    <section id="contact">
+      <form id="contactForm">
+        <label for="name">Nom et Prénom :</label><br />
+        <input type="text" id="name" name="name" placeholder="Michel Dupont" /><br />
+        <label for="email">Email :</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="exemple@gmail.com"
+        /><br />
+        <label for="message">Message :</label><br />
+        <textarea id="message" name="message"></textarea>
+        <br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
 </html>
