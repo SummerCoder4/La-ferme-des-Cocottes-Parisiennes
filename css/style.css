@@ -324,7 +324,7 @@ div#carrousel-repas figure {
 	animation: 30s slidy infinite;
 }
 
-div#carrousel-repas figure img, .repas-txt {
+div#carrousel-repas figure img, .repas-txt, .boissons-txt {
 	width: 16.6%;
 	height: auto;
 	float: left;
