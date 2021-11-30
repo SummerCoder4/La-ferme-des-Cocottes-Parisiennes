@@ -354,7 +354,6 @@ div#carrousel-boissons figure img {
   border-radius: 20px;
 }
 
-
 /* Version fonctionnel mais besoin d'ajustement */
 @keyframes slidy {
   0% { left: 0%; }
@@ -381,12 +380,6 @@ div#carrousel-boissons figure img {
   100% { left: -600%; }
 }
 */
-
-body {
-  background-color: whitesmoke;
-  font-family: "Garamond", serif;
-  color: #333;
-}
 
 p {
 display: flex;
