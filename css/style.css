@@ -33,7 +33,7 @@ header {
     max-width: 65px;
 }
 
-a {text-decoration: none;}
+nav a {text-decoration: none;}
 
 @media screen and (max-width: 650px) {
     #menuDesktop {display: none;}
