@@ -1,3 +1,306 @@
+* {
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    font-family: 'Outfit', sans-serif;
+}
+
+header {
+    background-color: #F2DA5E;
+    border-bottom: 5px solid #F2C2C2;
+}
+
+#menuDesktop {      
+    display: flex;
+    flex-direction: column;
+    justify-content: center;}
+
+#menuDesktop ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+#menuMobile {display: none;}
+
+.logo {
+    max-width: 65px;
+}
+
+a {text-decoration: none;}
+
+@media screen and (max-width: 650px) {
+    #menuDesktop {display: none;}
+    #menuMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menuMobile ul {
+       list-style: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    #menuMobile .logo {margin-top: 10px; text-align: center;}
+    header {height: 100px;}   
+
+    .menuDeroulant {
+        background-color: #F2DA5E; width: 100vw; height: 40vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: absolute;
+        transform: translateY(-100%);
+        transition: transform 0.2s;
+    }
+
+    .menuDeroulant ul {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+.placeholdertopbar {
+background-color: #F2DA5E;
+overflow: hidden;
+position: fixed; /* Set the navbar to fixed position */
+top: 0; /* Position the navbar at the top of the page */
+left: 0px;
+width: 100%; /* Full width */
+height: 116px;
+}
+
+.laTriche {
+height: 116px;
+}
+
+.laPrez {
+display: block;
+padding: 50px 20px 50px 20px;
+}
+
+.laFormule1 {
+display: flex;
+flex-direction: row;
+}
+
+.pouleFormule1 {
+width: 500px;
+border-radius: 0px 15px 15px 0px;
+justify-content: flex-start;
+}
+
+.texteFormule1 {
+padding: 20px;
+}
+
+.boutonmenuprincipal {
+background-color: darkgrey;
+color: white;
+border: none;
+cursor: pointer;
+padding:10px;
+margin-top:20px;
+font-size: 18px;
+}
+
+.boutonmenuprincipal:hover {
+background-color: darkgrey;
+}
+
+.dropdownParrainage {
+position: relative;
+display: inline-block;
+}
+
+.dropdownParrainage-child {
+display: none;
+background-color: darkgrey;
+min-width: 50px;
+}
+
+.dropdownParrainage-child a {
+color: white;
+padding:10px;
+text-decoration: none;
+display: block;
+}
+
+.dropdownParrainage:hover .dropdownParrainage-child {
+display: block;
+}
+
+.textareaNomPoule {
+margin: 50px 0px 50px 0px;
+align-items: flex-start;
+display: flex;
+flex-direction: row;
+}
+
+.textareaNomPoule textarea {
+width: 291px;
+height: 40px;
+resize: none;
+justify-content: flex-start;
+}
+
+.textareaNomPoule button {
+width: 100px;
+height: 40px;
+justify-content: flex-start;
+}
+
+.lePrix {
+margin: 0px 0px 20px 0px;
+font-size: 30px;
+}
+
+.addToCart button{
+color: white;
+width: 120px;
+height: 40px;
+background-color: #3D44D9;
+border-radius: 15px;
+border: 0px;
+}
+
+.laFormule2 {
+display: flex;
+flex-direction: row-reverse;
+background-color: grey;
+}
+
+.pouleFormule2 {
+width: 500px;
+border-radius: 15px 0px 0px 15px;
+justify-content: flex-start;
+}
+
+.texteFormule2 {
+padding: 20px;
+justify-content: flex-start;
+}
+
+.descriFormule2 {
+background-color: blue;
+justify-content: flex-start;
+}
+
+
+.plusMoins {
+margin: 50px 0px 50px 0px;
+align-items: flex-start;
+display: flex;
+flex-direction: row;
+}
+
+.plusMoins textarea {
+width: 75px;
+height: 40px;
+resize: none;
+white-space: normal;
+text-align: justify;
+-moz-text-align-last: center; /* Firefox 12+ */
+text-align-last: center;
+font-size: 16px;
+margin: 0px 10px 0px 10px;
+}
+
+.plusMoins button {
+width: 50px;
+height: 40px;
+justify-content: flex-start;
+}
+
+.addToCartformule2 {
+justify-content: flex-end;    
+}
+
+.titleParrainages {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+color: #3D44D9;
+margin: 50px;
+}
+
+.filleulesMalheureusement {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 42px;
+text-align: center;
+}
+
+.medailles {
+display: flex;
+flex: row;
+background-color: red;
+justify-content: space-evenly;
+align-items: flex-end;
+padding: 50px;
+height: 600px;
+}
+
+.medailleSolo {
+display: flex;
+flex-direction: column;
+background-color: yellow;
+max-width: 200px;
+}
+
+.medailles img  {
+width: 150px;
+}
+
+.medailleTxt {
+font-size: 30px;
+text-align: center;
+max-width: 100px;
+}
+
+.medailleComment {
+background-color: blue;
+}
+
+.medailleOr {
+align-self: flex-start;
+}
+
+.medailleArgent {
+align-self: center;
+}
+
+.placeholderFooter {
+background-color: #F2DA5E;
+width: 100%;
+height: 50px;
+bottom: 0;
+text-align: center;
+padding: 10px;
+}
+
+.laTricheFooter {
+height: 50px;
+}
+
 div#imgCarrousel {
 	border-top-left-radius: 20px;
   border-top-right-radius: 20px;
