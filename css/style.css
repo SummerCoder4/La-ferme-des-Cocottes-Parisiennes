@@ -381,3 +381,45 @@ div#carrousel-boissons figure img {
   100% { left: -600%; }
 }
 */
+
+body {
+  background-color: whitesmoke;
+  font-family: "Garamond", serif;
+  color: #333;
+}
+
+p {
+display: flex;
+justify-content: center;
+font-size: 25px;
+font-style: normal;
+}
+
+#poules {
+position: 50% 50%;
+}
+
+form {
+  margin: 0 auto;
+  width: 300px;
+  padding-top: 20px;
+}
+
+label {
+  line-height: 2;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+}
+
+input[type="submit"] {
+background: #283b63;
+color: white;
+border: none;
+padding: 10px 10px;
+}
