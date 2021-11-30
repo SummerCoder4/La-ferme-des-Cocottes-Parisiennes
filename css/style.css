@@ -299,5 +299,85 @@ padding: 10px;
 
 .laTricheFooter {
 height: 50px;
-   
 }
+
+div#imgCarrousel {
+	border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+div#carrousel-repas {
+	width: 80%;
+	max-width: 1000px;
+	overflow: hidden;
+}
+
+div#carrousel-repas figure {
+  position: relative;
+  width: 600%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: center;
+	animation: 30s slidy infinite;
+}
+
+div#carrousel-repas figure img {
+	width: 16.6%;
+	height: auto;
+	float: left;
+  border-radius: 20px;
+}
+
+div#carrousel-boissons {
+	width: 80%;
+	max-width: 1000px;
+	overflow: hidden;
+}
+
+div#carrousel-boissons figure {
+  position: relative;
+  width: 600%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: center;
+	animation: 30s slidy infinite;
+}
+
+div#carrousel-boissons figure img {
+	width: 16.6%;
+	height: auto;
+	float: left;
+  border-radius: 20px;
+}
+
+
+/* Version fonctionnel mais besoin d'ajustement */
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: -100%; }
+  40% { left: -200%; }
+  60% { left: -300%; }
+  80% { left: -400%; }
+  100% { left: -500%; }
+}
+
+/*
+@keyframes slidy {
+  0% { left: 0%; }
+	10% { left: 0%; }
+  20% { left: -100%; }
+	30% { left: -100%; }
+  40% { left: -200%; }
+	50% { left: -200%; }
+  60% { left: -300%; }
+	70% { left: -300%; }
+  80% { left: -400%; }
+	88% { left: -400%; }
+	92% { left: -500%; }
+  100% { left: -600%; }
+}
+*/
