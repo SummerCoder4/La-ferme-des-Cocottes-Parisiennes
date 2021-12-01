@@ -303,6 +303,10 @@ padding: 10px;
 height: 50px;
 }
 
+/////////////////////
+// Menu slideshow //
+///////////////////
+
 .slideshow img, .slideshow2 img {
 	max-width: 100%
 }
