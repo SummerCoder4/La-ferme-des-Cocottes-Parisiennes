@@ -16,7 +16,7 @@
             <ul id="menuDesktopSize">
                 <li><a href="#" class="link">Accueil</a></li>
                 <li><a href="residentes.html" class="link">Résidentes</a></li>
-                <li><a href="menus.html"class="link">Menus</a></li>
+                <li><a href="menu.html"class="link">Menus</a></li>
                 <li><a href="index.html"class="link"><img src="img/chickenLogo.png" class="logo"></a></li>
                 <li><a href="parrainages.html"class="link">Parrainages</a></li>
                 <li><a href="boutique.html"class="link">Boutique</a></li>
@@ -40,7 +40,7 @@
         <ul>
             <li><a href="#" class="link">Accueil</a></li>
             <li><a href="residentes.html" class="link">Résidentes</a></li>
-            <li><a href="menus.html" class="link">Menus</a></li>
+            <li><a href="menu.html" class="link">Menus</a></li>
             <li><a href="parrainages.html"class="link">Parrainages</a></li>
             <li><a href="boutique.html" class="link">Boutique</a></li>
             <li><a href="contact.html" class="link">Contact</a></li>
@@ -51,9 +51,9 @@
 
 <div class="laPrez">
 
-  <p>Nam nibh enim, tincidunt at massa at, semper bibendum erat. Suspendisse aliquet tempus eros, vel ullamcorper ex fermentum a. Sed sagittis, lorem vitae varius fermentum, risus risus lacinia dolor, in laoreet nisl risus in eros. Quisque et semper ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi volutpat dolor in cursus ultricies. </p>
+  <p>Donner à manger et un jolie nom à une poule ? Permettre à des gens dans le besoin de se reveiller le matin et déguster des oeufs fraichement ramassés ? Permettre à une poule à la retraite de vivre des jours heureux dans votre jardin ?  </p>
   <br>    
-  <p>Quisque et semper ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+  <p>Pariticipez ici à embellir avec nous la vie d'humains et de gallinacés !</p>
     
 </div>
 
@@ -68,22 +68,20 @@
     <div class="descriFormule1">
         <p>Parrainer une poule </p>
         <br>  
-        <p>Vous pouvez ici financer une poule, permettant Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo et amet porro beatae nulla incidunt cupiditate maiores voluptatibus, ut maxime doloremque similique dolor iste molestiae magnam commodi quod blanditiis. Reiciendis.  </p>
-  
+        <p>Formule 1 : Vous parrainez/marrainez une poule pendant 1 an (du 1er janvier au 31 décembre) en participant à son achat à hauteur 50 % du prix de la poule, soit 5€.</p>
+        <br>  
+        <p>Formule 2 : L'ensemble de la formule 1 + des prix préférentiels et une priorité sur les oeufs de votre filleule. 30€</p>
+        <br>  
+        <a href="">En savoir plus</a>
     </div>
-
-    <div class="dropdownParrainage">
-        <button class="boutonmenuprincipal">Choix de la formule de parrainage</button>
-
-        <div class="dropdownParrainage-child">
-          <a>Formule 1 : Participation à l'elevage d'une poule - 10 €</a>
-          <a>Formule 2 : Participation à l'elevage d'une poule + Nommage + 6 oeufs / mois - 30 €</a>
-        </div>
-
-    </div>
+    <select>
+      <option value="" disabled selected>Selectionnez votre formule</option>
+      <option value="choixFromule1">Formule 1 = 5€</option>
+      <option value="choixFromule2">Formule 2 = 30€</option>
+    </select>
 
     <div class="textareaNomPoule">
-      <textarea>Choix du nom de votre poule</textarea>
+      <textarea placeholder="Choix du nom de votre poule"></textarea>
       <button>Vérification</button>
     </div>
 
@@ -92,7 +90,7 @@
     </div>
 
     <div class="addToCart addToCartformule1">
-      <button>Ajouter au panier</button>
+      <button>Parrainer</button>
     </div>
 
   </div>
@@ -110,14 +108,39 @@
     <div class="descriFormule2">
         <p>Faire un don</p>
         <br>    
-        <p>Vous pouvez ici financer une poule, permettant Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo et amet porro beatae nulla incidunt cupiditate maiores voluptatibus, ut maxime doloremque similique dolor iste molestiae magnam commodi quod blanditiis. Reiciendis.  </p>
+        <p>Vous pouvez participer au financement d'une poule pondeuse qui sera envoyée en collaboration avec l'association les Enfants du désert  dans un des   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo et amet porro beatae nulla incidunt cupiditate maiores voluptatibus, ut maxime doloremque similique dolor iste molestiae magnam commodi quod blanditiis. Reiciendis.  </p>
+    </div>
+    <br>  
+    <a href="">En savoir plus</a>
+
+    <div class="lePrix lePrix2">
+      <p>10 €</p>
     </div>
 
+    <div class="addToCart addToCartformule2">
+      <button>Faire un don</button>
+    </div>
 
-    <div class="plusMoins">
-      <button>-</button>
-      <textarea>1</textarea>
-      <button>+</button>
+  </div>
+
+</div>
+
+
+<!-- ////////////////////////////////////////////////////////////////////////////   FORMULE 3   ///////////////////////////////////////////////////////////////////////////////// -->
+
+<div class="laFormule2">
+
+  <img class="pouleFormule2" src=".\img\poule_formule1.jpg" alt="Image poulet formule 2">
+
+  <div class="texteFormule2">
+
+    <div class="descriFormule2">
+        <p>Adopter une poule</p>
+        <br>    
+        <p>Les poules peuvent pondre jusqu’à l’âge de 5 ans mais leur productivité diminuant dès leurs 18 mois, elles sont purement et simplement envoyées à l’abattoir.
+          Pour leur éviter une fin certaine, Nous nous associons avec l’association POULE POUR TOUS et proposons d'adopter une poule à toutes les personnes possédant un jardin, tout en reclyclant les déchets alimentaires et en ayant la possibilité de récolter des œufs frais. </p>
+          <br> 
+        <a href="https://www.poulepourtous.com/">En savoir plus</a>
     </div>
 
     <div class="lePrix lePrix2">
@@ -125,18 +148,23 @@
     </div>
 
     <div class="addToCart addToCartformule2">
-      <button>Ajouter au panier</button>
+      <button>Nous contacter</button>
     </div>
 
   </div>
 
 </div>
 
+
+
+
+
+
 <!-- ////////////////////////////////////////////////////////////////////////////   VOS FILLEULES   ///////////////////////////////////////////////////////////////////////////////// -->
 
 <div class="vosFilleules">
   
-<p class="titreFilleules titleParrainages"> Vos Filleules</p>
+  <h2 class=" titleParrainages">Vos Filleules</h2>
 
 <p class="filleulesMalheureusement"> Malheureusement aucune poule n’a la chance d’être votre filleule...</p>
 
@@ -146,8 +174,7 @@
 
 
 <div class="topParrains">
-  <p class="titreParrains titleParrainages"> Top Parrains</p>
-
+  <h2 class="titleParrainages">Top Parrains</h2>
 <div class="medailles">
 
 

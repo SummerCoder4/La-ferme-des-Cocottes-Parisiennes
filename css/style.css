@@ -334,54 +334,26 @@ justify-content: flex-start;
 }
 
 .texteFormule1 {
-padding: 20px;
+padding: 0px 0px 0px 30px;
 }
 
 .descriFormule1 > p {
 justify-content: flex-start;
 }
 
-.boutonmenuprincipal {
-background-color: darkgrey;
-color: white;
-border: none;
-cursor: pointer;
-padding:10px;
-margin-top:20px;
-font-size: 18px;
-}
 
-.boutonmenuprincipal:hover {
-background-color: darkgrey;
-}
+select {
+font-family: var(--font-content);padding: 5px;
+margin: 20px 0px 20px 0px;
+width: 291px;
+height: 40px;
 
-.dropdownParrainage {
-position: relative;
-display: inline-block;
-}
-
-.dropdownParrainage-child {
-display: none;
-background-color: darkgrey;
-min-width: 50px;
-}
-
-.dropdownParrainage-child a {
-color: white;
-padding:10px;
-text-decoration: none;
-display: block;
-}
-
-.dropdownParrainage:hover .dropdownParrainage-child {
-display: block;
 }
 
 .textareaNomPoule {
-margin: 50px 0px 50px 0px;
-align-items: flex-start;
 display: flex;
 flex-direction: row;
+
 }
 
 .textareaNomPoule textarea {
@@ -389,12 +361,14 @@ width: 291px;
 height: 40px;
 resize: none;
 justify-content: flex-start;
+font-family: var(--font-content);
 }
 
 .textareaNomPoule button {
 width: 100px;
 height: 40px;
 justify-content: flex-start;
+font-family: var(--font-content);
 }
 
 .lePrix {
@@ -420,7 +394,8 @@ font-size: 18px;
 .laFormule2 {
 display: flex;
 flex-direction: row-reverse;
-background-color: lightgrey;
+margin: 30px 0px 0px 0px;
+
 }
 
 .pouleFormule2 {
@@ -430,8 +405,8 @@ justify-content: flex-start;
 }
 
 .texteFormule2 {
-padding: 20px;
-justify-content: flex-start;
+    padding: 0px 30px 0px 30px;
+    justify-content: flex-start;
 }
 
 .descriFormule2 {
@@ -451,20 +426,24 @@ justify-content: flex-end;
 
 .plusMoins textarea {
 width: 75px;
-height: 40px;
+height: 50px;
 resize: none;
 white-space: normal;
 text-align: justify;
 -moz-text-align-last: center; /* Firefox 12+ */
 text-align-last: center;
-font-size: 16px;
+font-size: 20px;
 margin: 0px 10px 0px 10px;
+overflow:hidden;
+rows:1; 
+disabled:true;
 }
 
 .plusMoins button {
 width: 50px;
-height: 40px;
-justify-content: flex-start;
+height: 50px;
+font-size: 30px;
+
 }
 
 .lePrix2 > p {
@@ -480,31 +459,23 @@ justify-content: flex-start;
 
 
 .titleParrainages {
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 36px;
-line-height: 42px;
 text-align: center;
-color: #3D44D9;
 margin: 50px;
 }
 
 .filleulesMalheureusement {
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
+font-size: 24px;
 line-height: 42px;
 text-align: center;
+margin: 150px;
 }
+
 
 
 
 .medailles {
 display: flex;
 flex: row;
-background-color: lightgrey;
 padding: 50px;
 min-height: 800px;
 align-content: center;
@@ -514,9 +485,10 @@ justify-content: space-evenly;
 .medailleSolo {
 display: flex;
 flex-direction: column;
-background-color: yellow;
 max-width: 300px;
 align-items: center;
+box-shadow: 5px 10px 5px lightgrey;
+margin: 10px 20px 10px 20px;
 }
 
 .medailles img {
@@ -529,7 +501,7 @@ text-align: center;
 }
 
 .medailleComment > p {
-background-color: blue;
+    padding: 20px;
 }
 
 .medailleOr {
