@@ -6,20 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/slideshow.css" />
 </head>
 <body>
-  <nav>
-  	<ul>
-    	<li><a class="dropdown-item" href="index.html">Accueil</a></li>
-      <li><a class="dropdown-item" href="residentes.html">Les Résidentes</a></li>
-      <li><a class="dropdown-item" href="#">Les Menus</a></li>
-      <li><a class="dropdown-item" href="parrainages.html">Les Parrainages</a></li>
-      <li><a class="dropdown-item" href="boutique.html">La boutique</a></li>
-      <li><a class="dropdown-item" href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+	<header>
+		<nav role="navigation" id="menuDesktop">
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="residentes.html">Les Résidentes</a></li>
+				<li><a href="#">Les Menus</a></li>
+				<li><a href="index.html"><img src="img/chickenLogo.png" class="logo"></a></li>
+				<li><a href="parrainages.html">Les Parrainages</a></li>
+				<li><a href="boutique.html">La boutique</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav> 
+		<nav role="navigation" id="menuMobile">
+			<a  href="index.html"><img src="img/chickenLogo.png" class="logo"></a>
+			<div class="menuDeroulant"> 
+				<ul>
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="residentes.html">Les Résidentes</a></li>
+					<li><a href="#">Les Menus</a></li>
+					<li><a href="parrainages.html">Les Parrainages</a></li>
+					<li><a href="boutique.html">La boutique</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
   <h1>Les menus proposés</h1>
-  <div class="menu">Nous vous proposons une selection de repas et de déssert à base d'œuf pour les petits et les grands.</div>
+  <p class="menu">Nous vous proposons une selection de repas et de déssert à base d'œuf pour les petits et les grands.</p>
 		<div class="slideshow">
 			<ul>
 				<li><img src="img/v106_123.png" alt><span>Œuf au lait et au chocolat</span></li>
@@ -31,18 +48,23 @@
 			<div class="barre_progression"></div>
     </div>
     <br /><br />
-    <p>Vous trouverez ci-dessous, une selection de boissons à notre bar à poules.</p><br/><br />
+    <p class="menu">Vous trouverez ci-dessous, une selection de boissons à notre bar à poules.</p>
     <div id="carrousel-boissons">
 			<div class="slideshow2">
 				<ul>
 					<li><img src="img/v71_78.png" alt><span>Lait de poule</span></li>
 					<li><img src="img/v91_10.png" alt><span>Sélection de vin rouge</span></li>
 					<li><img src="img/v91_11.png" alt><span>Champagne</span></li>
-					<li><img src="img/v91_12.png" alt><span>Thé</span></li>
-					<li><img src="img/v91_13.png" alt><span>Café</span></li>
+					<li><img src="img/v91_12.jpg" alt><span>Thé</span></li>
+					<li><img src="img/v91_13.jpg" alt><span>Café</span></li>
 				</ul>
 				<div class="barre_progression"></div>
 			</div>
     </div>
+		<footer>
+			<div class="placeholderFooter">
+				<p>Des trucs pour ne pas être dans l’illégalité</p>
+			</div>
+		</footer>
 	</body>
 </html>
