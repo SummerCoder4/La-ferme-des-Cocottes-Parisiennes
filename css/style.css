@@ -325,14 +325,22 @@ h3 {
   }
   
   .texteFormule1 {
-    padding: 0px 0px 0px 30px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
+
+
+
   
   .descriFormule1 > p {
   justify-content: flex-start;
+  }
+
+  .descriFormule1Mobile {
+  justify-content: flex-start;
+  display: none;
   }
   
   
@@ -341,6 +349,7 @@ h3 {
   margin: 20px 0px 20px 0px;
   width: 291px;
   height: 40px;
+  background-color: white;
   
   }
   
@@ -385,10 +394,17 @@ h3 {
   font-size: 18px;
   }
   
+  .addToCartformule1Mobile{
+    display: none;
+  }
+
+
   .addToCartformule2 {
     display: flex;
     justify-content: flex-end;   
   }
+
+  
   
   .laFormule2 {
   display: flex;
@@ -404,15 +420,17 @@ h3 {
   }
   
   .texteFormule2 {
-      padding: 0px 30px 0px 30px;
+      margin: 30px;
       justify-content: flex-start;
   }
   
-  .descriFormule2 {
-  }
   
   .descriFormule2 > p{
   justify-content: flex-start;
+  }
+
+  .descriFormule2Mobile > p{
+    display: none;
   }
   
   .plusMoins {
@@ -524,34 +542,57 @@ h3 {
   padding: 10px;
   }
   
-  .laTricheFooter {
-  height: 50px;
-  }
+
 
 
   
 @media screen and (max-width: 650px) {
 
-  .laPrez {
-
-    display: none;
-
-  }
-
+.laPrez {
+display: none;
+}
 
 .laPrezMobile {
 display: block;
+padding: 20px 20px 50px 20px;
 }
 
+.laFormule1{
+
+  
+}
 .texteFormule1 {
-  margin: 0px 0px 0px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0px 20px 0px 20px;
+  margin: 20px ;
+}
+
+.descriFormule1 {
+  display: none;
+}
+
+.descriFormule1Mobile {
+  justify-content: flex-start;
+  display: block;
 }
 
 
+.lePrix {
+  margin: 0px 0px 20px 0px;
+  font-size: 30px;
+  }
+  
+.lePrix1 > p {
+  justify-content: flex-end;
+  }
+
+.addToCartformule1 {
+
+  display: flex;
+  justify-content: flex-end;
+
+}
 
 
 .imgPouleParrainage {
@@ -568,7 +609,9 @@ select {
   align-self: center;
 
   
-  }
+}
+
+
   
   .textareaNomPoule {
   display: flex;
@@ -594,15 +637,48 @@ select {
   font-family: var(--font-content);
   }
 
+.descriFormule2Mobile > p{
+  display: flex;
+  justify-content: center;
+}
+
+.laFormule2 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0;
+  }
+
+.descriFormule2{
+  display: none;
+}
+
+.texteFormule2 {
+  margin: 0px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+}
+
 
 .medailles {
   display: flex;
-  flex-direction: column;
-  padding: 50px;
-  min-height: 800px;
+  flex-direction: row;
+  padding: 0px 20px 0px 20px;
+  min-height: 200px;
   align-content: center;
   justify-content: space-evenly;
   }
+
+  .medailles img {
+    width: 50px;
+}
+.medailleTxt > p {
+  font-size: 18px;
+  text-align: center;
+  padding: 0px 10px 10px 10px;
+}
+}
 
 .medailleSolo {
   display: flex;
@@ -637,6 +713,10 @@ align-self:baseline;
   align-self:baseline;
 }
   
+.placeholderFooter p{
+  font-size: 12px;
+}
+
 
 }
 
