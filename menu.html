@@ -5,69 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/slideshow.css" />
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a class="dropdown-item" href="index.html">Accueil</a></li>
-            <li><a class="dropdown-item" href="residentes.html">Les Résidentes</a></li>
-            <li><a class="dropdown-item" href="#">Les Menus</a></li>
-            <li><a class="dropdown-item" href="parrainages.html">Les Parrainages</a></li>
-            <li><a class="dropdown-item" href="boutique.html">La boutique</a></li>
-            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <h1>Les menus proposés</h1>
-    <div class="menu">Nous vous proposons une selection de repas et de déssert à base d'œuf pour les petits et les grands.</div>
-    <div id="carrousel-repas">
-        <figure>
-            <div class="imgCarrousel">
-                <img src="/img/v106_123.png" alt="oeuf au lait et au chocolat">
-                <div class="v106_125">Œuf au lait et au chocolat</div>
-            </div>
-            <div class="imgCarrousel">
-                <img src="/img/v106_126.png" alt="salade épinards">
-                <div class="v106_125">Salade d'épinards, oeuf mollets et croûtons</div>
-            </div>
-            <div class="imgCarrousel">
-                <img src="/img/v106_130.png" alt="Omelette au chocolat">
-            </div>
-            <div class="imgCarrousel">
-                <img src="/img/v106_150.png" alt="oeuf à la neige">
-            </div>
-            <div class="imgCarrousel">
-                <img src="/img/v106_154.png" alt="oeuf frit">
-            </div>
-            <div class="imgCarrousel">
-                <img src="/img/v106_123.png" alt="oeuf au lait et au chocolat">
-            </div>
-        </figure>
+	<header>
+		<!-- Menu desktop -->
+		<div class="menuFixed">
+			<nav role="navigation" id="menuDesktop">
+					<ul id="menuDesktopSize">
+						<li><a href="index.html" class="link">Accueil</a></li>
+						<li><a href="residentes.html" class="link">Résidentes</a></li>
+						<li><a href="#"class="link">Menus</a></li>
+						<li><a href="index.html"class="link"><img src="img/chickenLogo.png" class="logo"></a></li>
+						<li><a href="parrainages.html"class="link">Parrainages</a></li>
+						<li><a href="boutique.html"class="link">Boutique</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+			</nav> 
+		</div>
+	 
+		 <nav role="navigation" id="menuMobile">
+			<button class="b1">
+				<div class="container-lignes">
+				  <div class="ligne"></div>
+				  <div class="ligne"></div>
+				  <div class="ligne"></div>
+				</div>
+			</button>
+			<a  href="index.html"><img src="img/chickenLogo.png" class="logo"></a>
+		</nav> 
+	  
+		<div class="menuDeroulant"> 
+				<ul>
+					<li><a href="index.html" class="link">Accueil</a></li>
+					<li><a href="residentes.html" class="link">Résidentes</a></li>
+					<li><a href="#" class="link">Menus</a></li>
+					<li><a href="parrainages.html"class="link">Parrainages</a></li>
+					<li><a href="boutique.html" class="link">Boutique</a></li>
+					<li><a href="contact.html" class="link">Contact</a></li>
+				</ul>
+		</div>
+		</header>
+  <h1 class="menu">Les menus proposés</h1>
+  <p class="menu">Nous vous proposons une selection de repas et de déssert à base d'œuf pour les petits et les grands.</p>
+		<div class="slideshow">
+			<ul>
+				<li><img src="img/v106_123.png" alt><span>Œuf au lait et au chocolat</span></li>
+				<li><img src="img/v106_126.png" alt><span>Salade d'épinards, oeuf mollets et croûtons</span></li>
+				<li><img src="img/v106_130.png" alt><span>Omelette au chocolat</span></li>
+				<li><img src="img/v106_150.png" alt><span>Omelette à la neige au chocolat</span></li>
+				<li><img src="img/v106_154.png" alt><span>Œuf frit écossais</span></li>
+			</ul>
+			<div class="barre_progression"></div>
     </div>
-    <p>Vous trouverez ci-dessous, une selection de boissons à notre bar à poules.</p>
+    <br /><br />
+    <p class="menu">Vous trouverez ci-dessous, une selection de boissons à notre bar à poules.</p>
     <div id="carrousel-boissons">
-        <figure>
-            <div class="imgCarrousel">
-                <img src="/img/v71_78.png" alt="oeuf au lait et au chocolat">
-                <div class="v106_125">Lait de poules</div>
-            </div>
-            <div class="imgCarrousel">
-                <img src="/img/v91_10.png" alt="salade épinards">
-                <div class="v106_125">Salade d'épinards, oeuf mollets et croûtons</div>
-            </div>
-            <div class="imgCarrousel">
-                <img src="/img/v91_11.png" alt="Omelette au chocolat">
-            </div>
-            <div class="imgCarrousel">
-                <img src="/img/v91_12.png" alt="oeuf à la neige">
-            </div>
-            <div class="imgCarrousel">
-                <img src="/img/v91_13.png" alt="oeuf frit">
-            </div>
-            <div class="imgCarrousel">
-                <img src="/img/v71_78.png" alt="oeuf au lait et au chocolat">
-            </div> 
-        </figure>
+			<div class="slideshow2">
+				<ul>
+					<li><img src="img/v71_78.png" alt><span>Lait de poule</span></li>
+					<li><img src="img/v91_10.png" alt><span>Sélection de vin rouge</span></li>
+					<li><img src="img/v91_11.png" alt><span>Champagne</span></li>
+					<li><img src="img/v91_12.jpg" alt><span>Thé</span></li>
+					<li><img src="img/v91_13.jpg" alt><span>Café</span></li>
+				</ul>
+				<div class="barre_progression2"></div>
+			</div>
     </div>
-</body>
+		<footer>
+			<div class="placeholderFooter">
+				<p>Nous revoilà, la Bad Company</p>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript" src="script/script.js"></script>
 </html>
