@@ -303,6 +303,11 @@ h3 {
   display: block;
   padding: 50px 20px 50px 20px;
   }
+
+.laPrezMobile {
+  display: none;
+  padding: 50px 20px 50px 20px;
+}
   
   .laPrez > p {
     justify-content: flex-start;
@@ -523,20 +528,115 @@ h3 {
   height: 50px;
   }
 
-.imgPouleParrainage {
 
-visibility: collapse;  
-clear:both;
+  
+@media screen and (max-width: 650px) {
+
+  .laPrez {
+
+    display: none;
+
+  }
+
+
+.laPrezMobile {
+display: block;
+}
+
+.texteFormule1 {
+  margin: 0px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 20px 0px 20px;
+}
+
+
+
+
+.imgPouleParrainage {
+  display:none;
+}
+
+
+
+select {
+  font-family: var(--font-content);padding: 5px;
+  margin: 20px 0px 20px 0px;
+  max-width: 200px;
+  height: 40px;
+  align-self: center;
+
+  
+  }
+  
+  .textareaNomPoule {
+  display: flex;
+  flex-direction: column;
+  
+  }
+  
+  .textareaNomPoule textarea {
+  max-width: 200px;
+  height: 40px;
+  resize: none;
+  justify-content: flex-start;
+  font-family: var(--font-content);
+  align-self: center;
 
   }
   
-@media screen and (max-width: 640px) {
+  .textareaNomPoule button {
+  width: 100px;
+  height: 40px;
+  justify-content: flex-start;
+  align-self: center;
+  font-family: var(--font-content);
+  }
 
-.imgPouleParrainage {
-  visibility: visible;  
 
+.medailles {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  min-height: 800px;
+  align-content: center;
+  justify-content: space-evenly;
+  }
 
+.medailleSolo {
+  display: flex;
+  flex-direction: column;
+  max-width: 150px;
+  align-items: center;
+  box-shadow: 5px 10px 5px lightgrey;
+  margin: 10px 20px 10px 20px;
 }
+
+.medailleSolo img {
+  display: flex;
+  flex-direction: column;
+  max-width: 100px;
+  align-items: center;
+  margin: 10px 20px 10px 20px;
+}
+
+.medailleComment {
+display: none;
+}
+
+.medailleOr {
+align-self:baseline;
+}
+
+.medailleArgent {
+  align-self:baseline;
+}
+
+.medailleBronze  {
+  align-self:baseline;
+}
+  
 
 }
 
