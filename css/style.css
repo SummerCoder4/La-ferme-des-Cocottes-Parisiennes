@@ -438,6 +438,7 @@ padding: 10px 10px;
     justify-content: space-around;
     align-items: center;
     padding-top: 120px;
+    flex-wrap: wrap;
 }
 
 .lespoules2 {
@@ -454,5 +455,23 @@ padding: 10px 10px;
     padding-bottom: 200px;
 }
 
+.poules__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #d8d5cf;
+    margin: 1rem;
+    width: 30%;
+    height: 470px;
+    align-items: center;
+}
 
+.poule__contenu {
+    padding: 1rem;
+}
+
+.poulettes {
+    width: 80%;
+}
 
