@@ -334,7 +334,10 @@ justify-content: flex-start;
 }
 
 .texteFormule1 {
-padding: 0px 0px 0px 30px;
+  padding: 0px 0px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .descriFormule1 > p {
@@ -389,6 +392,11 @@ background-color: #3D44D9;
 border-radius: 15px;
 border: 0px;
 font-size: 18px;
+}
+
+.addToCartformule2 {
+  display: flex;
+  justify-content: flex-end;   
 }
 
 .laFormule2 {
