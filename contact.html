@@ -8,9 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Contact</title>
+
 </head>
 <body>
+
 <header>
     <!-- Menu desktop -->
     <nav role="navigation" id="menuDesktop">
@@ -24,7 +26,7 @@
       <li><a href="#">Contact</a></li>
     </ul>
     </nav> 
-    
+    <!-- Menu Mobile -->
     <nav role="navigation" id="menuMobile">
     <a  href="index.html"><img src="img/chickenLogo.png" class="logo"></a>
     <div class="menuDeroulant"> 
@@ -40,25 +42,38 @@
     </nav> 
     </header>
 
-    <p>Retrouvez-vous à notre point de vente habituel du lundi au samedi de 7h à 20h sans interruption !</p>
+    <p>Retrouvez-vous à notre point de vente habituel du lundi au samedi de 7h à 20h sans interruption ! </br>
+      Je vous invite à nous contacter via le formulaire ci-dessous pour toute question éventuelle.
+    </p>
     <section id="contact">
-      <form id="contactForm">
-        <label for="name">Nom et Prénom :</label><br />
-        <input type="text" id="name" name="name" placeholder="Eddy Malou" /><br />
-        <label for="email">Email :</label><br />
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="exemple@gmail.com"
+      <div class="poules-contact">
+        <img src="img/bird-g875583585_640.jpg" alt="ImageContact1"
+          height="300"
+          width="300"
+        />
+        <img src="img/cochin-gc7a9c98a4_640.jpg" alt="ImageContact2"
+          height="300"
+          width="300"
+        />
+      </div>
+        <form id="contactForm">
+          <label for="name">Nom et Prénom :</label><br />
+          <input type="text" id="name" name="name" placeholder="Eddy Malou" /><br />
+          <label for="email">Email :</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="exemple@gmail.com"
         /><br />
         <label for="message">Message :</label><br />
         <textarea id="message" name="message"></textarea>
         <br /><br />
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Envoyer" />
       </form>
     </section>
 
     <script src="script.js"></script>
   </body>
 </html>
+
