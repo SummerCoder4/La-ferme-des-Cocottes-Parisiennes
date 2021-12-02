@@ -162,6 +162,7 @@ h3 {
     transform: translate(-50%, -50%);
     pointer-events: none;
   }
+
   .ligne {
     position: absolute;
     border-radius: 10px;
@@ -185,29 +186,28 @@ h3 {
     transform 0.2s ease-in-out,
     top 0.2s 0.2s ease-in-out;
   }
-  .b1 .ligne:nth-child(2) {
-    transition: opacity 0.2s 0.2s ease-in-out;
-  }
+.b1 .ligne:nth-child(2) {
+  transition: opacity 0.2s 0.2s ease-in-out;
+}
   
-  
-  .b1.active .ligne:nth-child(1){
-    top: 15px;
-    transform: rotate(45deg);
-    transition:   
-    top 0.2s  ease-in-out,
-    transform 0.2s 0.2s ease-in-out;
-  }
-  .b1.active .ligne:nth-child(2){
-    transition: opacity 0.2s ease-in-out;
-    opacity: 0;
-  }
-  .b1.active .ligne:nth-child(3){
-    top: 15px;
-    transform: rotate(-45deg);
-    transition:   
-    top 0.2s  ease-in-out,
-    transform 0.2s 0.2s ease-in-out;
-  }
+.b1.active .ligne:nth-child(1){
+  top: 15px;
+  transform: rotate(45deg);
+  transition:   
+  top 0.2s  ease-in-out,
+  transform 0.2s 0.2s ease-in-out;
+}
+.b1.active .ligne:nth-child(2){
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+}
+.b1.active .ligne:nth-child(3){
+  top: 15px;
+  transform: rotate(-45deg);
+  transition:   
+  top 0.2s  ease-in-out,
+  transform 0.2s 0.2s ease-in-out;
+}
 
 /* HOME PAGE */ 
 .fullWidthHome {
@@ -229,11 +229,11 @@ h3 {
     align-items: center;}
 
 .actualiteHome {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
 }
 
 .rondJaune {
@@ -245,55 +245,55 @@ h3 {
 /* MEDIA QUERIES */ 
 
 @media screen and (max-width: 650px) {
-    #menuDesktop {display: none;}
+  #menuDesktop {display: none;}
 
-    #menuMobile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        z-index: 2;
-        background: var(--primary-color);
-        border-bottom:2px solid var(--second-color) ;
-    }
+  #menuMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    background: var(--primary-color);
+    border-bottom:2px solid var(--second-color) ;
+}
 
-    #menuMobile ul {
-       list-style: none;
-        text-align: center;
-        padding: 0;
-    }
+  #menuMobile ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
 
-    #menuMobile .logo {margin-top: 10px; text-align: center;}
-    header {height: 100px;}   
+  #menuMobile .logo {margin-top: 10px; text-align: center;}
+  header {height: 100px;}   
 
-    .menuDeroulant {
-        background-color: var(--primary-color); 
-        width: 100vw; 
-        height: 45vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        position: absolute;
-        transform: translateY(-150%);
-        transition: transform 0.4s ease-in;
-        z-index: -2;
-    }
+  .menuDeroulant {
+    background-color: var(--primary-color); 
+    width: 100vw; 
+    height: 45vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    transform: translateY(-150%);
+    transition: transform 0.4s ease-in;
+    z-index: -2;
+  }
 
-    .deroule {
-        transform: translateY(0%);
-    }
+  .deroule {
+    transform: translateY(0%);
+  }
 
-    .menuDeroulant ul {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 0;
-    }
+  .menuDeroulant ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+  }
     
-    .actualiteHome {
-        flex-direction: column;
-    }
+  .actualiteHome {
+    flex-direction: column;
+  }
 }
 
 /* //////////////////////////////////////////////////////     DEBUT     PARRAINAGES      ///////////////////////////////////////////////////////////////// */
@@ -398,10 +398,10 @@ h3 {
   justify-content: flex-start;
   }
   
-  .texteFormule2 {
-      padding: 0px 30px 0px 30px;
-      justify-content: flex-start;
-  }
+.texteFormule2 {
+  padding: 0px 30px 0px 30px;
+  justify-content: flex-start;
+}
   
   .descriFormule2 {
   }
@@ -463,44 +463,41 @@ h3 {
   text-align: center;
   margin: 150px;
   }
-  
-  
-  
-  
-  .medailles {
+    
+.medailles {
   display: flex;
   flex: row;
   padding: 50px;
   min-height: 800px;
   align-content: center;
   justify-content: space-evenly;
-  }
+}
   
-  .medailleSolo {
+.medailleSolo {
   display: flex;
   flex-direction: column;
   max-width: 300px;
   align-items: center;
   box-shadow: 5px 10px 5px lightgrey;
   margin: 10px 20px 10px 20px;
-  }
+}
   
-  .medailles img {
+.medailles img {
   width: 150px;
-  }
+}
   
-  .medailleTxt > p {
+.medailleTxt > p {
   font-size: 30px;
   text-align: center;
-  }
+}
   
-  .medailleComment > p {
+.medailleComment > p {
       padding: 20px;
-  }
+}
   
-  .medailleOr {
+.medailleOr {
   align-self: flex-start;
-  }
+}
   
   .medailleArgent {
   align-self: center;
@@ -525,87 +522,6 @@ h3 {
   
   
   /* //////////////////////////////////////////////////////     FIN     PARRAINAGES      ///////////////////////////////////////////////////////////////// */
-  
-
-div#imgCarrousel {
-	border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-
-div#carrousel-repas {
-	width: 80%;
-	max-width: 1000px;
-	overflow: hidden;
-}
-
-div#carrousel-repas figure {
-  position: relative;
-  width: 600%;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  text-align: center;
-	animation: 30s slidy infinite;
-}
-
-div#carrousel-repas figure img {
-	width: 16.6%;
-	height: auto;
-	float: left;
-  border-radius: 20px;
-}
-
-div#carrousel-boissons {
-	width: 80%;
-	max-width: 1000px;
-	overflow: hidden;
-}
-
-div#carrousel-boissons figure {
-  position: relative;
-  width: 600%;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  text-align: center;
-	animation: 30s slidy infinite;
-}
-
-div#carrousel-boissons figure img {
-	width: 16.6%;
-	height: auto;
-	float: left;
-  border-radius: 20px;
-}
-
-/* Version fonctionnel mais besoin d'ajustement */
-@keyframes slidy {
-  0% { left: 0%; }
-  20% { left: -100%; }
-  40% { left: -200%; }
-  60% { left: -300%; }
-  80% { left: -400%; }
-  100% { left: -500%; }
-}
-
-/*
-@keyframes slidy {
-  0% { left: 0%; }
-	10% { left: 0%; }
-  20% { left: -100%; }
-	30% { left: -100%; }
-  40% { left: -200%; }
-	50% { left: -200%; }
-  60% { left: -300%; }
-	70% { left: -300%; }
-  80% { left: -400%; }
-	88% { left: -400%; }
-	92% { left: -500%; }
-  100% { left: -600%; }
-}
-*/
 
 p {
 display: flex;
