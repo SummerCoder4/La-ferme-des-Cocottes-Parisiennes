@@ -295,10 +295,6 @@ h3 {
     }
 }
 
-/* //////////////////////////////////////////////////////     DEBUT     PARRAINAGES      ///////////////////////////////////////////////////////////////// */
-
-
-
 /* .placeholdertopbar {
 background-color: #F2DA5E;
 overflow: hidden;
@@ -318,10 +314,6 @@ display: block;
 padding: 50px 20px 50px 20px;
 }
 
-.laPrez > p {
-  justify-content: flex-start;
-}
-
 .laFormule1 {
 display: flex;
 flex-direction: row;
@@ -334,29 +326,50 @@ justify-content: flex-start;
 }
 
 .texteFormule1 {
-  padding: 0px 0px 0px 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+padding: 20px;
 }
 
-.descriFormule1 > p {
-justify-content: flex-start;
+.boutonmenuprincipal {
+background-color: darkgrey;
+color: white;
+border: none;
+cursor: pointer;
+padding:10px;
+margin-top:20px;
+font-size: 18px;
 }
 
+.boutonmenuprincipal:hover {
+background-color: darkgrey;
+}
 
-select {
-font-family: var(--font-content);padding: 5px;
-margin: 20px 0px 20px 0px;
-width: 291px;
-height: 40px;
+.dropdownParrainage {
+position: relative;
+display: inline-block;
+}
 
+.dropdownParrainage-child {
+display: none;
+background-color: darkgrey;
+min-width: 50px;
+}
+
+.dropdownParrainage-child a {
+color: white;
+padding:10px;
+text-decoration: none;
+display: block;
+}
+
+.dropdownParrainage:hover .dropdownParrainage-child {
+display: block;
 }
 
 .textareaNomPoule {
+margin: 50px 0px 50px 0px;
+align-items: flex-start;
 display: flex;
 flex-direction: row;
-
 }
 
 .textareaNomPoule textarea {
@@ -364,14 +377,12 @@ width: 291px;
 height: 40px;
 resize: none;
 justify-content: flex-start;
-font-family: var(--font-content);
 }
 
 .textareaNomPoule button {
 width: 100px;
 height: 40px;
 justify-content: flex-start;
-font-family: var(--font-content);
 }
 
 .lePrix {
@@ -379,31 +390,19 @@ margin: 0px 0px 20px 0px;
 font-size: 30px;
 }
 
-.lePrix1 > p {
-  justify-content: flex-start;
-}
-
-
 .addToCart button{
 color: white;
-width: 175px;
-height: 50px;
+width: 120px;
+height: 40px;
 background-color: #3D44D9;
 border-radius: 15px;
 border: 0px;
-font-size: 18px;
-}
-
-.addToCartformule2 {
-  display: flex;
-  justify-content: flex-end;   
 }
 
 .laFormule2 {
 display: flex;
 flex-direction: row-reverse;
-margin: 30px 0px 0px 0px;
-
+background-color: grey;
 }
 
 .pouleFormule2 {
@@ -413,103 +412,94 @@ justify-content: flex-start;
 }
 
 .texteFormule2 {
-    padding: 0px 30px 0px 30px;
-    justify-content: flex-start;
+padding: 20px;
+justify-content: flex-start;
 }
 
 .descriFormule2 {
-}
-
-.descriFormule2 > p{
+background-color: blue;
 justify-content: flex-start;
 }
+
 
 .plusMoins {
 margin: 50px 0px 50px 0px;
 align-items: flex-start;
 display: flex;
 flex-direction: row;
-justify-content: flex-end;
 }
 
 .plusMoins textarea {
 width: 75px;
-height: 50px;
+height: 40px;
 resize: none;
 white-space: normal;
 text-align: justify;
 -moz-text-align-last: center; /* Firefox 12+ */
 text-align-last: center;
-font-size: 20px;
+font-size: 16px;
 margin: 0px 10px 0px 10px;
-overflow:hidden;
-rows:1; 
-disabled:true;
 }
 
 .plusMoins button {
 width: 50px;
-height: 50px;
-font-size: 30px;
-
+height: 40px;
+justify-content: flex-start;
 }
-
-.lePrix2 > p {
-  justify-content: flex-end;
-}
-
-
 
 .addToCartformule2 {
-  display: flex;
-  justify-content: flex-end;   
+justify-content: flex-end;    
 }
 
-
 .titleParrainages {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
 text-align: center;
+color: #3D44D9;
 margin: 50px;
 }
 
 .filleulesMalheureusement {
-font-size: 24px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
 line-height: 42px;
 text-align: center;
-margin: 150px;
 }
-
-
-
 
 .medailles {
 display: flex;
 flex: row;
-padding: 50px;
-min-height: 800px;
-align-content: center;
+background-color: lightgrey;
 justify-content: space-evenly;
+align-items: flex-end;
+padding: 50px;
+height: 600px;
 }
 
 .medailleSolo {
 display: flex;
 flex-direction: column;
-max-width: 300px;
-align-items: center;
-box-shadow: 5px 10px 5px lightgrey;
-margin: 10px 20px 10px 20px;
+background-color: yellow;
+max-width: 200px;
 }
 
-.medailles img {
+.medailles img  {
 width: 150px;
 }
 
-.medailleTxt > p {
+.medailleTxt {
 font-size: 30px;
 text-align: center;
+max-width: 100px;
 }
 
-.medailleComment > p {
-    padding: 20px;
+.medailleComment {
+background-color: blue;
 }
 
 .medailleOr {
@@ -518,10 +508,6 @@ align-self: flex-start;
 
 .medailleArgent {
 align-self: center;
-}
-
-.medailleBronze  {
-align-self: flex-end;
 }
 
 .placeholderFooter {
@@ -537,99 +523,11 @@ padding: 10px;
 height: 50px;
 }
 
-
-/* //////////////////////////////////////////////////////     FIN     PARRAINAGES      ///////////////////////////////////////////////////////////////// */
-
-
-div#imgCarrousel {
-	border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-
-div#carrousel-repas {
-	width: 80%;
-	max-width: 1000px;
-	overflow: hidden;
-}
-
-div#carrousel-repas figure {
-  position: relative;
-  width: 600%;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  text-align: center;
-	animation: 30s slidy infinite;
-}
-
-div#carrousel-repas figure img {
-	width: 16.6%;
-	height: auto;
-	float: left;
-  border-radius: 20px;
-}
-
-div#carrousel-boissons {
-	width: 80%;
-	max-width: 1000px;
-	overflow: hidden;
-}
-
-div#carrousel-boissons figure {
-  position: relative;
-  width: 600%;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  text-align: center;
-	animation: 30s slidy infinite;
-}
-
-div#carrousel-boissons figure img {
-	width: 16.6%;
-	height: auto;
-	float: left;
-  border-radius: 20px;
-}
-
-/* Version fonctionnel mais besoin d'ajustement */
-@keyframes slidy {
-  0% { left: 0%; }
-  20% { left: -100%; }
-  40% { left: -200%; }
-  60% { left: -300%; }
-  80% { left: -400%; }
-  100% { left: -500%; }
-}
-
-/*
-@keyframes slidy {
-  0% { left: 0%; }
-	10% { left: 0%; }
-  20% { left: -100%; }
-	30% { left: -100%; }
-  40% { left: -200%; }
-	50% { left: -200%; }
-  60% { left: -300%; }
-	70% { left: -300%; }
-  80% { left: -400%; }
-	88% { left: -400%; }
-	92% { left: -500%; }
-  100% { left: -600%; }
-}
-*/
-
 p {
 display: flex;
 justify-content: center;
 font-size: 25px;
 font-style: normal;
-}
-
-#poules {
-position: 50% 50%;
 }
 
 form {
