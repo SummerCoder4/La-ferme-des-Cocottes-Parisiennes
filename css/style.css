@@ -671,10 +671,21 @@ h3 {
   /* //////////////////////////////////////////////////////     FIN     PARRAINAGES      ///////////////////////////////////////////////////////////////// */
 
 p {
-display: flex;
-justify-content: center;
-font-size: 25px;
-font-style: normal;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-style: normal;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+  }
+
+.poules-contact {
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: space-evenly;  
 }
 
 #poules {
@@ -682,27 +693,26 @@ position: 50% 50%;
 }
 
 form {
-  margin: 0 auto;
-  width: 300px;
-  padding-top: 20px;
+    margin: 0 auto;
+    width: 300px;
+    padding-top: 20px;
 }
 
 label {
-  line-height: 2;
+    line-height: 2;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-width: 100%;
-padding: 10px;
-margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 input[type="submit"] {
-background: #283b63;
-color: white;
-border: none;
-padding: 10px 10px;
+    background: #283b63;
+    color: white;
+    border: none;
+    padding: 10px 10px;
 }
-
