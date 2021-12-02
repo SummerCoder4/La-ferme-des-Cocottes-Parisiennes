@@ -1,27 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Outfit:wght@600&display=swap');
-
-* {
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
-}
-
-:root{ 
-    --primary-color: #F2DA5E ; 
-    --secondary-color: #F2C2C2; 
-    --third-color: #3D44D9;
-   
-    --font-titre: 'Outfit', sans-serif, 600; 
-    --font-content: 'Lato', sans-serif;
-    ; 
-}
-
-
-body{
-    font-family: var(--font-content);
-}
-
-
 
 .bene{
     display: flex;
@@ -35,14 +11,12 @@ section{
     height: 500px; 
 }
 
-h2{
-    font-family: var(--font-titre);
-    color: var(--third-color);
+.bene h2{
     padding: 20px 0 20px 0;
     text-align: center;
 }
 
-p{
+.bene p{
     line-height: 1.5; 
 }
 
@@ -155,6 +129,7 @@ article img {
              border: solid 20px;
              border-color: var(--secondary-color)
             }
+  
     .green { grid-area: 1 / 2 / 2 / 3; }
     .farm { grid-area: 2 / 1 / 3 / 3;
             height: 350px;
@@ -169,3 +144,565 @@ article img {
      
 }
 /* FIN MEDIA QUERIES QUI NOUS SOMMES */   
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Outfit:wght@400;600&display=swap');
+
+:root {
+    --primary-color : #F2DA5E;
+    --second-color : #F2C2C2;
+    --third-color : #3D44D9;
+    --font-titre : 'Outfit', sans-serif, 600;
+    --font-content : 'Lato', sans-serif;
+}
+* {
+
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+a:visited {color: var(--third-color);}
+
+body {
+    margin:0;
+    font-family: var(--font-content);
+    
+}
+
+header {
+    background-color: var(--primary-color);
+    border-bottom: 5px solid var(--second-color);
+    font-family: var(--font-titre);
+    font-size: 18px;
+    position: sticky;
+    top: 0;
+    transition:0.2s;
+}
+
+ul li {
+    padding: 0;
+    list-style: none;
+}
+
+section {
+    padding: 0 0 80px;
+}
+
+/* FONT ET TEXT*/
+
+
+a {
+    font-family: var(--font-titre); 
+    position: relative;
+    text-transform: uppercase;
+    
+}
+
+a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0px;
+    background: var(--second-color);
+    transition:.3s ease;
+    position: absolute;
+    top: 10px;
+    z-index: -1;
+}
+
+a:hover::after {
+    height: 10px;
+    position: absolute;
+    top: 14px;
+    z-index: -1;
+}
+
+h1{ 
+    font-family: var(--font-titre);
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--second-color);
+}
+
+h2 {
+    font-family: var(--font-titre);
+    color: var(--third-color);
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-align: center;
+    font-family: var(--font-titre);
+    color: var(--second-color);
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.btn {
+    border-radius: 25px;
+    padding: 10px;
+    border: solid 3px var(--third-color);
+    background: var(--third-color);
+    color: rgb(235, 235, 235);
+    font: var(--font-titre);
+}
+
+.btn:active {
+    background-color: var(--second-color);
+    border:var(--third-color) solid 3px;
+}
+/* MENU NAVIGATION */
+
+#menuDesktop {      
+    display: flex;
+    flex-direction: column;
+    justify-content: center;}
+
+#menuDesktopSize {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    transition: 0.2s;
+}
+
+#menuMobile {display: none;}
+.menuDeroulant {display: none;}
+
+.logo {
+    width: 65px;
+    transition: 0.2s;
+    margin-top: 10px
+}
+
+/* MENU MOBILE */
+.b1 { 
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 40%;
+    background: none;
+    transform: translateY(-50%);
+  }
+
+.container-lignes {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+
+  .ligne {
+    position: absolute;
+    border-radius: 10px;
+    width: 40px;
+    height: 5px;
+    background:var(--third-color);
+  }
+  .ligne:nth-child(1){
+    top: 0px;
+  }
+  .ligne:nth-child(2){
+    top: 15px;
+  }
+ .ligne:nth-child(3){
+    top: 30px;
+  }
+  
+  .b1 .ligne:nth-child(1), .ligne:nth-child(3){
+    transform: rotate(0deg);
+    transition:   
+    transform 0.2s ease-in-out,
+    top 0.2s 0.2s ease-in-out;
+  }
+.b1 .ligne:nth-child(2) {
+  transition: opacity 0.2s 0.2s ease-in-out;
+}
+  
+.b1.active .ligne:nth-child(1){
+  top: 15px;
+  transform: rotate(45deg);
+  transition:   
+  top 0.2s  ease-in-out,
+  transform 0.2s 0.2s ease-in-out;
+}
+.b1.active .ligne:nth-child(2){
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+}
+.b1.active .ligne:nth-child(3){
+  top: 15px;
+  transform: rotate(-45deg);
+  transition:   
+  top 0.2s  ease-in-out,
+  transform 0.2s 0.2s ease-in-out;
+}
+
+/* HOME PAGE */ 
+.fullWidthHome {
+    background-image: url(../img/chickenFull.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height : 80vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.centred {width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;}
+
+.actualiteHome {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+}
+
+.rondJaune {
+    position: absolute;
+    left: -150px;
+    z-index: -1;
+}
+
+/* MEDIA QUERIES */ 
+
+@media screen and (max-width: 650px) {
+  #menuDesktop {display: none;}
+
+  #menuMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    background: var(--primary-color);
+    border-bottom:2px solid var(--second-color) ;
+}
+
+  #menuMobile ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+
+  #menuMobile .logo {margin-top: 10px; text-align: center;}
+  header {height: 100px;}   
+
+  .menuDeroulant {
+    background-color: var(--primary-color); 
+    width: 100vw; 
+    height: 45vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    transform: translateY(-150%);
+    transition: transform 0.4s ease-in;
+    z-index: -2;
+  }
+
+  .deroule {
+    transform: translateY(0%);
+  }
+
+  .menuDeroulant ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+  }
+    
+  .actualiteHome {
+    flex-direction: column;
+  }
+}
+
+/* //////////////////////////////////////////////////////     DEBUT     PARRAINAGES      ///////////////////////////////////////////////////////////////// */
+
+
+.laPrez {
+  display: block;
+  padding: 50px 20px 50px 20px;
+  }
+  
+  .laPrez > p {
+    justify-content: flex-start;
+  }
+  
+  .laFormule1 {
+  display: flex;
+  flex-direction: row;
+  }
+  
+  .pouleFormule1 {
+  width: 500px;
+  border-radius: 0px 15px 15px 0px;
+  justify-content: flex-start;
+  }
+  
+  .texteFormule1 {
+    padding: 0px 0px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .descriFormule1 > p {
+  justify-content: flex-start;
+  }
+  
+  
+  select {
+  font-family: var(--font-content);padding: 5px;
+  margin: 20px 0px 20px 0px;
+  width: 291px;
+  height: 40px;
+  
+  }
+  
+  .textareaNomPoule {
+  display: flex;
+  flex-direction: row;
+  
+  }
+  
+  .textareaNomPoule textarea {
+  width: 291px;
+  height: 40px;
+  resize: none;
+  justify-content: flex-start;
+  font-family: var(--font-content);
+  }
+  
+  .textareaNomPoule button {
+  width: 100px;
+  height: 40px;
+  justify-content: flex-start;
+  font-family: var(--font-content);
+  }
+  
+  .lePrix {
+  margin: 0px 0px 20px 0px;
+  font-size: 30px;
+  }
+  
+  .lePrix1 > p {
+    justify-content: flex-start;
+  }
+  
+  
+  .addToCart button{
+  color: white;
+  width: 175px;
+  height: 50px;
+  background-color: #3D44D9;
+  border-radius: 15px;
+  border: 0px;
+  font-size: 18px;
+  }
+  
+  .addToCartformule2 {
+    display: flex;
+    justify-content: flex-end;   
+  }
+  
+  .laFormule2 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 30px 0px 0px 0px;
+  
+  }
+  
+  .pouleFormule2 {
+  width: 500px;
+  border-radius: 15px 0px 0px 15px;
+  justify-content: flex-start;
+  }
+  
+.texteFormule2 {
+  padding: 0px 30px 0px 30px;
+  justify-content: flex-start;
+}
+  
+  .descriFormule2 {
+  }
+  
+  .descriFormule2 > p{
+  justify-content: flex-start;
+  }
+  
+  .plusMoins {
+  margin: 50px 0px 50px 0px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  }
+  
+  .plusMoins textarea {
+  width: 75px;
+  height: 50px;
+  resize: none;
+  white-space: normal;
+  text-align: justify;
+  -moz-text-align-last: center; /* Firefox 12+ */
+  text-align-last: center;
+  font-size: 20px;
+  margin: 0px 10px 0px 10px;
+  overflow:hidden;
+  rows:1; 
+  disabled:true;
+  }
+  
+  .plusMoins button {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  
+  }
+  
+  .lePrix2 > p {
+    justify-content: flex-end;
+  }
+  
+  
+  
+  .addToCartformule2 {
+    display: flex;
+    justify-content: flex-end;   
+  }
+  
+  
+  .titleParrainages {
+  text-align: center;
+  margin: 50px;
+  }
+  
+  .filleulesMalheureusement {
+  font-size: 24px;
+  line-height: 42px;
+  text-align: center;
+  margin: 150px;
+  }
+    
+.medailles {
+  display: flex;
+  flex: row;
+  padding: 50px;
+  min-height: 800px;
+  align-content: center;
+  justify-content: space-evenly;
+}
+  
+.medailleSolo {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  align-items: center;
+  box-shadow: 5px 10px 5px lightgrey;
+  margin: 10px 20px 10px 20px;
+}
+  
+.medailles img {
+  width: 150px;
+}
+  
+.medailleTxt > p {
+  font-size: 30px;
+  text-align: center;
+}
+  
+.medailleComment > p {
+      padding: 20px;
+}
+  
+.medailleOr {
+  align-self: flex-start;
+}
+  
+  .medailleArgent {
+  align-self: center;
+  }
+  
+  .medailleBronze  {
+  align-self: flex-end;
+  }
+  
+  .placeholderFooter {
+  background-color: #F2DA5E;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  text-align: center;
+  padding: 10px;
+  }
+  
+  .laTricheFooter {
+  height: 50px;
+  }
+  
+  
+  /* //////////////////////////////////////////////////////     FIN     PARRAINAGES      ///////////////////////////////////////////////////////////////// */
+
+p {
+display: flex;
+justify-content: center;
+font-size: 25px;
+font-style: normal;
+}
+
+#poules {
+position: 50% 50%;
+}
+
+form {
+  margin: 0 auto;
+  width: 300px;
+  padding-top: 20px;
+}
+
+label {
+  line-height: 2;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+}
+
+input[type="submit"] {
+background: #283b63;
+color: white;
+border: none;
+padding: 10px 10px;
+}
+
