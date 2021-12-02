@@ -522,7 +522,25 @@ h3 {
   .laTricheFooter {
   height: 50px;
   }
+
+.imgPouleParrainage {
+
+visibility: collapse;  
+clear:both;
+
+  }
   
+@media screen and (max-width: 640px) {
+
+.imgPouleParrainage {
+  visibility: visible;  
+
+
+}
+
+}
+
+
   
   /* //////////////////////////////////////////////////////     FIN     PARRAINAGES      ///////////////////////////////////////////////////////////////// */
   
