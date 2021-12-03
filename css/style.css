@@ -670,14 +670,14 @@ h3 {
   
   /* //////////////////////////////////////////////////////     FIN     PARRAINAGES      ///////////////////////////////////////////////////////////////// */
 
-p {
+h4 {
     display: flex;
     justify-content: center;
-    font-size: 25px;
-    font-style: normal;
+    font-size: 16px;
+    margin-top: 4%;
 }
 
-section {
+#contact {
     padding: 40px;
     text-align: center;
   }
@@ -686,10 +686,6 @@ section {
     display: flex;
     padding-bottom: 10px;
     justify-content: space-evenly;  
-}
-
-#poules {
-position: 50% 50%;
 }
 
 form {
