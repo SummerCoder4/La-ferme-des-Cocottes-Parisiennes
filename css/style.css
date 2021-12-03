@@ -616,180 +616,16 @@ justify-content: flex-end;
   text-align: center;
   padding: 10px;
 }
-
-/* ///////////////////////////  MEDIA   //////////////////////////////// */
-
-@media screen and (max-width: 650px) {
-
-.laPrez {
-  display: none;
-}
-
-.laPrezMobile {
-  display: block;
-  padding: 20px 20px 50px 20px;
-}
-
-.texteFormule1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin:  20px;
-}
-
-.descriFormule1 {
-  display: none;
-}
-
-.descriFormule1Mobile {
-  justify-content: flex-start;
-  display: block;
-}
-
-.lePrix {
-  margin: 20px 0px 20px 0px;
-  font-size: 30px;
-}
-  
-.lePrix1 > p {
-  justify-content: flex-end;
-}
-
-.addToCartformule1 {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.imgPouleParrainage {
-  display:none;
-}
-
-select {
-  font-family: var(--font-content);padding: 5px;
-  margin: 20px 0px 20px 0px;
-  max-width: 200px;
-  height: 40px;
-  align-self: center;  
-}
- 
-.textareaNomPoule {
-  display: flex;
-  flex-direction: column;
-}
-  
-.textareaNomPoule textarea {
-  max-width: 200px;
-  height: 40px;
-  resize: none;
-  justify-content: flex-start;
-  font-family: var(--font-content);
-  align-self: center;
- }
-  
-.textareaNomPoule button {
-  width: 100px;
-  height: 40px;
-  justify-content: flex-start;
-  align-self: center;
-  font-family: var(--font-content);
-}
-
-.descriFormule2Mobile > p{
-  display: flex;
-  justify-content: center;
-}
-
-.laFormule2 {
-  display: flex;
-  flex-direction: row-reverse;
-  margin: 0;
-}
-
-.descriFormule2{
-  display: none;
-}
-
-.texteFormule2 {
-  margin: 0px 0px 0px 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 20px;
-}
-
-.filleulesMalheureusement {
-  margin: 100px;
-}
-
-.medailles {
-  display: flex;
-  flex-direction: row;
-  padding: 0px 20px 0px 20px;
-  min-height: 200px;
-  align-content: center;
-  justify-content: space-evenly;
-}
-
-.medailles img {
-    width: 50px;
-}
-
-.medailleTxt > p {
-  font-size: 18px;
-  text-align: center;
-  padding: 0px 10px 10px 10px;
-}
-
-
-.medailleSolo {
-  display: flex;
-  flex-direction: column;
-  max-width: 150px;
-  align-items: center;
-  box-shadow: 5px 5px 5px lightgrey;
-  margin: 10px 20px 10px 20px;
-}
-
-.medailleSolo img {
-  display: flex;
-  flex-direction: column;
-  max-width: 100px;
-  align-items: center;
-  margin: 10px 20px 10px 20px;
-}
-
-.medailleComment {
-  display: none;
-}
-
-.medailleOr {
-  align-self:baseline;
-}
-
-.medailleArgent {
-  align-self:baseline;
-}
-
-.medailleBronze  {
-  align-self:baseline;
-}
-  
-.placeholderFooter p{
-  font-size: 12px;
-}
-
-}
-  
   /* //////////////////////////////////////////////////////     FIN     PARRAINAGES      ///////////////////////////////////////////////////////////////// */
 
-p {
+h4 {
     display: flex;
     justify-content: center;
-    /*font-size: 25px;*/
     font-style: normal;
+    margin-top: 4%;
 }
 
-.sectionContact {
+#contact {
     padding: 40px;
     text-align: center;
 }
@@ -959,107 +795,7 @@ span.maj{
     text-align: center;
 }
 
-/* MEDIA QUERIES */ 
 
-@media screen and (max-width: 650px) {
-  #menuDesktop {display: none;}
-
-  #menuMobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 2;
-    background: var(--primary-color);
-    border-bottom:2px solid var(--second-color) ;
-}
-
-  #menuMobile ul {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-  }
-
-  #menuMobile .logo {margin-top: 10px; text-align: center;}
-  header {height: 100px;}   
-
-  .menuDeroulant {
-    background-color: var(--primary-color); 
-    width: 100vw; 
-    height: 45vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    position: absolute;
-    transform: translateY(-150%);
-    transition: transform 0.4s ease-in;
-    z-index: -2;
-  }
-
-  .deroule {
-    transform: translateY(0%);
-  }
-
-  .menuDeroulant ul {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0;
-  }
-    
-  .actualiteHome {
-    flex-direction: column;
-  }
-    
-    footer{
-        flex-direction: column-reverse;
-        align-items: center;
-        text-align: center;
-    }
-    footer>*{
-        width: 100%;
-    }
-    .societe{
-        padding: 15px;
-        width: 100%;
-    }
-    .trait{
-        border-top: solid 1px;
-        border-left: none;
-        border-color: var(--secondary-color);
-        width: 70%;
-        height: 0;
-    }
-}
-
-/* MEDIA QUERIES QUI NOUS SOMMES */
-@media screen and (min-width: 651px) {
-    .who {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-    }
-    .philo { grid-area: 1 / 1 / 2 / 2; 
-             border: solid 20px;
-             border-color: var(--secondary-color)
-            }
-  
-    .green { grid-area: 1 / 2 / 2 / 3; }
-    .farm { grid-area: 2 / 1 / 3 / 3;
-            height: 350px;
-            margin: 50px 0;
-    }
-
-    article {
-        display: flex; 
-        justify-content: space-around;
-        flex-flow: row wrap; 
-    }
-     
-}
 
 /* residentes photos */
 
@@ -1110,7 +846,9 @@ span.maj{
   padding: 1rem;
 }
 
+
 @media screen and (max-width: 650px) { 
+  /* residentes */
   .poules__container{
     width: 100%;
     float: right;
@@ -1133,6 +871,266 @@ span.maj{
     display: block;
   }
 
+    /* Parrainages */  
+  .laPrez {
+    display: none;
+  }
+  
+  .laPrezMobile {
+    display: block;
+    padding: 20px 20px 50px 20px;
+  }
+  
+  .texteFormule1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:  20px;
+  }
+  
+  .descriFormule1 {
+    display: none;
+  }
+  
+  .descriFormule1Mobile {
+    justify-content: flex-start;
+    display: block;
+  }
+  
+  .lePrix {
+    margin: 20px 0px 20px 0px;
+    font-size: 30px;
+  }
+    
+  .lePrix1 > p {
+    justify-content: flex-end;
+  }
+  
+  .addToCartformule1 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .imgPouleParrainage {
+    display:none;
+  }
+  
+  select {
+    font-family: var(--font-content);padding: 5px;
+    margin: 20px 0px 20px 0px;
+    max-width: 200px;
+    height: 40px;
+    align-self: center;  
+  }
+   
+  .textareaNomPoule {
+    display: flex;
+    flex-direction: column;
+  }
+    
+  .textareaNomPoule textarea {
+    max-width: 200px;
+    height: 40px;
+    resize: none;
+    justify-content: flex-start;
+    font-family: var(--font-content);
+    align-self: center;
+   }
+    
+  .textareaNomPoule button {
+    width: 100px;
+    height: 40px;
+    justify-content: flex-start;
+    align-self: center;
+    font-family: var(--font-content);
+  }
+  
+  .descriFormule2Mobile > p{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .laFormule2 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0;
+  }
+  
+  .descriFormule2{
+    display: none;
+  }
+  
+  .texteFormule2 {
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .filleulesMalheureusement {
+    margin: 100px;
+  }
+  
+  .medailles {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 20px 0px 20px;
+    min-height: 200px;
+    align-content: center;
+    justify-content: space-evenly;
+  }
+  
+  .medailles img {
+      width: 50px;
+  }
+  
+  .medailleTxt > p {
+    font-size: 18px;
+    text-align: center;
+    padding: 0px 10px 10px 10px;
+  }
+  
+  
+  .medailleSolo {
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+    align-items: center;
+    box-shadow: 5px 5px 5px lightgrey;
+    margin: 10px 20px 10px 20px;
+  }
+  
+  .medailleSolo img {
+    display: flex;
+    flex-direction: column;
+    max-width: 100px;
+    align-items: center;
+    margin: 10px 20px 10px 20px;
+  }
+  
+  .medailleComment {
+    display: none;
+  }
+  
+  .medailleOr {
+    align-self:baseline;
+  }
+  
+  .medailleArgent {
+    align-self:baseline;
+  }
+  
+  .medailleBronze  {
+    align-self:baseline;
+  }
+    
+  .placeholderFooter p{
+    font-size: 12px;
+  }
+
+  /* MENU */
+  
+  #menuDesktop {display: none;}
+
+  #menuMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    background: var(--primary-color);
+    border-bottom:2px solid var(--second-color) ;
+}
+
+  #menuMobile ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+
+  #menuMobile .logo {margin-top: 10px; text-align: center;}
+  header {height: 100px;}   
+
+  .menuDeroulant {
+    background-color: var(--primary-color); 
+    width: 100vw; 
+    height: 45vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    transform: translateY(-150%);
+    transition: transform 0.4s ease-in;
+    z-index: -2;
+  }
+
+  .deroule {
+    transform: translateY(0%);
+  }
+
+  .menuDeroulant ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+  }
+    
+  /* HOME */
+  .actualiteHome {
+    flex-direction: column;
+  }
+  /* qui sommes nous */
+    
+  /* FOOTER */
+  footer{
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  footer>*{
+    width: 100%;
+  }
+  .societe{
+    padding: 15px;
+    width: 100%;
+    }
+  .trait{
+  border-top: solid 1px;
+  border-left: none;
+  border-color: var(--secondary-color);
+  width: 70%;
+  height: 0;
+  }
+}
+
+/* MEDIA QUERIES QUI NOUS SOMMES */
+@media screen and (min-width: 651px) {
+    .who {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .philo { grid-area: 1 / 1 / 2 / 2; 
+             border: solid 20px;
+             border-color: var(--secondary-color)
+            }
+  
+    .green { grid-area: 1 / 2 / 2 / 3; }
+    .farm { grid-area: 2 / 1 / 3 / 3;
+            height: 350px;
+            margin: 50px 0;
+    }
+
+    article {
+        display: flex; 
+        justify-content: space-around;
+        flex-flow: row wrap; 
+    }
+     
 }
 
 @media screen and (min-width: 651px) and (max-width: 1080px) {
@@ -1140,19 +1138,3 @@ span.maj{
     width: 45%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
