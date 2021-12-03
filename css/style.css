@@ -958,6 +958,7 @@ span.maj{
   }
     
   .lePrix1 > p {
+    display: flex;
     justify-content: flex-end;
   }
   
