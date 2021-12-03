@@ -325,6 +325,7 @@ h3 {
   
 .texteFormule1 {
   margin: 20px;
+  margin-bottom: 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -358,6 +359,7 @@ select {
   resize: none;
   justify-content: flex-start;
   font-family: var(--font-content);
+  padding: 10px;
 }
   
 .textareaNomPoule button {
@@ -368,7 +370,7 @@ select {
 }
   
 .lePrix {
-  margin: 0px 0px 20px 0px;
+  margin: 20px 0px 20px 0px;
   font-size: 30px;
 }
   
@@ -409,8 +411,16 @@ select {
 
 .texteFormule2 {
   margin: 30px;
+  margin-bottom: 0px;
   justify-content: flex-start;
+
 }
+
+.texteFormule2 a{
+display: flex;
+justify-content: flex-end;
+}
+
 
 .descriFormule2 > p{
   justify-content: flex-start;
@@ -450,6 +460,7 @@ select {
 }
 
 .lePrix2 > p {
+  display: flex;
   justify-content: flex-end;
 }
 
@@ -539,7 +550,7 @@ select {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 20px ;
+  margin:  20px;
 }
 
 .descriFormule1 {
@@ -552,7 +563,7 @@ select {
 }
 
 .lePrix {
-  margin: 0px 0px 20px 0px;
+  margin: 20px 0px 20px 0px;
   font-size: 30px;
 }
   
@@ -635,7 +646,7 @@ select {
   justify-content: space-evenly;
 }
 
-  .medailles img {
+.medailles img {
     width: 50px;
 }
 
