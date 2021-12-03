@@ -1,146 +1,3 @@
-
-.bene{
-    display: flex;
-    flex-direction: column ;
-}
-
-/* //////////////// QUI NOUS SOMMES ////////////////// */
-/* general */
-.bene > section {
-    margin-top: 20px;
-    height: 500px; 
-}
-
-.bene h2{
-    padding: 20px 0 20px 0;
-    text-align: center;
-}
-
-/* philosophie */
-.philo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center; 
-    padding : 20px;  
-}
-.philo > p {
-    width: 350px;
-}
-
-.philo > img {
-    animation: roundpink 5s ease 0s infinite normal none;
-    z-index: 0; 
-    position: absolute; 
-}
-@keyframes roundpink {
-    0% {
-      animation-timing-function: ease-out;
-      transform: scale(1);
-      transform-origin: center center;
-    }
-  
-    10% {
-      animation-timing-function: ease-in;
-      transform: scale(0.91);
-    }
-  
-    17% {
-      animation-timing-function: ease-out;
-      transform: scale(0.98);
-    }
-  
-    33% {
-      animation-timing-function: ease-in;
-      transform: scale(0.87);
-    }
-  
-    45% {
-      animation-timing-function: ease-out;
-      transform: scale(1);
-    }
-  }
-.philo > h2, p {
-    z-index: 2;
-}
-
-/* mettez-vous au vert */
-.green {
-    border: solid 20px;
-    border-color: var(--third-color);
-    text-align: center; 
-    padding : 20px;
-    overflow: scroll; 
-}
-.green > p{
-    text-align: justify;
-    padding-bottom: 10px;
-}
-
-/* activités */
-article {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 35px;
-    grid-row-gap: 35px;
-    align-items: center;
-    justify-items: center;
-    padding-top: 20px;
-    }
-    
-    .farmer { grid-area: 1 / 1 / 2 / 2; }
-    .chicken { grid-area: 1 / 2 / 2 / 3; }
-    .heart { grid-area: 2 / 1 / 3 / 3; }
-    .bar { grid-area: 3 / 1 / 4 / 2; }
-    .shop { grid-area: 3 / 2 / 4 / 3; }
-article > div {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-}
-article > div {
-    transition: transform .1s;  
-}
-article > div:hover{
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5);
-    }
-article img {
-    padding: 20px; 
-}
-/* //////////////// FIN QUI NOUS SOMMES ////////////////// */
-
-/* MEDIA QUERIES QUI NOUS SOMMES */
-@media screen and (min-width: 651px) {
-    .bene {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-    }
-    .philo { grid-area: 1 / 1 / 2 / 2; 
-             border: solid 20px;
-             border-color: var(--second-color)
-            }
-  
-    .green { grid-area: 1 / 2 / 2 / 3; }
-    .farm { grid-area: 2 / 1 / 3 / 3;
-            height: 350px;
-            margin: 50px 0;
-    }
-
-    article {
-        display: flex; 
-        justify-content: space-around;
-        flex-flow: row wrap; 
-    }
-     
-}
-/* FIN MEDIA QUERIES QUI NOUS SOMMES */   
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Outfit:wght@400;600&display=swap');
 
 :root {
@@ -406,59 +263,124 @@ header {
     z-index: -1;
 }
 
-/* MEDIA QUERIES */ 
 
-@media screen and (max-width: 650px) {
-  #menuDesktop {display: none;}
-
-  #menuMobile {
+/* //////////////// QUI NOUS SOMMES ////////////////// */
+.who{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 2;
-    background: var(--primary-color);
-    border-bottom:2px solid var(--second-color) ;
+    flex-direction: column ;
 }
 
-  #menuMobile ul {
-    list-style: none;
+/* general */
+section{
+    margin-top: 20px;
+    height: 500px; 
+}
+
+.who h2{
+    padding: 20px 0 20px 0;
     text-align: center;
-    padding: 0;
-  }
-
-  #menuMobile .logo {margin-top: 10px; text-align: center;}
-  header {height: 100px;}   
-
-  .menuDeroulant {
-    background-color: var(--primary-color); 
-    width: 100vw; 
-    height: 45vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    position: absolute;
-    transform: translateY(-150%);
-    transition: transform 0.4s ease-in;
-    z-index: -2;
-  }
-
-  .deroule {
-    transform: translateY(0%);
-  }
-
-  .menuDeroulant ul {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0;
-  }
-    
-  .actualiteHome {
-    flex-direction: column;
-  }
 }
+
+.who p{
+    line-height: 1.5; 
+}
+
+/* philosophie */
+.philo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    padding : 20px;  
+}
+.philo > p {
+    width: 350px;
+}
+
+.philo > img {
+    animation: roundpink 5s ease 0s infinite normal none;
+    z-index: 0; 
+    position: absolute; 
+}
+@keyframes roundpink {
+    0% {
+      animation-timing-function: ease-out;
+      transform: scale(1);
+      transform-origin: center center;
+    }
+  
+    10% {
+      animation-timing-function: ease-in;
+      transform: scale(0.91);
+    }
+  
+    17% {
+      animation-timing-function: ease-out;
+      transform: scale(0.98);
+    }
+  
+    33% {
+      animation-timing-function: ease-in;
+      transform: scale(0.87);
+    }
+  
+    45% {
+      animation-timing-function: ease-out;
+      transform: scale(1);
+    }
+  }
+.philo > h2, p {
+    z-index: 2;
+}
+
+/* mettez-vous au vert */
+.green {
+    border: solid 20px;
+    border-color: var(--third-color);
+    text-align: center; 
+    padding : 20px;
+    overflow: scroll; 
+}
+.green > p{
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+/* activités */
+article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 35px;
+    grid-row-gap: 35px;
+    align-items: center;
+    justify-items: center;
+    padding-top: 20px;
+    }
+    
+    .farmer { grid-area: 1 / 1 / 2 / 2; }
+    .chicken { grid-area: 1 / 2 / 2 / 3; }
+    .heart { grid-area: 2 / 1 / 3 / 3; }
+    .bar { grid-area: 3 / 1 / 4 / 2; }
+    .shop { grid-area: 3 / 2 / 4 / 3; }
+article > div {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+article > div {
+    transition: transform .1s;  
+}
+article > div:hover{
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+    }
+article img {
+    padding: 20px; 
+}
+/* //////////////// FIN QUI NOUS SOMMES ////////////////// */
+
 
 /* //////////////////////////////////////////////////////     DEBUT     PARRAINAGES      ///////////////////////////////////////////////////////////////// */
 
@@ -671,20 +593,6 @@ header {
   align-self: flex-end;
   }
   
-  .placeholderFooter {
-  background-color: #F2DA5E;
-  width: 100%;
-  height: 50px;
-  bottom: 0;
-  text-align: center;
-  padding: 10px;
-  }
-  
-  .laTricheFooter {
-  height: 50px;
-  }
-  
-  
   /* //////////////////////////////////////////////////////     FIN     PARRAINAGES      ///////////////////////////////////////////////////////////////// */
 
 p {
@@ -823,3 +731,148 @@ textarea {
         width: 550px;
         height: 550px;
      }
+
+/* FOOTER */
+footer {
+    background-color: var(--primary-color);
+    color: var(--third-color); 
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    border-top: 5px solid;
+    border-color: var(--secondary-color);
+    display: flex; 
+    justify-content: space-between;
+    font-size: small;
+    }
+footer>*{
+    width: 30%;
+}
+.trait{
+    width: 0%;
+    border-left: solid 1px;
+    border-color: var(--secondary-color);
+    height: 60px;
+    align-self: center;
+    padding: 0;
+}
+.societe{
+    width: 50%; 
+}
+footer > div, p {
+    padding: 5px; 
+}
+.maj{
+    text-transform: uppercase;
+}
+span.maj{
+    font-weight: bold; 
+}
+.soc, .societe{
+    text-align: center;
+}
+
+/* MEDIA QUERIES */ 
+
+@media screen and (max-width: 650px) {
+  #menuDesktop {display: none;}
+
+  #menuMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    background: var(--primary-color);
+    border-bottom:2px solid var(--second-color) ;
+}
+
+  #menuMobile ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+
+  #menuMobile .logo {margin-top: 10px; text-align: center;}
+  header {height: 100px;}   
+
+  .menuDeroulant {
+    background-color: var(--primary-color); 
+    width: 100vw; 
+    height: 45vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    transform: translateY(-150%);
+    transition: transform 0.4s ease-in;
+    z-index: -2;
+  }
+
+  .deroule {
+    transform: translateY(0%);
+  }
+
+  .menuDeroulant ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+  }
+    
+  .actualiteHome {
+    flex-direction: column;
+  }
+    
+    footer{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    footer>*{
+        width: 100%;
+    }
+    .societe{
+        padding: 15px;
+        width: 100%;
+    }
+    .trait{
+        border-top: solid 1px;
+        border-left: none;
+        border-color: var(--secondary-color);
+        width: 70%;
+        height: 0;
+    }
+}
+
+/* MEDIA QUERIES QUI NOUS SOMMES */
+@media screen and (min-width: 651px) {
+    .who {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .philo { grid-area: 1 / 1 / 2 / 2; 
+             border: solid 20px;
+             border-color: var(--secondary-color)
+            }
+  
+    .green { grid-area: 1 / 2 / 2 / 3; }
+    .farm { grid-area: 2 / 1 / 3 / 3;
+            height: 350px;
+            margin: 50px 0;
+    }
+
+    article {
+        display: flex; 
+        justify-content: space-around;
+        flex-flow: row wrap; 
+    }
+     
+}
+/* FIN MEDIA QUERIES QUI NOUS SOMMES */   
+
+
