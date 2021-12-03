@@ -1,3 +1,146 @@
+
+.bene{
+    display: flex;
+    flex-direction: column ;
+}
+
+/* //////////////// QUI NOUS SOMMES ////////////////// */
+/* general */
+.bene > section {
+    margin-top: 20px;
+    height: 500px; 
+}
+
+.bene h2{
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+
+/* philosophie */
+.philo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    padding : 20px;  
+}
+.philo > p {
+    width: 350px;
+}
+
+.philo > img {
+    animation: roundpink 5s ease 0s infinite normal none;
+    z-index: 0; 
+    position: absolute; 
+}
+@keyframes roundpink {
+    0% {
+      animation-timing-function: ease-out;
+      transform: scale(1);
+      transform-origin: center center;
+    }
+  
+    10% {
+      animation-timing-function: ease-in;
+      transform: scale(0.91);
+    }
+  
+    17% {
+      animation-timing-function: ease-out;
+      transform: scale(0.98);
+    }
+  
+    33% {
+      animation-timing-function: ease-in;
+      transform: scale(0.87);
+    }
+  
+    45% {
+      animation-timing-function: ease-out;
+      transform: scale(1);
+    }
+  }
+.philo > h2, p {
+    z-index: 2;
+}
+
+/* mettez-vous au vert */
+.green {
+    border: solid 20px;
+    border-color: var(--third-color);
+    text-align: center; 
+    padding : 20px;
+    overflow: scroll; 
+}
+.green > p{
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+/* activités */
+article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 35px;
+    grid-row-gap: 35px;
+    align-items: center;
+    justify-items: center;
+    padding-top: 20px;
+    }
+    
+    .farmer { grid-area: 1 / 1 / 2 / 2; }
+    .chicken { grid-area: 1 / 2 / 2 / 3; }
+    .heart { grid-area: 2 / 1 / 3 / 3; }
+    .bar { grid-area: 3 / 1 / 4 / 2; }
+    .shop { grid-area: 3 / 2 / 4 / 3; }
+article > div {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+article > div {
+    transition: transform .1s;  
+}
+article > div:hover{
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+    }
+article img {
+    padding: 20px; 
+}
+/* //////////////// FIN QUI NOUS SOMMES ////////////////// */
+
+/* MEDIA QUERIES QUI NOUS SOMMES */
+@media screen and (min-width: 651px) {
+    .bene {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .philo { grid-area: 1 / 1 / 2 / 2; 
+             border: solid 20px;
+             border-color: var(--second-color)
+            }
+  
+    .green { grid-area: 1 / 2 / 2 / 3; }
+    .farm { grid-area: 2 / 1 / 3 / 3;
+            height: 350px;
+            margin: 50px 0;
+    }
+
+    article {
+        display: flex; 
+        justify-content: space-around;
+        flex-flow: row wrap; 
+    }
+     
+}
+/* FIN MEDIA QUERIES QUI NOUS SOMMES */   
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Outfit:wght@400;600&display=swap');
 
 :root {
@@ -38,8 +181,8 @@ ul li {
     list-style: none;
 }
 
-section {
-    padding: 0 0 80px;
+.fullWidthHomeBG {
+    padding: 0 0 80px 0;
 }
 
 /* FONT ET TEXT*/
@@ -76,7 +219,7 @@ a {
 }
 
 
-p {font-size: 1em;}
+p {font-size: 1em; line-height: 1.5; }
 
 h1{ 
     font-family: var(--font-titre);
@@ -172,6 +315,7 @@ header {
     transform: translate(-50%, -50%);
     pointer-events: none;
   }
+
   .ligne {
     position: absolute;
     border-radius: 10px;
@@ -219,6 +363,11 @@ header {
   }
 
 /* HOME PAGE */ 
+.fullWidthHomeBg {
+  padding: 0;
+  margin: 0;
+}
+
 .fullWidthHome {
     background-image: url(../img/chickenFull.png);
     background-repeat: no-repeat;
@@ -235,14 +384,20 @@ header {
     display: flex;
     flex-direction: column;
     align-content: center;
-    align-items: center;}
+    align-items: center;
+    padding: 80px; 
+}
+
+.imgPictureHome {
+  padding: 20px 0;
+}
 
 .actualiteHome {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
 }
 
 .rondJaune {
@@ -254,55 +409,55 @@ header {
 /* MEDIA QUERIES */ 
 
 @media screen and (max-width: 650px) {
-    #menuDesktop {display: none;}
+  #menuDesktop {display: none;}
 
-    #menuMobile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        z-index: 2;
-        background: var(--primary-color);
-        border-bottom:2px solid var(--second-color) ;
-    }
+  #menuMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    background: var(--primary-color);
+    border-bottom:2px solid var(--second-color) ;
+}
 
-    #menuMobile ul {
-       list-style: none;
-        text-align: center;
-        padding: 0;
-    }
+  #menuMobile ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
 
-    #menuMobile .logo {margin-top: 10px; text-align: center;}
-    header {height: 100px;}   
+  #menuMobile .logo {margin-top: 10px; text-align: center;}
+  header {height: 100px;}   
 
-    .menuDeroulant {
-        background-color: var(--primary-color); 
-        width: 100vw; 
-        height: 45vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        position: absolute;
-        transform: translateY(-150%);
-        transition: transform 0.4s ease-in;
-        z-index: -2;
-    }
+  .menuDeroulant {
+    background-color: var(--primary-color); 
+    width: 100vw; 
+    height: 45vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    transform: translateY(-150%);
+    transition: transform 0.4s ease-in;
+    z-index: -2;
+  }
 
-    .deroule {
-        transform: translateY(0%);
-    }
+  .deroule {
+    transform: translateY(0%);
+  }
 
-    .menuDeroulant ul {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 0;
-    }
+  .menuDeroulant ul {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+  }
     
-    .actualiteHome {
-        flex-direction: column;
-    }
+  .actualiteHome {
+    flex-direction: column;
+  }
 }
 
 /* //////////////////////////////////////////////////////     DEBUT     PARRAINAGES      ///////////////////////////////////////////////////////////////// */
@@ -407,10 +562,10 @@ header {
   justify-content: flex-start;
   }
   
-  .texteFormule2 {
-      padding: 0px 30px 0px 30px;
-      justify-content: flex-start;
-  }
+.texteFormule2 {
+  padding: 0px 30px 0px 30px;
+  justify-content: flex-start;
+}
   
   .descriFormule2 {
   }
@@ -472,41 +627,41 @@ header {
   text-align: center;
   margin: 150px;
   }
-  
-  .medailles {
+    
+.medailles {
   display: flex;
   flex: row;
   padding: 50px;
   min-height: 800px;
   align-content: center;
   justify-content: space-evenly;
-  }
+}
   
-  .medailleSolo {
+.medailleSolo {
   display: flex;
   flex-direction: column;
   max-width: 300px;
   align-items: center;
   box-shadow: 5px 10px 5px lightgrey;
   margin: 10px 20px 10px 20px;
-  }
+}
   
-  .medailles img {
+.medailles img {
   width: 150px;
-  }
+}
   
-  .medailleTxt > p {
+.medailleTxt > p {
   font-size: 30px;
   text-align: center;
-  }
+}
   
-  .medailleComment > p {
+.medailleComment > p {
       padding: 20px;
-  }
+}
   
-  .medailleOr {
+.medailleOr {
   align-self: flex-start;
-  }
+}
   
   .medailleArgent {
   align-self: center;
@@ -531,92 +686,23 @@ header {
   
   
   /* //////////////////////////////////////////////////////     FIN     PARRAINAGES      ///////////////////////////////////////////////////////////////// */
-  
-
-div#imgCarrousel {
-	border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-
-div#carrousel-repas {
-	width: 80%;
-	max-width: 1000px;
-	overflow: hidden;
-}
-
-div#carrousel-repas figure {
-  position: relative;
-  width: 600%;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  text-align: center;
-	animation: 30s slidy infinite;
-}
-
-div#carrousel-repas figure img {
-	width: 16.6%;
-	height: auto;
-	float: left;
-  border-radius: 20px;
-}
-
-div#carrousel-boissons {
-	width: 80%;
-	max-width: 1000px;
-	overflow: hidden;
-}
-
-div#carrousel-boissons figure {
-  position: relative;
-  width: 600%;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  text-align: center;
-	animation: 30s slidy infinite;
-}
-
-div#carrousel-boissons figure img {
-	width: 16.6%;
-	height: auto;
-	float: left;
-  border-radius: 20px;
-}
-
-/* Version fonctionnel mais besoin d'ajustement */
-@keyframes slidy {
-  0% { left: 0%; }
-  20% { left: -100%; }
-  40% { left: -200%; }
-  60% { left: -300%; }
-  80% { left: -400%; }
-  100% { left: -500%; }
-}
-
-/*
-@keyframes slidy {
-  0% { left: 0%; }
-	10% { left: 0%; }
-  20% { left: -100%; }
-	30% { left: -100%; }
-  40% { left: -200%; }
-	50% { left: -200%; }
-  60% { left: -300%; }
-	70% { left: -300%; }
-  80% { left: -400%; }
-	88% { left: -400%; }
-	92% { left: -500%; }
-  100% { left: -600%; }
-}
-*/
 
 p {
-display: flex;
-justify-content: center;
-font-style: normal;
+    display: flex;
+    justify-content: center;
+    /*font-size: 25px;*/
+    font-style: normal;
+}
+
+.sectionContact {
+    padding: 40px;
+    text-align: center;
+}
+
+.poules-contact {
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: space-evenly;  
 }
 
 #poules {
@@ -624,26 +710,116 @@ position: 50% 50%;
 }
 
 form {
-  margin: 0 auto;
-  width: 300px;
-  padding-top: 20px;
+    margin: 0 auto;
+    width: 300px;
+    padding-top: 20px;
 }
 
 label {
-  line-height: 2;
+    line-height: 2;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-width: 100%;
-padding: 10px;
-margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-input[type="submit"] {
-background: #283b63;
-color: white;
-border: none;
-padding: 10px 10px;
+/* Boutique */
+/* les oeufs et les poules */
+.letitre {
+    font-size:200%;
+    text-align: center;
+    color:blueviolet;
+    
 }
+.lesoeufs {
+    display: flex;
+    flex-direction: row;
+    }
+    
+    .imgoeufs {
+    width: 500px;
+    border-radius: 0px 15px 15px 0px;
+    justify-content: flex-start;
+    }
+    
+    .texteoeuf {
+    padding: 20px;
+    }
+    
+    .boutonmenu1 {
+    background-color: rgb(238, 235, 52);
+    color:blueviolet;
+    border: none;
+    cursor: pointer;
+    padding:10px;
+    margin-top:20px;
+    font-size: 18px;
+    }
+    
+    .boutonmenu1:hover {
+     background-color: #3D44D9;
+    }
+    
+    .dropdownPack {
+    position: relative;
+    display: inline-block;
+    }
+    
+    .dropdownPack-child {
+    display: none;
+    background-color: rgb(238, 235, 52);
+    min-width: 50px;
+    }
+    
+    .dropdownPack-child a {
+    color:blueviolet;
+    padding:10px;
+    text-decoration: none;
+    display: block;
+    }
+    
+    .dropdownPack:hover .dropdownPack-child {
+    display: block;
+    }
+    
+        .le-prix {
+        margin: 0px 0px 20px 0px;
+        font-size: 30px;
+        }
+        
+        .addToCarte button{
+        color:blueviolet;
+        width: 120px;
+        height: 40px;
+        background-color: #3D44D9;
+        border-radius: 15px;
+        border: 0px;
+        }
+    /* la boutique */
+    .articles {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 100px;
+        flex-wrap: wrap;
+        font-size:180%;
+        text-align: center;
+        color:blueviolet;
+     }
+    
+     .imgposterpoules{
+        width: 550px;
+        height: 550px;
+     }
+     .imgt-shirt{
+        width: 550px;
+        height: 550px;
+     }
+     .imgfigurines{
+        width: 550px;
+        height: 550px;
+     }
