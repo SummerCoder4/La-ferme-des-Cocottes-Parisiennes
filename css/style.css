@@ -788,11 +788,14 @@ textarea {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding-top: 100px;
+        padding-top: 40px;
         flex-wrap: wrap;
         font-size:180%;
         text-align: center;
         color:blueviolet;
+     }
+     .lestitres{
+       margin-top: 40px;
      }
     
      .imgposterpoules{
