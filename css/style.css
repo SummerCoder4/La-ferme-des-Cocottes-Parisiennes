@@ -23,17 +23,17 @@ body{
 
 
 
-.bene{
+.who{
     display: flex;
     flex-direction: column ;
+    align-items: center;
+    width: 80vw; 
+    margin: auto; 
 }
 
 /* //////////////// QUI NOUS SOMMES ////////////////// */
 /* general */
-section{
-    margin-top: 20px;
-    height: 500px; 
-}
+
 
 h2{
     font-family: var(--font-titre);
@@ -45,6 +45,7 @@ h2{
 p{
     line-height: 1.5; 
 }
+
 
 /* philosophie */
 .philo {
@@ -106,6 +107,12 @@ p{
 .green > p{
     text-align: justify;
     padding-bottom: 10px;
+
+}
+
+.philo, .green{
+    height: 450px; 
+    width: 450px;
 }
 
 /* activités */
@@ -140,16 +147,20 @@ article > div:hover{
 article img {
     padding: 20px; 
 }
+
 /* //////////////// FIN QUI NOUS SOMMES ////////////////// */
 
 /* MEDIA QUERIES QUI NOUS SOMMES */
 @media screen and (min-width: 651px) {
-    .bene {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
+    .who {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center ;  
+    }
+    .philogreen {
+        display:flex; 
+        justify-content:center ;  
+        align-items: center;  
     }
     .philo { grid-area: 1 / 1 / 2 / 2; 
              border: solid 20px;
@@ -168,4 +179,67 @@ article img {
     }
      
 }
+
 /* FIN MEDIA QUERIES QUI NOUS SOMMES */   
+
+/* FOOTER */
+footer {
+    background-color: var(--primary-color);
+    color: var(--third-color); 
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    border-top: 5px solid;
+    border-color: var(--secondary-color);
+    display: flex; 
+    justify-content: space-between;
+    font-size: small;
+    }
+footer>*{
+    width: 30%;
+}
+.trait{
+    width: 0%;
+    border-left: solid 1px;
+    border-color: var(--secondary-color);
+    height: 60px;
+    align-self: center;
+    padding: 0;
+}
+.societe{
+    width: 50%; 
+}
+footer > div, p {
+    padding: 5px; 
+}
+.maj{
+    text-transform: uppercase;
+}
+span.maj{
+    font-weight: bold; 
+}
+.soc, .societe{
+    text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+    footer{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    footer>*{
+        width: 100%;
+    }
+    .societe{
+        padding: 15px;
+        width: 100%;
+    }
+    .trait{
+        border-top: solid 1px;
+        border-left: none;
+        border-color: var(--secondary-color);
+        width: 70%;
+        height: 0;
+    }
+}
