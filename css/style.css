@@ -441,6 +441,7 @@ h3 {
   .actualiteHome {
     flex-direction: column;
   }
+  
 }
 
 /* //////////////////////////////////////////////////////     DEBUT     PARRAINAGES      ///////////////////////////////////////////////////////////////// */
@@ -806,3 +807,19 @@ textarea {
         width: 550px;
         height: 550px;
      }
+     @media screen and (max-width: 650px) {
+     .descriPack{
+       display: none;
+
+     }
+     .imgoeufs{
+       max-width: 200px;
+     }
+     .letitre{
+       font-size: 20px;
+     }
+     .header{
+      margin-right: -87px;
+     }
+       }
+
