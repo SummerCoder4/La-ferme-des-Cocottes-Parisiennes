@@ -1,21 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a class="dropdown-item" href="index.html">Accueil</a></li>
-            <li><a class="dropdown-item" href="residentes.html">Les Résidentes</a></li>
-            <li><a class="dropdown-item" href="menus.html">Les Menus</a></li>
-            <li><a class="dropdown-item" href="parainages.html">Les Parainages</a></li>
-            <li><a class="dropdown-item" href="#">La boutique</a></li>
-            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+        <title>Document</title>
+    </head>
+    <body>
+      <header>
+        <!-- Menu desktop -->
+        <div class="menuFixed">
+            <nav role="navigation" id="menuDesktop">
+                    <ul id="menuDesktopSize">
+                        <li><a href="#" class="link">Accueil</a></li>
+                        <li><a href="residentes.html" class="link">Résidentes</a></li>
+                        <li><a href="menu.html"class="link">Menus</a></li>
+                        <li><a href="index.html"class="link"><img src="img/chickenLogo.png" class="logo"></a></li>
+                        <li><a href="parrainages.html"class="link">Parrainages</a></li>
+                        <li><a href="boutique.html"class="link">Boutique</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+            </nav> 
+        </div>
+     
+         <nav role="navigation" id="menuMobile">
+            <button class="b1">
+                <div class="container-lignes">
+                  <div class="ligne"></div>
+                  <div class="ligne"></div>
+                  <div class="ligne"></div>
+                </div>
+            </button>
+            <a  href="index.html"><img src="img/chickenLogo.png" class="logo"></a>
+        </nav> 
+      
+        <div class="menuDeroulant"> 
+                <ul>
+                    <li><a href="#" class="link">Accueil</a></li>
+                    <li><a href="residentes.html" class="link">Résidentes</a></li>
+                    <li><a href="menu.html" class="link">Menus</a></li>
+                    <li><a href="parrainages.html"class="link">Parrainages</a></li>
+                    <li><a href="boutique.html" class="link">Boutique</a></li>
+                    <li><a href="contact.html" class="link">Contact</a></li>
+                </ul>
+        </div>
+        </header>
+        <!-------------------------------------------------------------Les oueufs-------------------------------------------------------------->
+        <section class="partoeufs">
+          <div class="letitre">
+            <h1>Nos oeufs</h1>
+          </div>
+          <div class="lesoeufs">
+
+            <img class="imgoeufs" src="img/oeufsboutique.jpeg" alt="Image d'oeufs!">
+          
+            <div class="texteoeufs">
+              <div class="descriPack">
+                  <br>    
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt lorem ut velit suscipit, nec condimentum est fringilla. Pellentesque tempor erat eu lorem suscipit, eu viverra dui venenatis. Donec eget pellentesque ante. Donec facilisis posuere lectus, sed accumsan metus ultrices quis. Pellentesque habitan. </p>
+              </div>
+          
+              <div class="dropdownPack">
+                  <button class="boutonmenu1">Pack de 6 oeufs</button>
+                  <div class="dropdownPack-child">
+                    <a>Pack de 12 oeufs : 10 €</a>
+                    <a>Pack de 24 oeufs : 18 €</a>
+                  </div>
+                  <div class="le-prix">
+                    <p>5 €</p>
+                  </div>
+                  <div class="addToCart addToCartepack">
+                    <button>Ajouter au panier</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+
+            <!------------------------------------------------------------Les Poules--------------------------------------------------------------->
+            <section class="partpoules">
+              <div class="letitre">
+                <h1 class="lestitres">Nos Poules</h1>
+              </div>
+              <div class="lesoeufs">
+    
+                <img class="imgoeufs" src="img/poules-boutique.jpg" alt="Image de Poules">
+              
+                <div class="texteoeufs">
+                  <div class="descriPack">
+                      <br>    
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt lorem ut velit suscipit, nec condimentum est fringilla. Pellentesque tempor erat eu lorem suscipit, eu viverra dui venenatis. Donec eget pellentesque ante. Donec facilisis posuere lectus, sed accumsan metus ultrices quis. Pellentesque habitan. </p>
+                  </div>
+              
+                  <div class="dropdownPack">
+                      <button class="boutonmenu1">Poules rousses</button>
+                      <div class="dropdownPack-child">
+                        <a>Poules Sussex : 45 €</a>
+                        <a>Poule gâtinaise : 28 €</a>
+                        <a>Poule Coucou de Rennes : 35 €</a>
+                      </div>
+                      <div class="le-prix">
+                        <p>20 € unité</p>
+                      </div>
+                      <div class="addToCart addToCartepack">
+                        <button>Ajouter au panier</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-----------------------------------------------------------------------Goodies------------------------------------------------------------>
+            <section class="partgoodies">
+              <div class="letitre">
+                <h1 class="lestitres">Nos Goodies</h1>
+              </div>
+              <div class="articles">
+                <div class="elements">
+                  <h2>Posters</h2>
+                  <img class="imgposterpoules" src="img/poster-boutique.jpeg" alt="Poster de poule.">
+                  <div class="dropdownPack">
+                    <button class="boutonmenu1">Poster poules 1</button>
+                    <div class="dropdownPack-child">
+                      <a>Poster poule rockeuse : 12 €</a>
+                      <a>Poster poule du 93 : 12 €</a>
+                    </div>
+                    <div class="le-prix">
+                      <p>12 € unité</p>
+                    </div>
+                    <div class="addToCart addToCartepack">
+                      <button>Ajouter au panier</button>
+                    </div>
+                </div>
+                <div class="elements">
+                  <h2>T-shirt</h2>
+                  <img class="imgt-shirt" src="img/t-shirt-poulet-dab-.jpg" alt="T-shirt de poule qui Dab.">
+                  <div class="dropdownPack">
+                    <button class="boutonmenu1">T-shirt de poule qui DAB t'as capté ?</button>
+                    <div class="dropdownPack-child">
+                      <a>T-shirt poule Matuidi Charo : 25 €</a>
+                      <a>T-shirte poule bien mafé : 25 €</a>
+                      <a>T-shirt poules résidentes : 35 €</a>
+                    </div>
+                    <div class="le-prix">
+                      <p>25 € unité</p>
+                    </div>
+                    <div class="addToCart addToCartepack">
+                      <button>Ajouter au panier</button>
+                    </div>
+                </div>
+                <div class="elements">
+                  <h2>Figurines</h2>
+                  <img class="imgfigurines" src="img/figurines-de-poule.jpg" alt="Figurines de poules.">
+                  <div class="dropdownPack">
+                    <button class="boutonmenu1">Figurines de poules 1</button>
+                    <div class="dropdownPack-child">
+                      <a>Figurines de poules tueuses: 45 €</a>
+                      <a>Figurines de poules à tête chercheuse: 28 €</a>
+                    </div>
+                    <div class="le-prix">
+                      <p>15 € unité</p>
+                    </div>
+                    <div class="addToCart addToCartepack">
+                      <button>Ajouter au panier</button>
+                    </div>
+                </div>
+              </div>
+            </section>
+                    
+             <footer>
+                <p>© Nous revoilà, la Bad Company <br> ≻ Mentions legales et politique de confidentialité</p> 
+                    <div class="trait"></div>
+                <p class="societe"><span class="maj">La ferme des Cocottes Parisiennes</span> <br> adresse <br>tel<br>mail</p>
+                    <div class="trait"></div>
+                <div class="soc">
+                    <p class="maj">Suivez-nous</p>
+                    <img src="img/insta.png" alt="instagram">
+                    <img src="img/twi.png" alt="twitter">
+                    <img src="img/fbk.png" alt="facebook">
+                </div>
+            </footer>
+            
+          </body>
+          <script type="text/javascript" src="script/script.js"></script>
 </html>
