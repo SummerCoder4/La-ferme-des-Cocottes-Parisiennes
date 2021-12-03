@@ -661,6 +661,12 @@ select {
 }
 
 
+.filleulesMalheureusement {
+
+margin: 100px;
+
+}
+
 .medailles {
   display: flex;
   flex-direction: row;
