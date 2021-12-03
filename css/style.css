@@ -271,7 +271,7 @@ header {
 }
 
 /* general */
-section{
+.who > section{
     margin-top: 20px;
     height: 500px; 
 }
