@@ -735,11 +735,14 @@ textarea {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding-top: 100px;
+        padding-top: 40px;
         flex-wrap: wrap;
         font-size:180%;
         text-align: center;
         color:blueviolet;
+     }
+     .lestitres{
+       margin-top: 40px;
      }
     
      .imgposterpoules{
@@ -754,6 +757,58 @@ textarea {
         width: 550px;
         height: 550px;
      }
+     @media screen and (max-width: 650px) {
+     .descriPack{
+       display: none;
+
+     }
+     .imgoeufs{
+       max-width: 200px;
+     }
+     .letitre{
+       font-size: 10px;
+       margin: 20px;
+     }
+      
+
+.partoeufs {
+
+padding:  0px ;
+margin: 20px 20px 20px 0px;
+height: 200px;
+}
+
+.partpoules {
+
+padding:  0px ;
+margin: 20px 20px 20px 0px;
+height: 200px;
+}
+
+.imgposterpoules {
+  width: 90%;
+  /* height: 550px; */
+/*   margin: 50px;
+ */  /* margin: 0; */
+}
+
+.texteoeuf {
+
+padding: 10px;  
+
+}
+
+.partgoodies {
+
+max-height: 200px; 
+
+}
+
+
+
+
+       }
+
 
 /* FOOTER */
 footer {
@@ -903,6 +958,7 @@ span.maj{
   }
     
   .lePrix1 > p {
+    display: flex;
     justify-content: flex-end;
   }
   
