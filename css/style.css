@@ -595,14 +595,14 @@ article img {
   
   /* //////////////////////////////////////////////////////     FIN     PARRAINAGES      ///////////////////////////////////////////////////////////////// */
 
-p {
+h4 {
     display: flex;
     justify-content: center;
-    /*font-size: 25px;*/
     font-style: normal;
+    margin-top: 4%;
 }
 
-.sectionContact {
+#contact {
     padding: 40px;
     text-align: center;
 }
