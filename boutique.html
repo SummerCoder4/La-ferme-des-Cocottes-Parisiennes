@@ -11,33 +11,43 @@
         <title>Document</title>
     </head>
     <body>
-    <header>
+      <header>
         <!-- Menu desktop -->
-        <nav role="navigation" id="menuDesktop">
-        <ul>
-          <li><a href="#">Accueil</a></li>
-          <li><a href="residentes.html">Les Résidentes</a></li>
-          <li><a href="menu.html">Les Menus</a></li>
-          <li><a href="index.html"><img src="img/chickenLogo.png" class="logo"></a></li>
-          <li><a href="parrainages.html">Les Parrainages</a></li>
-          <li><a href="boutique.html">La boutique</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        </nav> 
-        
-        <nav role="navigation" id="menuMobile">
-        <a  href="index.html"><img src="img/chickenLogo.png" class="logo"></a>
-        <div class="menuDeroulant"> 
-          <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="residentes.html">Les Résidentes</a></li>
-            <li><a href="menu.html">Les Menus</a></li>
-            <li><a href="parrainages.html">Les Parrainages</a></li>
-            <li><a href="boutique.html">La boutique</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+        <div class="menuFixed">
+            <nav role="navigation" id="menuDesktop">
+                    <ul id="menuDesktopSize">
+                        <li><a href="#" class="link">Accueil</a></li>
+                        <li><a href="residentes.html" class="link">Résidentes</a></li>
+                        <li><a href="menu.html"class="link">Menus</a></li>
+                        <li><a href="index.html"class="link"><img src="img/chickenLogo.png" class="logo"></a></li>
+                        <li><a href="parrainages.html"class="link">Parrainages</a></li>
+                        <li><a href="boutique.html"class="link">Boutique</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+            </nav> 
         </div>
+     
+         <nav role="navigation" id="menuMobile">
+            <button class="b1">
+                <div class="container-lignes">
+                  <div class="ligne"></div>
+                  <div class="ligne"></div>
+                  <div class="ligne"></div>
+                </div>
+            </button>
+            <a  href="index.html"><img src="img/chickenLogo.png" class="logo"></a>
         </nav> 
+      
+        <div class="menuDeroulant"> 
+                <ul>
+                    <li><a href="#" class="link">Accueil</a></li>
+                    <li><a href="residentes.html" class="link">Résidentes</a></li>
+                    <li><a href="menu.html" class="link">Menus</a></li>
+                    <li><a href="parrainages.html"class="link">Parrainages</a></li>
+                    <li><a href="boutique.html" class="link">Boutique</a></li>
+                    <li><a href="contact.html" class="link">Contact</a></li>
+                </ul>
+        </div>
         </header>
         <!-------------------------------------------------------------Les oueufs-------------------------------------------------------------->
         <section class="partoeufs">
@@ -75,7 +85,7 @@
             <!------------------------------------------------------------Les Poules--------------------------------------------------------------->
             <section class="partpoules">
               <div class="letitre">
-                <h1>Nos Poules</h1>
+                <h1 class="lestitres">Nos Poules</h1>
               </div>
               <div class="lesoeufs">
     
@@ -107,7 +117,7 @@
             <!-----------------------------------------------------------------------Goodies------------------------------------------------------------>
             <section class="partgoodies">
               <div class="letitre">
-                <h1>Nos Goodies</h1>
+                <h1 class="lestitres">Nos Goodies</h1>
               </div>
               <div class="articles">
                 <div class="elements">
@@ -116,9 +126,8 @@
                   <div class="dropdownPack">
                     <button class="boutonmenu1">Poster poules 1</button>
                     <div class="dropdownPack-child">
-                      <a>Poster poules 2 : 12 €</a>
-                      <a>Poster poules 3 : 12 €</a>
-                      <a>Poster poules 4 : 12 €</a>
+                      <a>Poster poule rockeuse : 12 €</a>
+                      <a>Poster poule du 93 : 12 €</a>
                     </div>
                     <div class="le-prix">
                       <p>12 € unité</p>
@@ -128,7 +137,7 @@
                     </div>
                 </div>
                 <div class="elements">
-                  <h2>T-shirte</h2>
+                  <h2>T-shirt</h2>
                   <img class="imgt-shirt" src="img/t-shirt-poulet-dab-.jpg" alt="T-shirt de poule qui Dab.">
                   <div class="dropdownPack">
                     <button class="boutonmenu1">T-shirt de poule qui DAB t'as capté ?</button>
@@ -150,9 +159,8 @@
                   <div class="dropdownPack">
                     <button class="boutonmenu1">Figurines de poules 1</button>
                     <div class="dropdownPack-child">
-                      <a>Figurines de poules 2: 45 €</a>
-                      <a>Figurines de poules 3: 28 €</a>
-                      <a>Figurines de poules 4 : 35 €</a>
+                      <a>Figurines de poules tueuses: 45 €</a>
+                      <a>Figurines de poules à tête chercheuse: 28 €</a>
                     </div>
                     <div class="le-prix">
                       <p>15 € unité</p>
@@ -177,5 +185,6 @@
                 </div>
             </footer>
             
-</body>
+          </body>
+          <script type="text/javascript" src="script/script.js"></script>
 </html>
