@@ -8,124 +8,84 @@
     <link rel="shortcut icon" type="image/png" href="img/chickenIco.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>Document</title>
+    <script type="text/javascript" src="script/starter.js"></script>
+    <title>La ferme des Cocottes Parisiennes</title>
 </head>
 <body>
-    <header>
-    <!-- Menu desktop -->
-    <div class="menuFixed">
-        <nav role="navigation" id="menuDesktop">
-                <ul id="menuDesktopSize">
-                    <li><a href="#" class="link">Accueil</a></li>
-                    <li><a href="residentes.html" class="link">Résidentes</a></li>
-                    <li><a href="menu.html"class="link">Menus</a></li>
-                    <li><a href="index.html" class="noAfter"><img src="img/chickenLogo.png" alt="" class="logo"></a></li>
-                    <li><a href="parrainages.html"class="link">Parrainages</a></li>
-                    <li><a href="boutique.html"class="link">Boutique</a></li>
-                    <li><a href="contact.html" class="link">Contact</a></li>
-                </ul>
-        </nav> 
+  <header>
+		<div w3-include-html="navbar.html"></div>
+		<script>
+			includeHTML();
+		</script>
+  </header>
+  <section class="fullWidthHomeBG">
+    <div class="fullWidthHome">
+      <h1>Nom du gars</h1>
     </div>
- 
-     <nav role="navigation" id="menuMobile">
-        <button class="b1">
-            <div class="container-lignes">
-              <div class="ligne"></div>
-              <div class="ligne"></div>
-              <div class="ligne"></div>
-            </div>
-        </button>
-        <a  href="index.html"><img src="img/chickenLogo.png" class="logo"></a>
-    </nav> 
-  
-    <div class="menuDeroulant"> 
-            <ul>
-                <li><a href="#" class="link">Accueil</a></li>
-                <li><a href="residentes.html" class="link">Résidentes</a></li>
-                <li><a href="menu.html" class="link">Menus</a></li>
-                <li><a href="parrainages.html"class="link">Parrainages</a></li>
-                <li><a href="boutique.html" class="link">Boutique</a></li>
-                <li><a href="contact.html" class="link">Contact</a></li>
-            </ul>
+  </section>
+  <section class="actualitesHome centred">
+    <h2>Actualités</h2>
+    <div class="actualiteHome">
+      <div class="actu1"><img onmouseout="this.src='img/actu2.png'" onmouseover="this.src='img/rooster.png'" alt="" src='img/actu2.png'/><h3>Actualités 1</h3></div>
+      <div class="actu2"><img src="img/rooster.png" alt=""/><h3>Actualités 2</h3></div>
+      <div class="actu3"><img src="img/actu2.png" alt=""/><h3>Actualités 3</h3></div>
     </div>
-    </header>
-    <section class="fullWidthHomeBG">
-        <div class="fullWidthHome">
-            <h1>Nom du gars</h1>
-        </div>
-    </section>
-    <section class="actualitesHome centred">
-        <h2>Actualités</h2>
-        <div class="actualiteHome">
-            <div class="actu1"><img onmouseout="this.src='img/actu2.png'" onmouseover="this.src='img/rooster.png'" alt="" src='img/actu2.png'/><h3>Actualités 1</h3></div>
-            <div class="actu2"><img src="img/rooster.png" alt=""/><h3>Actualités 2</h3></div>
-            <div class="actu3"><img src="img/actu2.png" alt=""/><h3>Actualités 3</h3></div>
-        </div>
-    </section>
-    <section class="aProposHome centred">
-        <h2>À propos de nous</h2>
-        <div class="rondJaune"|><img src="img/Ellipse 1.png" alt=""/></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt lorem ut velit suscipit, nec condimentum est fringilla.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt lorem ut velit suscipit, nec condimentum est fringilla.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt lorem ut velit suscipit, nec condimentum est fringilla. </p>
-        <div class="imgPictureHome"><img src="img/profilpicture.png"></div>
-    </section>
+  </section>
+  <section class="aProposHome centred">
+    <h2>À propos de nous</h2>
+    <div class="rondJaune"|><img src="img/Ellipse 1.png" alt=""/></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt lorem ut velit suscipit, nec condimentum est fringilla.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt lorem ut velit suscipit, nec condimentum est fringilla.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt lorem ut velit suscipit, nec condimentum est fringilla. </p>
+    <div class="imgPictureHome"><img src="img/profilpicture.png"></div>
+  </section>
 
-    <!------------------------------------  QUI SOMMES-NOUS -------------------------------------->
-    <main class="who">
-        <section class="philo">
-            <img src="img/logowho/pink.png" alt="sponsorship" width="400px">
-            <h2>Notre philosophie</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum saepe laborum optio recusandae, nihil deserunt tempore iusto quod distinctio, pariatur et quaerat! Quasi deleniti mollitia et aliquam ratione, fugit quo!</p>
-        </section>
+<!------------------------------------  QUI SOMMES-NOUS -------------------------------------->
+    
+	<main class="who">
+    <section class="philo">
+      <img src="img/logowho/pink.png" alt="sponsorship" width="400px">
+      <h2>Notre philosophie</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum saepe laborum optio recusandae, nihil deserunt tempore iusto quod distinctio, pariatur et quaerat! Quasi deleniti mollitia et aliquam ratione, fugit quo!</p>
+    </section>
             
-        <section class="green">
-            <img src="img/logowho/greengreen.png" alt="countryside" width="100px">
-            <h2>Mettez vous au vert</h2>
-            <p>Le temps de quelques heures.... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis corporis magnam tenetur, consectetur deserunt provident voluptatem commodi error eos aperiam maxime excepturi non quo magni. Deserunt autem recusandae officia</p>
-            <p>lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis corporis magnam tenetur, consectetur deserunt provident voluptatem commodi error eos aperiam maxime excepturi non quo magni. Deserunt autem recusandae officia </p>
-        </section>
+    <section class="green">
+      <img src="img/logowho/greengreen.png" alt="countryside" width="100px">
+      <h2>Mettez vous au vert</h2>
+      <p>Le temps de quelques heures.... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis corporis magnam tenetur, consectetur deserunt provident voluptatem commodi error eos aperiam maxime excepturi non quo magni. Deserunt autem recusandae officia</p>
+      <p>lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis corporis magnam tenetur, consectetur deserunt provident voluptatem commodi error eos aperiam maxime excepturi non quo magni. Deserunt autem recusandae officia </p>
+    </section>
         
-        <section class="farm">
-            <h2>Activités de la ferme</h2>
-            <article>
-                <div class="farmer">
-                    <img src="img/logowho/farmer.png" alt="farmer" width="100px">
-                    <input class="btn" type="button" value="Fermier d'un jour">
-                </div>
-                <div class="chicken">
-                    <img src="img/logowho/chicken.png" alt="chicken" width="100px">
-                    <input class="btn" type="button" value="Rencontrez nos poules">
-                </div>
-                <div class="heart">
-                    <img src="img/logowho/heart.png" alt="sponsorship" width="100px">
-                    <input class="btn" type="button" value="Devenez parrain">
-                </div>
-                <div class="bar">
-                    <img src="img/logowho/bar.png" alt="Bar à poule" width="100px">
-                    <input class="btn" type="button" value="Bar à poule">
-                </div>
-                <div class="shop">
-                    <img src="img/logowho/shop.png" alt="Shop" width="100px">
-                    <input class="btn" type="button" value="La boutique"> 
-                </div>
-            </article>
-        </section>
-    </main>
-    <!-----------------------------------  FIN QUI SOMMES-NOUS ------------------------------------->   
-  
-    <footer>
-        <p>© Nous revoilà, la Bad Company <br> ≻ Mentions legales et politique de confidentialité</p> 
-        <div class="trait"></div>
-        <p class="societe"><span class="maj">La ferme des Cocottes Parisiennes</span> <br> adresse <br>tel<br>mail</p>
-        <div class="trait"></div>
-        <div class="soc">
-        <p class="maj">Suivez-nous</p>
-        <img src="img/insta.png" alt="instagram">
-        <img src="img/twi.png" alt="twitter">
-        <img src="img/fbk.png" alt="facebook">
-        </div>
-    </footer>
-        
-<script type="text/javascript" src="script/script.js"></script>
-
+    <section class="farm">
+      <h2>Activités de la ferme</h2>
+        <article>
+          <div class="farmer">
+            <img src="img/logowho/farmer.png" alt="farmer" width="100px">
+            <input class="btn" type="button" value="Fermier d'un jour">
+          </div>
+          <div class="chicken">
+            <img src="img/logowho/chicken.png" alt="chicken" width="100px">
+            <input class="btn" type="button" value="Rencontrez nos poules">
+          </div>
+          <div class="heart">
+            <img src="img/logowho/heart.png" alt="sponsorship" width="100px">
+              <input class="btn" type="button" value="Devenez parrain">
+          </div>
+          <div class="bar">
+            <img src="img/logowho/bar.png" alt="Bar à poule" width="100px">
+            <input class="btn" type="button" value="Bar à poule">
+          </div>
+          <div class="shop">
+            <img src="img/logowho/shop.png" alt="Shop" width="100px">
+            <input class="btn" type="button" value="La boutique"> 
+          </div>
+        </article>
+    </section>
+  </main>
+    
+<!-----------------------------------  FIN QUI SOMMES-NOUS ------------------------------------->   
+<!-- FOOTER -->  
+<div w3-include-html="footer.html"></div>
+<script>
+  includeHTML();
+</script>
 </body>
 </html>
