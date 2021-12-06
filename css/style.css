@@ -662,66 +662,66 @@ textarea {
 /* Boutique */
 /* les oeufs et les poules */
 .letitre {
-    font-size:200%;
-    text-align: center;
-    color:blueviolet;
-    
+  font-size:200%;
+  text-align: center;
+  color:blueviolet; 
 }
+
 .lesoeufs {
-    display: flex;
-    flex-direction: row;
-    }
+  display: flex;
+  flex-direction: row;
+}
     
-    .imgoeufs {
-    width: 500px;
-    border-radius: 0px 15px 15px 0px;
-    justify-content: flex-start;
-    }
+.imgoeufs {
+  width: 500px;
+  border-radius: 0px 15px 15px 0px;
+  justify-content: flex-start;
+}
     
-    .texteoeuf {
-    padding: 20px;
-    }
+.texteoeuf {  
+  padding: 20px;
+}
     
-    .boutonmenu1 {
-    background-color: rgb(238, 235, 52);
-    color:blueviolet;
-    border: none;
-    cursor: pointer;
-    padding:10px;
-    margin-top:20px;
-    font-size: 18px;
-    }
+.boutonmenu1 {
+  background-color: rgb(238, 235, 52);
+  color:blueviolet;
+  border: none;
+  cursor: pointer;
+  padding:10px;
+  margin-top:20px;
+  font-size: 18px;
+}
     
-    .boutonmenu1:hover {
-     background-color: #3D44D9;
-    }
+.boutonmenu1:hover {
+  background-color: #3D44D9;
+}
     
-    .dropdownPack {
-    position: relative;
-    display: inline-block;
-    }
+.dropdownPack {
+  position: relative;
+  display: inline-block;
+}
     
-    .dropdownPack-child {
-    display: none;
-    background-color: rgb(238, 235, 52);
-    min-width: 50px;
-    }
+.dropdownPack-child {
+  display: none;
+  background-color: rgb(238, 235, 52);
+  min-width: 50px;
+  }
     
-    .dropdownPack-child a {
-    color:blueviolet;
-    padding:10px;
-    text-decoration: none;
-    display: block;
-    }
+.dropdownPack-child a {
+  color:blueviolet;
+  padding:10px;
+  text-decoration: none;
+  display: block;
+  }
     
-    .dropdownPack:hover .dropdownPack-child {
-    display: block;
-    }
+.dropdownPack:hover .dropdownPack-child {
+  display: block;
+  }
     
-        .le-prix {
-        margin: 0px 0px 20px 0px;
-        font-size: 30px;
-        }
+.le-prix {
+  margin: 0px 0px 20px 0px;
+  font-size: 30px;
+}
         
         .addToCarte button{
         color:blueviolet;
