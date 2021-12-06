@@ -265,24 +265,18 @@ header {
 
 
 /* //////////////// QUI NOUS SOMMES ////////////////// */
-.who{
-    display: flex;
-    flex-direction: column ;
-}
 
-/* general */
-.who > section{
-    margin-top: 20px;
-    height: 500px; 
+.who{
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  width: 80vw; 
+  margin: auto; 
 }
 
 .who h2{
     padding: 20px 0 20px 0;
     text-align: center;
-}
-
-.who p{
-    line-height: 1.5; 
 }
 
 /* philosophie */
@@ -330,6 +324,7 @@ header {
       transform: scale(1);
     }
   }
+
 .philo > h2, p {
     z-index: 2;
 }
@@ -345,6 +340,12 @@ header {
 .green > p{
     text-align: justify;
     padding-bottom: 10px;
+
+}
+
+.philo, .green{
+    height: 450px; 
+    width: 450px;
 }
 
 /* activités */
@@ -368,8 +369,6 @@ article > div {
     display: flex; 
     flex-direction: column;
     align-items: center;
-}
-article > div {
     transition: transform .1s;  
 }
 article > div:hover{
@@ -379,6 +378,8 @@ article > div:hover{
 article img {
     padding: 20px; 
 }
+
+
 /* //////////////// FIN QUI NOUS SOMMES ////////////////// */
 
 
@@ -808,7 +809,10 @@ max-height: 200px;
 
 
        }
-
+article > .btn {
+  width: 100px;
+  height: 30px;
+  }
 
 /* FOOTER */
 footer {
@@ -1155,7 +1159,7 @@ span.maj{
   .trait{
   border-top: solid 1px;
   border-left: none;
-  border-color: var(--secondary-color);
+  border-color: var(--second-color );
   width: 70%;
   height: 0;
   }
@@ -1164,21 +1168,23 @@ span.maj{
 /* MEDIA QUERIES QUI NOUS SOMMES */
 @media screen and (min-width: 651px) {
     .who {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center ;  
+    }
+    .philogreen {
+        display:flex; 
+        justify-content:center ;  
+        align-items: center;  
     }
     .philo { 
       grid-area: 1 / 1 / 2 / 2; 
              border: solid 20px;
-             border-color: var(--secondary-color)
+             border-color: var(--second-color )
             }
   
     .green { grid-area: 1 / 2 / 2 / 3; }
     .farm { grid-area: 2 / 1 / 3 / 3;
-            height: 350px;
             margin: 50px 0;
     }
 
@@ -1190,6 +1196,69 @@ span.maj{
      
 }
 
+/* FIN MEDIA QUERIES QUI NOUS SOMMES */   
+
+/* FOOTER */
+footer {
+    background-color: var(--primary-color);
+    color: var(--third-color); 
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    border-top: 5px solid;
+    border-color: var(--second-color );
+    display: flex; 
+    justify-content: space-between;
+    font-size: small;
+    }
+footer>*{
+    width: 30%;
+}
+.trait{
+    width: 0%;
+    border-left: solid 1px;
+    border-color: var(--second-color);
+    height: 60px;
+    align-self: center;
+    padding: 0;
+}
+.societe{
+    width: 50%; 
+}
+footer > div, p {
+    padding: 5px; 
+}
+.maj{
+    text-transform: uppercase;
+}
+span.maj{
+    font-weight: bold; 
+}
+.soc, .societe{
+    text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+    footer{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    footer>*{
+        width: 100%;
+    }
+    .societe{
+        padding: 15px;
+        width: 100%;
+    }
+    .trait{
+        border-top: solid 1px;
+        border-left: none;
+        border-color: var(--second-color);
+        width: 70%;
+        height: 0;
+    }
+}
 @media screen and (min-width: 651px) and (max-width: 1080px) {
   .poules__container {
     width: 45%;

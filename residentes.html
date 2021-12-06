@@ -4,54 +4,21 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="script/starter.js"></script>
         <link href="css/style.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="shortcut icon" type="image/png" href="img/chickenIco.png"/>
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
-        <title>Document</title>
+        <title>Nos résidentes - La ferme des Cocottes Parisiennes</title>
     </head>
     <body>
       <header>
-        <!-- Menu desktop -->
-        <div class="menuFixed">
-            <nav role="navigation" id="menuDesktop">
-                    <ul id="menuDesktopSize">
-                        <li><a href="#" class="link">Accueil</a></li>
-                        <li><a href="residentes.html" class="link">Résidentes</a></li>
-                        <li><a href="menu.html"class="link">Menus</a></li>
-                        <li><a href="index.html"class="link"><img src="img/chickenLogo.png" class="logo"></a></li>
-                        <li><a href="parrainages.html"class="link">Parrainages</a></li>
-                        <li><a href="boutique.html"class="link">Boutique</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-            </nav> 
-        </div>
-     
-         <nav role="navigation" id="menuMobile">
-            <button class="b1">
-                <div class="container-lignes">
-                  <div class="ligne"></div>
-                  <div class="ligne"></div>
-                  <div class="ligne"></div>
-                </div>
-            </button>
-            <a  href="index.html"><img src="img/chickenLogo.png" class="logo"></a>
-        </nav> 
-      
-        <div class="menuDeroulant"> 
-                <ul>
-                    <li><a href="#" class="link">Accueil</a></li>
-                    <li><a href="residentes.html" class="link">Résidentes</a></li>
-                    <li><a href="menu.html" class="link">Menus</a></li>
-                    <li><a href="parrainages.html"class="link">Parrainages</a></li>
-                    <li><a href="boutique.html" class="link">Boutique</a></li>
-                    <li><a href="contact.html" class="link">Contact</a></li>
-                </ul>
-        </div>
-        </header>
-    
-
+        <div w3-include-html="navbar.html"></div>
+		    <script>
+			    includeHTML();
+		    </script>
+      </header>
         <div class="lespoules">
           <div class="poules__container">
               <img class="poulettes" src=".\img\poulet1.jpg" alt="Image poulet 1">
@@ -107,21 +74,12 @@
           
 
         </div>
+      <!-- FOOTER -->
+      <div w3-include-html="footer.html"></div>
+			<script>
+				includeHTML();
+			</script>
 
-        <footer>
-            <p>© Nous revoilà, la Bad Company <br> ≻ Mentions legales et politique de confidentialité</p> 
-            <div class="trait"></div>
-            <p class="societe"><span class="maj">La ferme des Cocottes Parisiennes</span> <br> adresse <br>tel<br>mail</p>
-            <div class="trait"></div>
-            <div class="soc">
-            <p class="maj">Suivez-nous</p>
-            <img src="img/insta.png" alt="instagram">
-            <img src="img/twi.png" alt="twitter">
-            <img src="img/fbk.png" alt="facebook">
-            </div>
-        </footer>
-
-<script type="text/javascript" src="script/script.js"></script>
-        
+      
 </body>
 </html>
