@@ -5,54 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	  <link rel="shortcut icon" type="image/png" href="img/chickenIco.png"/>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
-    <title>Contact</title>
+    <script type="text/javascript" src="script/starter.js"></script>
+    <title>Contact - La ferme des Cocottes Parisiennes</title>
 
 </head>
 <body>
 
   <header>
-		<!-- Menu desktop -->
-		<div class="menuFixed">
-			<nav role="navigation" id="menuDesktop">
-					<ul id="menuDesktopSize">
-						<li><a href="index.html" class="link">Accueil</a></li>
-						<li><a href="residentes.html" class="link">Résidentes</a></li>
-						<li><a href="menu.html"class="link">Menus</a></li>
-						<li><a href="index.html"class="link"><img src="img/chickenLogo.png" class="logo"></a></li>
-						<li><a href="parrainages.html"class="link">Parrainages</a></li>
-						<li><a href="boutique.html"class="link">Boutique</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-			</nav> 
-		</div>
-	 
-		 <nav role="navigation" id="menuMobile">
-			<button class="b1">
-				<div class="container-lignes">
-				  <div class="ligne"></div>
-				  <div class="ligne"></div>
-				  <div class="ligne"></div>
-				</div>
-			</button>
-			<a  href="index.html"><img src="img/chickenLogo.png" class="logo"></a>
-		</nav> 
-	  
-		<div class="menuDeroulant"> 
-				<ul>
-					<li><a href="index.html" class="link">Accueil</a></li>
-					<li><a href="residentes.html" class="link">Résidentes</a></li>
-					<li><a href="menu.html" class="link">Menus</a></li>
-					<li><a href="parrainages.html"class="link">Parrainages</a></li>
-					<li><a href="boutique.html" class="link">Boutique</a></li>
-					<li><a href="#" class="link">Contact</a></li>
-				</ul>
-		</div>
-		</header>
+		<div w3-include-html="navbar.html"></div>
+		<script>
+			includeHTML();
+		</script>
+	</header>
+    <h2 class="contactTitle">Dites-nous tout !</h2>
 
-    <h4>Retrouvez-vous à notre point de vente habituel du lundi au samedi de 7h à 20h sans interruption ! </br>
+    <h4>Retrouvez-vous à notre point de vente habituel du lundi au samedi de 7h à 20h sans interruption ! 
+      <br /><br />
       Je vous invite à nous contacter via le formulaire ci-dessous pour toute question éventuelle.
     </h4>
     <section id="contact">
@@ -66,37 +39,39 @@
           width="300"
         />
       </div>
-        <form id="contactForm">
+      <!-- <form name="form4" action="">
           <label for="name">Nom et Prénom :</label><br />
           <input type="text" id="name" name="name" placeholder="Eddy Malou" /><br />
           <label for="email">Email :</label><br />
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="exemple@gmail.com"
-        /><br />
-        <label for="message">Message :</label><br />
-        <textarea id="message" name="message"></textarea>
+          <input type="email" id="email" name="email" placeholder="exemple@gmail.com"
+        /><br /> -->
+        <script type="text/javascript">
+          function ValiderMail(formulaire) {
+             if (formulaire.mail.value.indexOf("@",0)<0) {alert("Adresse mail saisie invalide.\nLe formulaire ne sera pas validé.")}
+             else {
+                alert("formulaire validé.\nPour valider un formulaire : formulaire.submit()");
+                // Pour valider le formulaire en javascript :
+                // formulaire.submit()
+             }
+          }
+       </script>
+       <label for="message">Message :</label><br />
+       <textarea id="message" name="message"></textarea>
+       <form name="form4" action="">
+          <h4>Entrez une adresse mail valide (du type nom@domaine.com)</h4>
+          <br />
+          <input type="texte" name="mail">
+          <br /><br />
+          <input class="btn" type="button" value="Envoyer" onclick="ValiderMail(this.form)">
+       </form>
         <br /><br />
-        <input type="submit" value="Envoyer" />
-      </form>
+        </form>
     </section>
-
-    <footer>
-        <p>© Nous revoilà, la Bad Company <br> ≻ Mentions legales et politique de confidentialité</p> 
-          <div class="trait"></div>
-        <p class="societe"><span class="maj">La ferme des Cocottes Parisiennes</span> <br> adresse <br>tel<br>mail</p>
-          <div class="trait"></div>
-        <div class="soc">
-          <p class="maj">Suivez-nous</p>
-          <img src="img/insta.png" alt="instagram">
-          <img src="img/twi.png" alt="twitter">
-          <img src="img/fbk.png" alt="facebook">
-        </div>
-    </footer>
-
-    <script type="text/javascript" src="script/script.js"></script>
+    <!-- FOOTER -->
+    <div w3-include-html="footer.html"></div>
+			<script>
+        includeHTML();
+      </script>
+    <script type="text/javascript" src="script/contact.js"></script>
   </body>
 </html>
-
