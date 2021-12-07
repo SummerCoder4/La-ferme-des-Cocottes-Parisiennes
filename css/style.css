@@ -619,45 +619,51 @@ justify-content: flex-end;
 }
   /* //////////////////////////////////////////////////////     FIN     PARRAINAGES      ///////////////////////////////////////////////////////////////// */
 
-h4 {
+  /* ///////////////////     DEBUT   CONTACT     /////////////////// */
+
+  /* .contactTitle {
     display: flex;
     justify-content: center;
-    font-style: normal;
     margin-top: 4%;
-}
+  }
 
-#contact {
+  h4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+  }
+
+  #contact {
     padding: 40px;
     text-align: center;
-}
+  }
 
-.poules-contact {
+  .poules-contact {
     display: flex;
     padding-bottom: 10px;
-    justify-content: space-evenly;  
-}
+    justify-content: space-evenly;
+    border-radius: 50%;
+  }
 
-#poules {
-position: 50% 50%;
-}
-
-form {
+  form {
     margin: 0 auto;
     width: 300px;
     padding-top: 20px;
-}
+  }
 
-label {
+  label {
     line-height: 2;
-}
+  }
 
-input[type="text"],
-input[type="email"],
-textarea {
+  input[type="text"],
+  input[type="email"],
+  textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-}
+  } */
+
+  /* ///////////////////    FIN  CONTACT     /////////////////// */
 
 /* Boutique */
 /* les oeufs et les poules */
