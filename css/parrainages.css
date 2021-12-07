@@ -441,6 +441,56 @@
     .medailleBronze  {
       align-self:baseline;
     }
+
+
+    .rondJaune {
+      position: absolute;
+      bottom: -350px;
+      left: -400px;
+      z-index: -1;
+      overflow: hidden;
+    }
+    
+    .rondRose {
+      position: absolute;
+      height: 200px;
+      width: 200px;
+      bottom: 350px;
+      right: -150px;
+      z-index: -1;
+      background-color: pink;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    
+    
+    .rondRose2 {
+      position: absolute;
+      height: 200px;
+      width: 200px;
+      right: -100px;
+      top: 1475px;
+
+      z-index: -1;
+      background-color: pink;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    
+    .rondJaune2 {
+      position: absolute;
+      height: 300px;
+      width: 300px;
+      right: -200px;
+      top: 1500px;
+      z-index: -1;
+      background-color: var(--primary-color);
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+
+
   
 
   }
