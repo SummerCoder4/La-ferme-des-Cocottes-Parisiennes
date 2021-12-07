@@ -3,6 +3,8 @@
 .laPrez {
     display: block;
     padding: 50px 20px 50px 20px;
+    width: 80vw;
+    margin: auto; 
   }
   
   .laPrezMobile {
@@ -17,24 +19,29 @@
   .laFormule1 {
     display: flex;
     flex-direction: row;
+    width: 80vw;
+    margin: auto; 
   }
     
   .pouleFormule1 {
     width: 500px;
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 50%;
     justify-content: flex-start;
   }
     
   .texteFormule1 {
-    margin: 20px;
+    margin: 50px;
     margin-bottom: 0px;
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+
   }
     
   .descriFormule1 > p {
     justify-content: flex-start;
+    padding-left: 0px;
   }
   
   .descriFormule1Mobile {
@@ -102,17 +109,22 @@
     display: flex;
     flex-direction: row-reverse;
     margin: 30px 0px 0px 0px;
+    width: 80vw;
+    margin: auto; 
+    align-items: center;
   }
     
   .pouleFormule2 {
     width: 500px;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 50%;
     justify-content: flex-start;
   }
   
   .texteFormule2 {
-    margin: 30px;
+    margin: 50px;
     margin-bottom: 0px;
+    margin-top: 0px;
+
     justify-content: flex-start;
   
   }
@@ -170,6 +182,8 @@
     justify-content: flex-end;   
   }
   
+
+
   .titleParrainages {
     text-align: center;
     margin: 50px;
@@ -223,6 +237,265 @@
   .medailleBronze  {
     align-self: flex-end;
   }
+
+
+.rondJaune {
+  position: absolute;
+  bottom: -350px;
+  left: -400px;
+  z-index: -1;
+}
+
+.rondRose {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  bottom: 350px;
+  right: -250px;
+  z-index: -1;
+  background-color: pink;
+  border-radius: 50%;
+}
+
+
+.rondRose2 {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  right: -50px;
+  z-index: -1;
+  background-color: pink;
+  border-radius: 50%;
+}
+
+.rondJaune2 {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  right: -250px;
+  top: 1700px;
+  z-index: -1;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
+
+
+
+  @media screen and (max-width: 650px) { 
+
+    .laPrez {
+      display: none;
+    }
+    
+    .laPrezMobile {
+      display: block;
+      padding: 20px 20px 00px 20px;
+    }
+    
+    .texteFormule1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin:  20px;
+    }
+    
+    .descriFormule1 {
+      display: none;
+    }
+    
+    .descriFormule1Mobile {
+      justify-content: flex-start;
+      display: block;
+    }
+    
+    .lePrix {
+      margin: 20px 0px 20px 0px;
+      font-size: 30px;
+    }
+      
+    .lePrix1 > p {
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+    .addToCartformule1 {
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+    .imgPouleParrainage {
+      display:none;
+    }
+    
+    select {
+      font-family: var(--font-content);padding: 5px;
+      margin: 20px 0px 20px 0px;
+      max-width: 200px;
+      height: 40px;
+      align-self: center;  
+    }
+     
+    .textareaNomPoule {
+      display: flex;
+      flex-direction: column;
+    }
+      
+    .textareaNomPoule textarea {
+      max-width: 200px;
+      height: 40px;
+      resize: none;
+      justify-content: flex-start;
+      font-family: var(--font-content);
+      align-self: center;
+     }
+      
+    .textareaNomPoule button {
+      width: 100px;
+      height: 40px;
+      justify-content: flex-start;
+      align-self: center;
+      font-family: var(--font-content);
+    }
+    
+    .descriFormule2Mobile > p{
+      display: flex;
+      justify-content: center;
+    }
+    
+    .laFormule2 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 30px 0px 0px 0px;
+    width: 80vw;
+    margin: auto;
+    align-items: center;
+}
+    
+    
+    .descriFormule2{
+      display: none;
+    }
+    
+    .texteFormule2 {
+      margin: 0px 0px 0px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 20px;
+    }
+    
+    .filleulesMalheureusement {
+      margin: 100px;
+    }
+    
+    .medailles {
+      display: flex;
+      flex-direction: row;
+      padding: 0px 20px 0px 20px;
+      min-height: 200px;
+      align-content: center;
+      justify-content: space-evenly;
+    }
+    
+    .medailles img {
+        width: 50px;
+    }
+    
+    .medailleTxt > p {
+      font-size: 18px;
+      text-align: center;
+      padding: 0px 10px 10px 10px;
+    }
+    
+    
+    .medailleSolo {
+      display: flex;
+      flex-direction: column;
+      max-width: 150px;
+      align-items: center;
+      box-shadow: 5px 5px 5px lightgrey;
+      margin: 10px 20px 10px 20px;
+    }
+    
+    .medailleSolo img {
+      display: flex;
+      flex-direction: column;
+      max-width: 100px;
+      align-items: center;
+      margin: 10px 20px 10px 20px;
+    }
+    
+    .medailleComment {
+      display: none;
+    }
+    
+    .medailleOr {
+      align-self:baseline;
+    }
+    
+    .medailleArgent {
+      align-self:baseline;
+    }
+    
+    .medailleBronze  {
+      align-self:baseline;
+    }
+
+
+    .rondJaune {
+      position: absolute;
+      bottom: -350px;
+      left: -400px;
+      z-index: -1;
+      overflow: hidden;
+    }
+    
+    .rondRose {
+      position: absolute;
+      height: 200px;
+      width: 200px;
+      bottom: 350px;
+      right: -150px;
+      z-index: -1;
+      background-color: pink;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    
+    
+    .rondRose2 {
+      position: absolute;
+      height: 200px;
+      width: 200px;
+      right: -100px;
+      top: 1475px;
+
+      z-index: -1;
+      background-color: pink;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    
+    .rondJaune2 {
+      position: absolute;
+      height: 300px;
+      width: 300px;
+      right: -200px;
+      top: 1500px;
+      z-index: -1;
+      background-color: var(--primary-color);
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+
+
+  
+
+  }
+
+
   
   
     /* //////////////////////////////////////////////////////     FIN     PARRAINAGES      ///////////////////////////////////////////////////////////////// */
