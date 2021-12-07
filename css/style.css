@@ -19,8 +19,7 @@ a:visited {color: var(--third-color);}
 
 body {
     margin:0;
-    font-family: var(--font-content);
-    
+    font-family: var(--font-content);   
 }
 
 header {
@@ -38,13 +37,14 @@ ul li {
     list-style: none;
 }
 
-.fullWidthHomeBG {
-    padding: 0 0 80px 0;
+
+/* 80 vw */
+.partgoodies, .partoeufs, .partpoules, h4, .contact, .lespoules {
+  width: 80vw;
+  margin: auto; 
 }
 
 /* FONT ET TEXT*/
-
-
 a {
     font-family: var(--font-titre); 
     position: relative;
@@ -105,27 +105,30 @@ h3 {
 
 
 .btn {
-    border-radius: 25px;
-    padding: 10px;
-    border: solid 3px var(--third-color);
-    background: var(--third-color);
-    color: rgb(235, 235, 235);
-    font: var(--font-titre);
+  border-radius: 25px;
+  padding: 10px;
+  border: solid 1px var(--third-color);
+  background: var(--third-color);
+  color: rgb(235, 235, 235);
+  font: var(--font-titre);
+  font-size: 80%;
+  width: 150px;
 }
 
 .btn:active {
     background-color: var(--second-color);
     border:var(--third-color) solid 3px;
 }
-/* MENU NAVIGATION */
-header {
+MENU NAVIGATION
+ header {
   z-index: 1000000000;
 }
 
 #menuDesktop {      
     display: flex;
     flex-direction: column;
-    justify-content: center;}
+    justify-content: center;
+}
 
 #menuDesktopSize {
   display: grid;
@@ -148,7 +151,7 @@ header {
     margin-top: 10px
 }
 
-/* MENU MOBILE */
+MENU MOBILE
 .b1 { 
     margin: 10px;
     width: 40px;
@@ -171,7 +174,7 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
-  }
+  } */ 
 
   .ligne {
     position: absolute;
@@ -198,7 +201,7 @@ header {
   }
   .b1 .ligne:nth-child(2) {
     transition: opacity 0.2s 0.2s ease-in-out;
-  }
+  } 
 
   .b1.active .ligne:nth-child(1){
     top: 15px;
@@ -219,8 +222,8 @@ header {
     transform 0.2s 0.2s ease-in-out;
   }
 
-/* HOME PAGE */ 
-.fullWidthHomeBg {
+/* HOME PAGE 
+.fullWidthHomeBG {
   padding: 0;
   margin: 0;
 }
@@ -243,9 +246,9 @@ header {
     align-content: center;
     align-items: center;
     padding: 80px; 
-}
+} */
 
-.imgPictureHome {
+/* .imgPictureHome {
   padding: 20px 0;
 }
 
@@ -261,12 +264,12 @@ header {
     position: absolute;
     left: -150px;
     z-index: -1;
-}
+} */
 
 
 /* //////////////// QUI NOUS SOMMES ////////////////// */
 
-.who{
+/* .who{
   display: flex;
   flex-direction: column ;
   align-items: center;
@@ -277,10 +280,10 @@ header {
 .who h2{
     padding: 20px 0 20px 0;
     text-align: center;
-}
+} */
 
 /* philosophie */
-.philo {
+/* .philo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -323,14 +326,14 @@ header {
       animation-timing-function: ease-out;
       transform: scale(1);
     }
-  }
+  } */
 
-.philo > h2, p {
+/* .philo > h2, p {
     z-index: 2;
-}
+} */
 
 /* mettez-vous au vert */
-.green {
+/* .green {
     border: solid 20px;
     border-color: var(--third-color);
     text-align: center; 
@@ -346,10 +349,10 @@ header {
 .philo, .green{
     height: 450px; 
     width: 450px;
-}
+} */
 
 /* activités */
-article {
+/* article {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -358,26 +361,30 @@ article {
     align-items: center;
     justify-items: center;
     padding-top: 20px;
-    }
-    
-    .farmer { grid-area: 1 / 1 / 2 / 2; }
-    .chicken { grid-area: 1 / 2 / 2 / 3; }
-    .heart { grid-area: 2 / 1 / 3 / 3; }
-    .bar { grid-area: 3 / 1 / 4 / 2; }
-    .shop { grid-area: 3 / 2 / 4 / 3; }
+}
+.farmer { grid-area: 1 / 1 / 2 / 2; 
+}
+.chicken { grid-area: 1 / 2 / 2 / 3; 
+}
+.heart { grid-area: 2 / 1 / 3 / 3; 
+}
+.bar { grid-area: 3 / 1 / 4 / 2;
+}
+.shop { grid-area: 3 / 2 / 4 / 3; 
+}
 article > div {
     display: flex; 
     flex-direction: column;
     align-items: center;
     transition: transform .1s;  
-}
-article > div:hover{
+} */
+/* article > div:hover{
     -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5);
-    }
+    /* transform: scale(1.5);
+}
 article img {
     padding: 20px; 
-}
+} */ 
 
 
 /* //////////////// FIN QUI NOUS SOMMES ////////////////// */
@@ -385,7 +392,7 @@ article img {
 
 /* //////////////////////////////////////////////////////     DEBUT     PARRAINAGES      ///////////////////////////////////////////////////////////////// */
 
-.laPrez {
+/* .laPrez {
   display: block;
   padding: 50px 20px 50px 20px;
 }
@@ -440,8 +447,8 @@ select {
   flex-direction: row;
 }
   
-.textareaNomPoule textarea {
-  width: 291px;
+.textareaNomPoule textarea { */
+  /* width: 291px;
   height: 40px;
   resize: none;
   justify-content: flex-start;
@@ -505,16 +512,16 @@ select {
 .texteFormule2 a{
 display: flex;
 justify-content: flex-end;
-}
+} */
 
 
-.descriFormule2 > p{
+/* .descriFormule2 > p{
   justify-content: flex-start;
 }
 
 .descriFormule2Mobile > p{
   display: none;
-}
+} */
 
 /* .plusMoins {
   margin: 50px 0px 50px 0px;
@@ -545,7 +552,7 @@ justify-content: flex-end;
   font-size: 30px;
 } */
 
-.lePrix2 > p {
+/* .lePrix2 > p {
   display: flex;
   justify-content: flex-end;
 }
@@ -582,9 +589,9 @@ justify-content: flex-end;
   align-items: center;
   box-shadow: 5px 10px 5px lightgrey;
   margin: 10px 20px 10px 20px;
-}
+} */
 
-.medailles img {
+/* .medailles img {
   width: 150px;
 }  
 
@@ -607,21 +614,16 @@ justify-content: flex-end;
 
 .medailleBronze  {
   align-self: flex-end;
-}
+} */
 
-.placeholderFooter {
-  background-color: #F2DA5E;
-  width: 100%;
-  height: 50px;
-  bottom: 0;
-  text-align: center;
-  padding: 10px;
-}
+
   /* //////////////////////////////////////////////////////     FIN     PARRAINAGES      ///////////////////////////////////////////////////////////////// */
+
 
   /* ///////////////////     DEBUT   CONTACT     /////////////////// */
 
   /* .contactTitle {
+
     display: flex;
     justify-content: center;
     margin-top: 4%;
@@ -661,18 +663,13 @@ justify-content: flex-end;
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-  } */
-
-  /* ///////////////////    FIN  CONTACT     /////////////////// */
 
 /* Boutique */
 /* les oeufs et les poules */
-.letitre {
-    font-size:200%;
-    text-align: center;
-    color:blueviolet;
-    
+/* .letitre {
+    text-align: center;   
 }
+
 .lesoeufs {
     display: flex;
     flex-direction: row;
@@ -697,8 +694,8 @@ justify-content: flex-end;
     margin-top:20px;
     font-size: 18px;
     }
-    
-    .boutonmenu1:hover {
+     */
+    /* .boutonmenu1:hover {
      background-color: #3D44D9;
     }
     
@@ -722,9 +719,9 @@ justify-content: flex-end;
     
     .dropdownPack:hover .dropdownPack-child {
     display: block;
-    }
+    } */
     
-        .le-prix {
+        /* .le-prix {
         margin: 0px 0px 20px 0px;
         font-size: 30px;
         }
@@ -736,15 +733,14 @@ justify-content: flex-end;
         background-color: #3D44D9;
         border-radius: 15px;
         border: 0px;
-        }
+        } */
     /* la boutique */
-    .articles {
+    /* .articles {
         display: flex;
         justify-content: space-around;
         align-items: center;
         padding-top: 40px;
         flex-wrap: wrap;
-        font-size:180%;
         text-align: center;
         color:blueviolet;
      }
@@ -759,8 +755,8 @@ justify-content: flex-end;
      .imgt-shirt{
         width: 550px;
         height: 550px;
-     }
-     .imgfigurines{
+     } */
+     /* .imgfigurines{
         width: 550px;
         height: 550px;
      }
@@ -773,98 +769,46 @@ justify-content: flex-end;
        max-width: 200px;
      }
      .letitre{
-       font-size: 10px;
+    
        margin: 20px;
      }
-      
+    }      */
 
-.partoeufs {
-
+/* .partoeufs {
 padding:  0px ;
 margin: 20px 20px 20px 0px;
 height: 200px;
 }
 
 .partpoules {
-
 padding:  0px ;
 margin: 20px 20px 20px 0px;
 height: 200px;
 }
 
 .imgposterpoules {
-  width: 90%;
+  width: 90%; */
   /* height: 550px; */
-/*   margin: 50px;
- */  /* margin: 0; */
-}
+  /*   margin: 50px;*/ 
+  /* margin: 0; */
+/* }
 
 .texteoeuf {
-
 padding: 10px;  
-
 }
 
 .partgoodies {
-
 max-height: 200px; 
-
 }
 
-
-
-
-       }
 article > .btn {
   width: 100px;
   height: 30px;
-  }
-
-/* FOOTER */
-footer {
-    background-color: var(--primary-color);
-    color: var(--third-color); 
-    width: 100%;
-    bottom: 0;
-    padding: 10px;
-    border-top: 5px solid;
-    border-color: var(--secondary-color);
-    display: flex; 
-    justify-content: space-between;
-    font-size: small;
-    }
-footer>*{
-    width: 30%;
-}
-.trait{
-    width: 0%;
-    border-left: solid 1px;
-    border-color: var(--secondary-color);
-    height: 60px;
-    align-self: center;
-    padding: 0;
-}
-.societe{
-    width: 50%; 
-}
-footer > div, p {
-    padding: 5px; 
-}
-.maj{
-    text-transform: uppercase;
-}
-span.maj{
-    font-weight: bold; 
-}
-.soc, .societe{
-    text-align: center;
-}
-
-
+} */
 
 /* residentes photos */
 
-.lespoules {
+/* .lespoules {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -888,8 +832,8 @@ span.maj{
 
 .poules__container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column; */
+    /* justify-content: center;
     padding: 1rem;
     background-color: #d8d5cf;
     margin: 1rem;
@@ -909,7 +853,7 @@ span.maj{
 .poule__desc {
   display: none;
   padding: 1rem;
-}
+} */
 
 
 @media screen and (max-width: 650px) { 
@@ -1090,10 +1034,7 @@ span.maj{
   .medailleBronze  {
     align-self:baseline;
   }
-    
-  .placeholderFooter p{
-    font-size: 12px;
-  }
+  
 
   /* MENU */
   
@@ -1142,37 +1083,16 @@ span.maj{
     align-items: center;
     padding: 0;
   }
-    
+}
   /* HOME */
-  .actualiteHome {
+  /* .actualiteHome {
     flex-direction: column;
   }
-  /* qui sommes nous */
-    
-  /* FOOTER */
-  footer{
-    flex-direction: column-reverse;
-    align-items: center;
-    text-align: center;
-  }
-  footer>*{
-    width: 100%;
-  }
-  .societe{
-    padding: 15px;
-    width: 100%;
-    }
-  .trait{
-  border-top: solid 1px;
-  border-left: none;
-  border-color: var(--second-color );
-  width: 70%;
-  height: 0;
-  }
-}
+   */
+
 
 /* MEDIA QUERIES QUI NOUS SOMMES */
-@media screen and (min-width: 651px) {
+/* @media screen and (min-width: 651px) {
     .who {
         display: flex;
         flex-flow: row wrap;
@@ -1199,7 +1119,7 @@ span.maj{
         flex-flow: row wrap; 
     }
      
-}
+} */
 
 /* FIN MEDIA QUERIES QUI NOUS SOMMES */   
 
@@ -1216,9 +1136,7 @@ footer {
     justify-content: space-between;
     font-size: small;
     }
-footer>*{
-    width: 30%;
-}
+
 .trait{
     width: 0%;
     border-left: solid 1px;
@@ -1248,9 +1166,6 @@ span.maj{
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
-    }
-    footer>*{
-        width: 100%;
     }
     .societe{
         padding: 15px;

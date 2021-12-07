@@ -1,0 +1,141 @@
+/* Boutique */
+/* les oeufs et les poules */
+.letitre {
+    text-align: center;   
+}
+
+.lesoeufs {
+    display: flex;
+    flex-direction: row;
+    }
+    
+    .imgoeufs {
+    width: 500px;
+    border-radius: 0px 15px 15px 0px;
+    justify-content: flex-start;
+    }
+    
+    .texteoeuf {
+    padding: 20px;
+    }
+    
+    .boutonmenu1 {
+    background-color: rgb(238, 235, 52);
+    color:blueviolet;
+    border: none;
+    cursor: pointer;
+    padding:10px;
+    margin-top:20px;
+    font-size: 18px;
+    }
+    
+    .boutonmenu1:hover {
+     background-color: #3D44D9;
+    }
+    
+    .dropdownPack {
+    position: relative;
+    display: inline-block;
+    }
+    
+    .dropdownPack-child {
+    display: none;
+    background-color: rgb(238, 235, 52);
+    min-width: 50px;
+    }
+    
+    .dropdownPack-child a {
+    color:blueviolet;
+    padding:10px;
+    text-decoration: none;
+    display: block;
+    }
+    
+    .dropdownPack:hover .dropdownPack-child {
+    display: block;
+    }
+    
+        .le-prix {
+        margin: 0px 0px 20px 0px;
+        font-size: 30px;
+        }
+        
+        .addToCarte button{
+        color:blueviolet;
+        width: 120px;
+        height: 40px;
+        background-color: #3D44D9;
+        border-radius: 15px;
+        border: 0px;
+        }
+    /* la boutique */
+    .articles {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 40px;
+        flex-wrap: wrap;
+        text-align: center;
+        color:blueviolet;
+     }
+     .lestitres{
+       margin-top: 40px;
+     }
+    
+     .imgposterpoules{
+        width: 550px;
+        height: 550px;
+     }
+     .imgt-shirt{
+        width: 550px;
+        height: 550px;
+     }
+     .imgfigurines{
+        width: 550px;
+        height: 550px;
+     }
+     @media screen and (max-width: 650px) {
+     .descriPack{
+       display: none;
+
+     }
+     .imgoeufs{
+       max-width: 200px;
+     }
+     .letitre{
+    
+       margin: 20px;
+     }
+    }     
+
+.partoeufs {
+padding:  0px ;
+margin: 20px 20px 20px 0px;
+height: 200px;
+}
+
+.partpoules {
+padding:  0px ;
+margin: 20px 20px 20px 0px;
+height: 200px;
+}
+
+.imgposterpoules {
+  width: 90%;
+  /* height: 550px; */
+  /*   margin: 50px;*/ 
+  /* margin: 0; */
+}
+
+.texteoeuf {
+padding: 10px;  
+}
+
+.partgoodies {
+max-height: 200px; 
+}
+
+article > .btn {
+  width: 100px;
+  height: 30px;
+}
