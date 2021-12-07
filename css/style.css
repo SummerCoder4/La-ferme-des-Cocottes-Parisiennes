@@ -39,7 +39,7 @@ ul li {
 
 
 /* 80 vw */
-.partgoodies, .partoeufs, .partpoules, h4, .contact, .laPrez, .laFormule1, .laFormule2, .vosFilleules, .topParrains, .lespoules {
+.partgoodies, .partoeufs, .partpoules, h4, .contact, .lespoules {
   width: 80vw;
   margin: auto; 
 }
