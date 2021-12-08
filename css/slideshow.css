@@ -1,3 +1,7 @@
+h4 {
+	width: unset;
+}
+
 .menu {
     display: flex;
     flex-direction: row;
