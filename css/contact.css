@@ -1,0 +1,44 @@
+/* ///////////////////     DEBUT   CONTACT     /////////////////// */
+.contactTitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+  }
+
+  h4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+  }
+
+  #contact {
+    padding: 40px;
+    text-align: center;
+  }
+
+  .poules-contact {
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
+    border-radius: 50%;
+  }
+
+  form {
+    margin: 0 auto;
+    width: 300px;
+    padding-top: 20px;
+  }
+
+  label {
+    line-height: 2;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* ///////////////////    FIN  CONTACT     /////////////////// */
