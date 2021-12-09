@@ -28,13 +28,15 @@
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
-    background-color: #d8d5cf;
+    background-color: whitesmoke ;
+    border: 5px solid var(--second-color);
     margin: 1rem;
     width: 30%;
     height: 470px;
     align-items: center;
     border-radius: 50%;
     font-weight: bold;
+/*     #f7eed6 */
 }
 
 .poule__contenu {
@@ -71,16 +73,17 @@
 }
 
 .poules__popup-container {
-  position: absolute;
-  width: 20%;
-  height: 550px;
-  background-color: red;
+  position: fixed;
+  width: 350px;
+  height: 500px;
+  background-color: var(--primary-color);
   right: 0;
-  top: 0;
+  bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
+  padding-bottom: 15px;
   display: none;
 }
 
@@ -90,11 +93,22 @@
 }
 
 .poules__popup-message {
-  border: 2px solid blue;
+  border: 2px solid var(--third-color);
   width: 80%;
   height: 80%;
   background-color: white;
   margin-bottom: 0.5rem;
+  border-radius: 20px;
+  padding: 0.5rem;
+}
+
+.poules__popup-message > p:nth-child(2n+1){
+  padding: 5px;
+  text-align: left;
+}
+
+.poules__popup-message> p:nth-child(2n){
+  text-align: right;
 }
 
 .poules__popup-close {
