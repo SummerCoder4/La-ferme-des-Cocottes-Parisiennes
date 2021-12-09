@@ -6,6 +6,7 @@
     align-items: center;
     padding-top: 120px;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .lespoules2 {
@@ -67,6 +68,42 @@
 .poule__desc {
   display: none;
   padding: 1rem;
+}
+
+.poules__popup-container {
+  position: absolute;
+  width: 20%;
+  height: 550px;
+  background-color: red;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  display: none;
+}
+
+.poules__popup-title {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.poules__popup-message {
+  border: 2px solid blue;
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  margin-bottom: 0.5rem;
+}
+
+.poules__popup-close {
+  padding: 0.5rem;
+}
+
+.poules__popup-text {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 650px) { 
