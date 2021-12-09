@@ -54,7 +54,7 @@
   margin: 0 auto;
   position: relative;
 }
-.gallery-item > img {width: 100%; border-radius: 150px;}
+.gallery-item > img {width: 100%; height: 100%; border-radius: 150px;}
 .gallery-item {
   height: 150px;
   opacity: 0;
@@ -208,77 +208,76 @@
 /* //////////////// QUI NOUS SOMMES ////////////////// */
 
 .who {  
-  display: flex;
-  flex-direction: column ;
-  align-items: center;
-  width: 80vw; 
-  margin: auto; 
-}
-
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    width: 80vw; 
+    margin: auto; 
+  }
+  
 .who h2{
-  padding: 20px 0 20px 0;
-  text-align: center;
-}
-
-/* philosophie */
+    padding: 20px 0 20px 0;
+    text-align: center;
+  }
+  
+/* philosophie */  
 .philo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center; 
-  padding : 20px;  
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    padding : 20px;  
+  }
 .philo > p {
-  width: 350px;
-}
-
+    width: 350px;
+  }
 .philo > img {
-  animation: roundpink 5s ease 0s infinite normal none;
-  z-index: 0; 
-  position: absolute; 
-}
+    animation: roundpink 5s ease 0s infinite normal none;
+    z-index: 0; 
+    position: absolute; 
+  }
+
 @keyframes roundpink {
-  0% {
+ 0% {
     animation-timing-function: ease-out;
     transform: scale(1);
     transform-origin: center center;
   }
-
-  10% {
+    
+ 10% {
     animation-timing-function: ease-in;
     transform: scale(0.91);
   }
-
+    
   17% {
-    animation-timing-function: ease-out;
-    transform: scale(0.98);
+     animation-timing-function: ease-out;
+     transform: scale(0.98);
   }
-
+    
   33% {
-    animation-timing-function: ease-in;
-    transform: scale(0.87);
+     animation-timing-function: ease-in;
+     transform: scale(0.87);
   }
-
+    
   45% {
-    animation-timing-function: ease-out;
-    transform: scale(1);
+     animation-timing-function: ease-out;
+     transform: scale(1);
   }
-  }
-
-.philo > h2, p {
-  z-index: 2;
-}
-
+ }
+  
+ .philo > h2, p {
+     z-index: 2;
+ }
+  
 /* mettez-vous au vert */
-.green {
-  border: solid 20px;
-  border-color: var(--third-color);
-  text-align: center; 
-  padding : 20px;
-  overflow: scroll; 
+ .green {
+   border: solid 20px;
+   border-color: var(--third-color);
+   text-align: center; 
+   padding : 20px;
+   overflow: scroll; 
 }
-
 .green > p{
   text-align: justify;
   padding-bottom: 10px;
@@ -288,8 +287,15 @@
   height: 450px; 
   width: 450px;
 }
-
+.philo >h2, .green>h2{
+  font-size: 20px;  
+}
+  
 /* activités */
+
+.farm {
+  margin : 50px 0; 
+}
 article {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -310,19 +316,25 @@ article {
 }
 .shop { grid-area: 3 / 2 / 4 / 3; 
 }
+
 article > div {
-  display: flex; 
-  flex-direction: column;
-  align-items: center;
-  transition: transform .1s;  
+   display: flex; 
+   flex-direction: column;
+   align-items: center;
+   padding: 10px;  
 }
-article > div:hover{
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5);
-}
+
 article img {
-  padding: 20px; 
+   transition: transform .1s; 
+   padding: 20px; 
 }
+
+article img:hover{
+   -webkit-transform: scale(1.5); /* Safari 3-8 */
+   transform: scale(1.5);
+}
+/* //////////////// FIN QUI NOUS SOMMES ////////////////// */
+
 
 @media screen and (max-width: 650px) { 
   .centred {width: 100vw;}
@@ -331,41 +343,35 @@ article img {
     margin: 30px 0;
     justify-content: space-around;}
 }
-
-/* //////////////// FIN QUI NOUS SOMMES ////////////////// */
+  
 /* MEDIA QUERIES QUI NOUS SOMMES */
 @media screen and (min-width: 651px) {
-  .actualiteHome {
-    flex-direction: row;
-  }
-  .who {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center ;  
-  }
-  .philogreen {
-    display:flex; 
-    justify-content:center ;  
-    align-items: center;  
-  }
-  .philo { 
-    grid-area: 1 / 1 / 2 / 2; 
-    border: solid 20px;
-    border-color: var(--second-color )
-  }
-
-  .green { grid-area: 1 / 2 / 2 / 3; }
-  .farm { 
-    grid-area: 2 / 1 / 3 / 3;
-    margin: 50px 0;
-  }
-
-  article {
-    display: flex; 
-    justify-content: space-around;
-    flex-flow: row wrap; 
-  }
+    .who {
+        display: flex;
+        justify-content: center ;  
+    }
+    .philogreen {
+        display:flex; 
+        justify-content:center ;  
+        align-items: center;  
+    }
+    .philo { grid-area: 1 / 1 / 2 / 2; 
+             border: solid 20px;
+             border-color: var(--second-color )
+            }
+  
+    .green { grid-area: 1 / 2 / 2 / 3; 
+              padding: 10px; 
+            }
+    .farm { grid-area: 2 / 1 / 3 / 3;}
     
+    .green >h2{
+      padding-top: 15px;
+    }
+    article {
+        display: flex; 
+        justify-content: space-around;
+        flex-flow: row wrap; 
+    }
 }
-
 /* FIN MEDIA QUERIES QUI NOUS SOMMES */   
