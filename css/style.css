@@ -77,11 +77,18 @@ a {
 p {font-size: 1em; line-height: 1.5;}
 
 h1{ 
-  font-family: var(--font-titre);
-  font-size: 3em;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: var(--second-color);
+    font-family: var(--font-titre);
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--second-color);
+    text-align: center;
+}
+
+h1 > span{
+    font-size: smaller;
+    font-weight: lighter;
+
 }
 
 h2 {
@@ -116,6 +123,8 @@ h3 {
   background-color: var(--second-color);
   border:var(--third-color) solid 3px;
 }
+
+
 /* MENU NAVIGATION */
  header {
   z-index: 1000000000;
@@ -162,6 +171,15 @@ h3 {
   background: none;
   transform: translateY(-50%);
 }
+
+
+.rondJaune {
+    position: absolute;
+    left: -150px;
+    z-index: -1;
+} */
+
+
 
 .container-lignes {
   width: 40px;
@@ -218,6 +236,7 @@ h3 {
   top 0.2s  ease-in-out,
   transform 0.2s 0.2s ease-in-out;
 }
+
 
 /* //////////////////////////////////////////////////////     DEBUT     PARRAINAGES      ///////////////////////////////////////////////////////////////// */
 
@@ -751,6 +770,9 @@ footer {
 .footerLeft {
   grid-area: 1;
 }
+.soc, .reseaux {
+  width: 25%;
+}
 footer > div, p {
     padding: 5px;
 }
@@ -802,6 +824,7 @@ span.maj{
         align-items: center;
         text-align: center;
     }
+
     .containerFooter {
       display: flex;
       flex-direction: column-reverse;
@@ -822,10 +845,62 @@ span.maj{
         width: 70%;
         height: 0;
     }
+
     .animaPoule {left: 0;}
 }
+
 @media screen and (min-width: 651px) and (max-width: 1080px) {
   .poules__container {
     width: 45%;
   }
 }
+
+/* Dark Mode*/
+.darkMode {
+  position: absolute;
+  top: 150px; 
+  right: 10px; 
+  width: 60px; 
+  height: 60px; 
+  border-radius: 50%; 
+  background-color: #1E1F33;
+  color: #F2DA5E;
+  border: 1px solid #1E1F33;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  cursor: pointer; 
+}
+
+body.dark {
+  color: #DDDDDD; 
+  background: #1E1F33; 
+} 
+body.dark .darkMode {
+  background-color: #F2DA5E;
+  border: 1px solid #F2DA5E;
+  color: #3D44D9;
+}
+body.dark h2 {
+  color: #F2C2C2; 
+}
+body.dark .philo>* {
+  color: #3D44D9; 
+}
+body.dark .rondJaune>img {
+  opacity: 80%;
+}
+body.dark header {
+  background-color:  #1E1F33;
+  border-bottom: 5px solid #3D44D9;
+}
+body.dark ul a {
+  color: #F2DA5E; 
+}
+body.dark footer, body.dark .menuDeroulant, body.dark #menuMobile{
+  background-color: #1E1F33;
+  color: #F2DA5E; 
+}
+
+
+
