@@ -111,13 +111,11 @@
 .partoeufs {
 padding:  0px ;
 margin: 20px 20px 20px 0px;
-height: 200px;
 }
 
 .partpoules {
 padding:  0px ;
 margin: 20px 20px 20px 0px;
-height: 200px;
 }
 
 .imgposterpoules {
@@ -132,7 +130,6 @@ padding: 10px;
 }
 
 .partgoodies {
-max-height: 200px; 
 }
 
 article > .btn {
