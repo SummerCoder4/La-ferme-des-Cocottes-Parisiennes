@@ -229,6 +229,10 @@ top:0;
     .poules__container {
       width: 45%;
     }
+
+    .poules__popup-container {
+      display: none;
+    }
   }
 
 
@@ -236,4 +240,8 @@ top:0;
     .poules__container {
       width: 75%;
     }
+    .poules__popup-container {
+      display: none;
+    }
+
   }
