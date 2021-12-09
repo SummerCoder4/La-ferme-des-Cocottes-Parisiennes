@@ -512,6 +512,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 margin:  20px 0px 20px 0px;
+width: 100%;
 }
 
 .descriFormule1 {
@@ -583,6 +584,8 @@ align-self: center;
 .textareaNomPoule {
 display: flex;
 flex-direction: row;
+justify-content: center;
+
 }
 
 .textareaNomPoule input {
@@ -591,6 +594,7 @@ resize: none;
 justify-content: flex-start;
 font-family: var(--font-content);
 align-self: center;
+
 }
 
 .textareaNomPoule button {
@@ -601,12 +605,18 @@ align-self: center;
 font-family: var(--font-content);
 }
 
+.textareaMailParraiange {
 
+  display: flex;
+  justify-content: center;
+
+}
 
 
 
 .textareaMailParraiange input {
 width: 100%;
+max-width: 300px;
 height: 40px;
 resize: none;
 justify-content: flex-start;
