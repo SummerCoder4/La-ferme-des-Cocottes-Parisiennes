@@ -112,7 +112,7 @@ h4 {
 
 .active, .dot:hover, .dot-2:hover {
   transition-duration: 2s;
-  background-color: #717171;
+  background-color: var(--primary-color);
 }
 
 /* Fading animation */
