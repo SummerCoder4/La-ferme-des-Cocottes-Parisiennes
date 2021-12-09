@@ -54,16 +54,17 @@ h4 {
 }
 
 .mySlides span, .mySlides-2 span {
-	background:rgba(0,0,0,0.7);
+	background: var(--third-color);
 	height:30px;
 	display: flex;
 	justify-content: center;
-	color:white;
+	color:var(--primary-color);
 	position:relative;
 	bottom:0;
 	right:0;
 	left:0;
 	text-align: center;
+	align-items: center;
 }
 
 /* Slider Section */
