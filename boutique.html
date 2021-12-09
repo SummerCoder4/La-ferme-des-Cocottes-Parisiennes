@@ -11,6 +11,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/37bee4d75f.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="script/starter.js"></script>
         <title>La Boutique - La ferme des Cocottes Parisiennes</title>
     </head>
@@ -21,10 +22,13 @@
           includeHTML();
         </script>
       </header>
+      <br/>
+      <i class="fas fa-shopping-basket"></i>
+      <br/>
         <!-------------------------------------------------------------Les oueufs-------------------------------------------------------------->
         <section class="partoeufs">
           <div class="letitre">
-            <h2>Nos oeufs</h2>
+            <h2 class="lestitres">Nos oeufs</h2>
           </div>
           <div class="lesoeufs">
 
@@ -86,14 +90,17 @@
                 </div>
               </div>
             </section>
+            <br/>
             <!-----------------------------------------------------------------------Goodies------------------------------------------------------------>
             <section class="partgoodies">
               <div class="letitre">
-                <h2 class="lestitres">Nos Goodies</h2>
+                <hr/>
+                  <h2 class="lestitres">Nos Goodies</h2>
               </div>
               <div class="articles">
+                  <hr/>
                 <div class="elements">
-                  <h3>Posters</h3>
+                  <h2 class="lestitres">Posters</h2>
                   <img class="imgposterpoules" src="img/poster-boutique.jpeg" alt="Poster de poule.">
                   <div class="dropdownPack">
                     <button class="boutonmenu1">Poster poules 1</button>
@@ -107,9 +114,10 @@
                     <div class="addToCart addToCartepack">
                       <button class="btn">Ajouter au panier</button>
                     </div>
+                  </div>
                 </div>
                 <div class="elements">
-                  <h3>T-shirt</h3>
+                  <h2 class="lestitres">T-shirt</h2>
                   <img class="imgt-shirt" src="img/t-shirt-poulet-dab-.jpg" alt="T-shirt de poule qui Dab.">
                   <div class="dropdownPack">
                     <button class="boutonmenu1">T-shirt de poule qui DAB t'as capté ?</button>
@@ -124,9 +132,10 @@
                     <div class="addToCart addToCartepack">
                       <button class="btn">Ajouter au panier</button>
                     </div>
+                  </div>
                 </div>
                 <div class="elements">
-                  <h3>Figurines</h3>
+                  <h2 class="lestitres">Figurines</h2>
                   <img class="imgfigurines" src="img/figurines-de-poule.jpg" alt="Figurines de poules.">
                   <div class="dropdownPack">
                     <button class="boutonmenu1">Figurines de poules 1</button>
@@ -140,6 +149,7 @@
                     <div class="addToCart addToCartepack">
                       <button class="btn">Ajouter au panier</button>
                     </div>
+                  </div>
                 </div>
               </div>
             </section>
@@ -148,6 +158,13 @@
             <script>
               includeHTML();
             </script>
-            
+            <script src="boutique.html"></script>
+           <script>
+             const bouton = document.querySelectorAll(".btn");
+             bouton.forEach(item=>item.addEventListener("click", () =>{
+               alert("Votre article a bien été ajouté au panier !");
+               console.log("bouton");
+             }));
+           </script>
           </body>
 </html>

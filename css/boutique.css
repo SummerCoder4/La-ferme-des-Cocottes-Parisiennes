@@ -9,17 +9,17 @@
     flex-direction: row;
     }
     
-    .imgoeufs {
+.imgoeufs {
     width: 500px;
     border-radius: 0px 15px 15px 0px;
     justify-content: flex-start;
     }
     
-    .texteoeuf {
+.texteoeuf {
     padding: 20px;
     }
     
-    .boutonmenu1 {
+.boutonmenu1 {
     background-color: rgb(238, 235, 52);
     color:blueviolet;
     border: none;
@@ -29,13 +29,17 @@
     font-size: 18px;
     }
     
-    .boutonmenu1:hover {
-     background-color: #3D44D9;
+.boutonmenu1:hover {
+    background-color: #3D44D9;
+    }
+
+a:hover{
+    background-color: #3D44D9;
     }
     
     .dropdownPack {
     position: relative;
-    display: inline-block;
+    margin-bottom: 40px;
     }
     
     .dropdownPack-child {
@@ -68,6 +72,19 @@
         border-radius: 15px;
         border: 0px;
         }
+      hr{
+         width: 100%;
+      }
+      i{
+         position: fixed;
+         right: 0;
+         top: 50%;
+         width: 2em;
+         margin-top: -2.5em;
+         font-size: xxx-large;
+         color: blue;
+          
+      }
     /* la boutique */
     .articles {
         display: flex;
@@ -80,6 +97,7 @@
      }
      .lestitres{
        margin-top: 40px;
+       font-size: 4em;
      }
     
      .imgposterpoules{
@@ -94,11 +112,12 @@
         width: 550px;
         height: 550px;
      }
-     @media screen and (max-width: 650px) {
-     .descriPack{
-       display: none;
+  @media screen and (max-width: 650px) {
 
-     }
+   i{
+      font-size: xx-large;
+   }
+    
      .imgoeufs{
        max-width: 200px;
      }
@@ -106,36 +125,44 @@
     
        margin: 20px;
      }
-    }     
+         
 
-.partoeufs {
-padding:  0px ;
-margin: 20px 20px 20px 0px;
-height: 200px;
-}
+    .partoeufs {
+    padding:  0px ;
+    margin: 20px 20px 20px 0px;
+    }
 
-.partpoules {
-padding:  0px ;
-margin: 20px 20px 20px 0px;
-height: 200px;
-}
+    .partpoules {
+    padding:  0px ;
+    margin: 20px 20px 20px 0px;
+    }
 
-.imgposterpoules {
-  width: 90%;
-  /* height: 550px; */
-  /*   margin: 50px;*/ 
-  /* margin: 0; */
-}
+    .imgposterpoules{
+      width: 90%;
+      height: auto;
+      
+   }
+   .imgt-shirt{
+      width: 90%;
+      height: auto;
+     
+   }
+   .imgfigurines{
+      width: 90%;
+      height: auto;
+      
+   }
 
-.texteoeuf {
-padding: 10px;  
-}
+    .texteoeuf {
+    padding: 10px;  
+    }
 
-.partgoodies {
-max-height: 200px; 
-}
 
-article > .btn {
-  width: 100px;
-  height: 30px;
-}
+    article > .btn {
+      width: 100px;
+      height: 30px;
+    }
+    .lesoeufs {
+      flex-direction: column;
+      }
+  }
