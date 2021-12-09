@@ -770,9 +770,7 @@ footer {
 .footerLeft {
   grid-area: 1;
 }
-.soc, .reseaux {
-  width: 25%;
-}
+
 footer > div, p {
     padding: 5px;
 }
