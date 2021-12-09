@@ -331,23 +331,16 @@ btnVerif.addEventListener('click' , () => {
   const textareaNomPouleValue = document.getElementById("textareaNomPouleValue");
   const btnVerif = document.getElementById("btnVerif");
 
-
-
-if (nomArrayPoule.includes(capitalizeFirstLetter(textareaNomPouleValue.value))) {
+if (nomArrayPoule.includes(capitalizeFirstLetter(textareaNomPouleValue.value)) || textareaNomPouleValue.value == "" ) {
   document.getElementById("textareaNomPouleValue").style.borderColor = "red";
   document.getElementById("textareaNomPouleValue").style.borderWidth = "3px";
   btnVerif.style.background = "darkred";
-
-
-
 }
+
 else {
   document.getElementById("textareaNomPouleValue").style.borderColor = "lightgreen";
   document.getElementById("textareaNomPouleValue").style.borderWidth = "3px";
   btnVerif.style.background = "green";
-
-
-
 
 }
 
