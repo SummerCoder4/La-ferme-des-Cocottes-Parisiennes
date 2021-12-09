@@ -12,7 +12,8 @@
     <script type="text/javascript" src="script/starter.js"></script>
     <title>Parrainages - La ferme des Cocottes Parisiennes</title>
 </head>
-<body>
+<body class="light">
+  <div class="darkMode">Nuit</div>
   <header>
     <div w3-include-html="navbar.html"></div>
 		<script>
@@ -231,9 +232,11 @@
 <!-- ////////////////////////////////////////////////////////////////////////////   FOOTER   ///////////////////////////////////////////////////////////////////////////////// -->
 
 <div w3-include-html="footer.html"></div>
-<script>
-includeHTML();
-</script>
+
+	<script>
+		includeHTML();
+	</script>
+  <script src="script/darkMode.js"></script>
 
 
 <!-- <script>
@@ -347,13 +350,7 @@ else {
 }
 
 })
-
-
-
-
-
 </script>
-
 
 </body>
 </html>
