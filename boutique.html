@@ -11,21 +11,25 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/37bee4d75f.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="script/starter.js"></script>
         <title>La Boutique - La ferme des Cocottes Parisiennes</title>
     </head>
     <body class="light">
+      <div class="darkMode">Nuit</div>
       <header>
         <div w3-include-html="navbar.html"></div>
         <script>
           includeHTML();
         </script>
       </header>
-        <div class="darkMode">Nuit</div>
+      <br/>
+      <i class="fas fa-shopping-basket"></i>
+
         <!-------------------------------------------------------------Les oueufs-------------------------------------------------------------->
         <section class="partoeufs">
           <div class="letitre">
-            <h2>Nos oeufs</h2>
+            <h2 class="lestitres">Nos oeufs</h2>
           </div>
           <div class="lesoeufs">
 
@@ -33,21 +37,29 @@
           
             <div class="texteoeufs">
               <div class="descriPack">
-                  <br>    
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt lorem ut velit suscipit, nec condimentum est fringilla. Pellentesque tempor erat eu lorem suscipit, eu viverra dui venenatis. Donec eget pellentesque ante. Donec facilisis posuere lectus, sed accumsan metus ultrices quis. Pellentesque habitan. </p>
               </div>
           
-              <div class="dropdownPack">
+<!--               <div class="dropdownPack">
                   <button class="boutonmenu1">Pack de 6 oeufs</button>
                   <div class="dropdownPack-child">
                     <a>Pack de 12 oeufs : 10 €</a>
                     <a>Pack de 24 oeufs : 18 €</a>
-                  </div>
+                  </div> -->
+                  <select id="leSelectPrixNosOeufs">
+                    <option value="" disabled selected>Selectionnez votre formule</option>
+                    <option id="leSelectPrixNosOeufsOption1" " value="10">Pack de 12 oeufs : 10 €</option>
+                    <option id="leSelectPrixNosOeufsOption2" " value="18">Pack de 24 oeufs : 18 €</option>
+                  </select>
+              
                   <div class="le-prix">
-                    <p>5 €</p>
+                    <p id="lePrixNosOeufs">&#8203;</p>
                   </div>
                   <div class="addToCart addToCartepack">
-                    <button class="btn">Ajouter au panier</button>
+                    <button id="btnAjoutNosOeufs" class="btn btnAjoutPanierAll">Ajouter au panier</button>
+                  </div>
+                  <div>
+                    <p id="messageAjoutPanierNosOeufs">&#8203;</p>
                   </div>
               </div>
             </div>
@@ -60,96 +72,280 @@
               <div class="letitre">
                 <h2 class="lestitres">Nos Poules</h2>
               </div>
-              <div class="lesoeufs">
+              <div class="lesoeufs divDesPoules">
     
-                <img class="imgoeufs" src="img/poules-boutique.jpg" alt="Image de Poules">
+                <img class="imgoeufs " src="img/poules-boutique.jpg" alt="Image de Poules">
               
                 <div class="texteoeufs">
                   <div class="descriPack">
-                      <br>    
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt lorem ut velit suscipit, nec condimentum est fringilla. Pellentesque tempor erat eu lorem suscipit, eu viverra dui venenatis. Donec eget pellentesque ante. Donec facilisis posuere lectus, sed accumsan metus ultrices quis. Pellentesque habitan. </p>
                   </div>
               
                   <div class="dropdownPack">
-                      <button class="boutonmenu1">Poules rousses</button>
-                      <div class="dropdownPack-child">
+ <!--                     <button class="boutonmenu1">Poules rousses</button>
+                       <div class="dropdownPack-child">
                         <a>Poules Sussex : 45 €</a>
                         <a>Poule gâtinaise : 28 €</a>
                         <a>Poule Coucou de Rennes : 35 €</a>
-                      </div>
-                      <div class="le-prix">
-                        <p>20 € unité</p>
+                      </div> -->
+                      <select id="leSelectPrixNosPoules">
+                        <option value="" disabled selected>Selectionnez votre formule</option>
+                        <option id="leSelectPrixNosPoulesOption1" " value="28">Poule Gâtinaise : 28 €</option>
+                        <option id="leSelectPrixNosPoulesOption2" " value="35">Poule Coucou de Rennes : 35 €</option>
+                        <option id="leSelectPrixNosPoulesOption3" " value="45">Poule Sussex : 45 €</option>
+                      </select>
+    
+                      <div class="le-prix lePrixNosOeufs">
+                        <p id="lePrixNosPoules">&#8203;</p>
                       </div>
                       <div class="addToCart addToCartepack">
-                        <button class="btn">Ajouter au panier</button>
+                        <button id="btnAjoutNosPoules" class="btn btnAjoutPanierAll">Ajouter au panier</button>
+                      </div>
+                      <div>
+                        <p id="messageAjoutPanierNosPoules">&#8203;</p>
                       </div>
                   </div>
                 </div>
               </div>
             </section>
+            <br/>
             <!-----------------------------------------------------------------------Goodies------------------------------------------------------------>
             <section class="partgoodies">
               <div class="letitre">
-                <h2 class="lestitres">Nos Goodies</h2>
+                  <h2 class="lestitres">Nos Goodies</h2>
               </div>
               <div class="articles">
                 <div class="elements">
-                  <h3>Posters</h3>
+                  <h2 class="lestitres">Posters</h2>
                   <img class="imgposterpoules" src="img/poster-boutique.jpeg" alt="Poster de poule.">
                   <div class="dropdownPack">
-                    <button class="boutonmenu1">Poster poules 1</button>
+<!--                     <button class="boutonmenu1">Poster poules 1</button>
                     <div class="dropdownPack-child">
                       <a>Poster poule rockeuse : 12 €</a>
                       <a>Poster poule du 93 : 12 €</a>
-                    </div>
+                    </div> -->
+                    <select id="leSelectPrixNosPosters">
+                      <option value="" disabled selected>Selectionnez votre poster</option>
+                      <option id="leSelectPrixNosPostersOption1" " value="12">Poster poule rockeuse : 12 €</option>
+                      <option id="leSelectPrixNosPostersOption2" " value="12">Poster poule du 93 : 12 €</option>
+                    </select>
+
                     <div class="le-prix">
-                      <p>12 € unité</p>
+                      <p id="lePrixNosPosters">&#8203;</p>
                     </div>
                     <div class="addToCart addToCartepack">
-                      <button class="btn">Ajouter au panier</button>
+                      <button id="btnAjoutNosPosters" class="btn btnAjoutPanierAll">Ajouter au panier</button>
                     </div>
+                    <div>
+                      <p id="messageAjoutPanierNosPosters">&#8203;</p>
+                    </div>
+
+                  </div>
                 </div>
                 <div class="elements">
-                  <h3>T-shirt</h3>
+                  <h2 class="lestitres">T-shirt</h2>
                   <img class="imgt-shirt" src="img/t-shirt-poulet-dab-.jpg" alt="T-shirt de poule qui Dab.">
                   <div class="dropdownPack">
-                    <button class="boutonmenu1">T-shirt de poule qui DAB t'as capté ?</button>
+<!--                     <button class="boutonmenu1">T-shirt de poule qui DAB t'as capté ?</button>
                     <div class="dropdownPack-child">
                       <a>T-shirt poule Matuidi Charo : 25 €</a>
                       <a>T-shirte poule bien mafé : 25 €</a>
                       <a>T-shirt poules résidentes : 35 €</a>
-                    </div>
+                    </div> -->
+                    <select id="leSelectPrixNosTshirts">
+                      <option value="" disabled selected>Selectionnez votre T-shirt</option>
+                      <option id="leSelectPrixNosTshirtsOption1" " value="25">T-shirt poule Matuidi Charo : 25 €</option>
+                      <option id="leSelectPrixNosTshirtsOption2" " value="25">T-shirt poule bien mafé : 25 €</option>
+                      <option id="leSelectPrixNosTshirtsOption3" " value="35">T-shirt poule résidentes : 35 €</option>
+                    </select>
+
                     <div class="le-prix">
-                      <p>25 € unité</p>
+                      <p id="lePrixNosTshirts">&#8203;</p>
                     </div>
                     <div class="addToCart addToCartepack">
-                      <button class="btn">Ajouter au panier</button>
+                      <button id="btnAjoutNosTshirts" class="btn btnAjoutPanierAll">Ajouter au panier</button>
                     </div>
+                    <div>
+                      <p id="messageAjoutPanierNosTshirts">&#8203;</p>
+                    </div>
+
+                  </div>
                 </div>
                 <div class="elements">
-                  <h3>Figurines</h3>
+                  <h2 class="lestitres">Figurines</h2>
                   <img class="imgfigurines" src="img/figurines-de-poule.jpg" alt="Figurines de poules.">
                   <div class="dropdownPack">
-                    <button class="boutonmenu1">Figurines de poules 1</button>
+<!--                     <button class="boutonmenu1">Figurines de poules 1</button>
                     <div class="dropdownPack-child">
                       <a>Figurines de poules tueuses: 45 €</a>
                       <a>Figurines de poules à tête chercheuse: 28 €</a>
-                    </div>
-                    <div class="le-prix">
-                      <p>15 € unité</p>
-                    </div>
+                    </div> -->   
+                    <select id="leSelectPrixNosFigurines">
+                      <option value="" disabled selected>Selectionnez votre figurine</option>
+                      <option id="leSelectPrixNosFigurinesOption1" " value="45">Figurines de poules tueuses: 45 €</option>
+                      <option id="leSelectPrixNosFigurinesOption2" " value="28">Figurines de poules à tête chercheuse: 28 €</option>
+                    </select>
+
+                 <div class="le-prix">
+                  <p id="lePrixNosFigurines">&#8203;</p>
+                </div>
                     <div class="addToCart addToCartepack">
-                      <button class="btn">Ajouter au panier</button>
+                      <button id="btnAjoutNosFigurines" class="btn btnAjoutPanierAll">Ajouter au panier</button>
                     </div>
+                    <div>
+                      <p id="messageAjoutPanierNosFigurines">&#8203;</p>
+                    </div>
+
+                  </div>
                 </div>
               </div>
             </section>
-            <!-- FOOTER -->        
-            <div w3-include-html="footer.html"></div>
-            <script>
-              includeHTML();
-            </script>
-            <script src="script/darkMode.js"></script>
+            <div class="rondJaune" |=""><img src="img/Ellipse 1.png" alt=""></div>
+<div class="boiteRose"> 
+  <div class="rondRose"><img src="" alt=""></div>
+</div>
+<div class="boiteJaune2">
+  <div class="rondJaune2"><img src="" alt=""></div>
+</div>
+<div class="boiteJaune3">
+  <div class="rondJaune3"><img src="" alt=""></div>
+</div>
+<div class="boiteRose2">
+  <div class="rondRose2"><img src="" alt=""></div>
+</div>
+<div class="boiteRose3">
+  <div class="rondRose3"><img src="" alt=""></div>
+</div>
+<div class="boiteRose4">
+  <div class="rondRose4"><img src="" alt=""></div>
+</div>
+<!-- FOOTER -->        
+<div w3-include-html="footer.html"></div>
+<script>includeHTML();</script>
+<script src="script/darkMode.js"></script>
             
-          </body>
+       
+
+            <script src="boutique.html"></script>
+
+<script>
+
+btnAjoutNosOeufs.addEventListener('click' , () => {
+
+  const btnAjoutNosOeufs = document.getElementById("btnAjoutNosOeufs");
+  const messageAjoutPanierNosOeufs = document.getElementById("messageAjoutPanierNosOeufs");
+
+  document.getElementById("messageAjoutPanierNosOeufs").innerHTML = "Votre article a bien été ajouté au panier !";
+}) 
+
+btnAjoutNosPoules.addEventListener('click' , () => {
+
+  const btnAjoutNosPoules = document.getElementById("btnAjoutNosPoules");
+  const messageAjoutPanierNosPoules = document.getElementById("messageAjoutPanierNosPoules");
+
+  document.getElementById("messageAjoutPanierNosPoules").innerHTML = "Votre article a bien été ajouté au panier !";
+}) 
+
+btnAjoutNosPosters.addEventListener('click' , () => {
+
+  const btnAjoutNosPosters = document.getElementById("btnAjoutNosPosters");
+  const messageAjoutPanierNosPosters = document.getElementById("messageAjoutPanierNosPosters");
+
+  document.getElementById("messageAjoutPanierNosPosters").innerHTML = "Votre article a bien été ajouté au panier !";
+}) 
+
+
+btnAjoutNosTshirts.addEventListener('click' , () => {
+
+  const btnAjoutNosTshirts = document.getElementById("btnAjoutNosTshirts");
+  const messageAjoutPanierNosTshirts = document.getElementById("messageAjoutPanierNosTshirts");
+
+  document.getElementById("messageAjoutPanierNosTshirts").innerHTML = "Votre article a bien été ajouté au panier !";
+})
+
+
+btnAjoutNosFigurines.addEventListener('click' , () => {
+
+  const btnAjoutNosFigurines = document.getElementById("btnAjoutNosFigurines");
+  const messageAjoutPanierNosFigurines = document.getElementById("messageAjoutPanierNosFigurines");
+
+  document.getElementById("messageAjoutPanierNosFigurines").innerHTML = "Votre article a bien été ajouté au panier !";
+}) 
+
+</script>
+
+<script>
+
+var select = document.querySelector('#leSelectPrixNosOeufs'),
+input = document.querySelector('input[type="button"]');
+
+select.addEventListener('change', () => {
+  if (document.getElementById("leSelectPrixNosOeufs").value === "") {
+  document.getElementById("lePrixNosOeufs").style.display = "none";
+  }
+  else {
+  document.getElementById("lePrixNosOeufs").innerHTML = document.getElementById("leSelectPrixNosOeufs").value + "€";
+  }
+
+});
+
+
+var select = document.querySelector('#leSelectPrixNosPoules'),
+input = document.querySelector('input[type="button"]');
+
+select.addEventListener('change', () => {
+  if (document.getElementById("leSelectPrixNosPoules").value === "") {
+  document.getElementById("lePrixNosPoules").style.display = "none";
+
+  }
+  else {
+  document.getElementById("lePrixNosPoules").innerHTML = document.getElementById("leSelectPrixNosPoules").value + "€";
+  }
+
+});
+
+
+var select = document.querySelector('#leSelectPrixNosPosters'),
+input = document.querySelector('input[type="button"]');
+
+select.addEventListener('change', () => {
+  if (document.getElementById("leSelectPrixNosPosters").value === "") {
+  document.getElementById("lePrixNosPosters").style.display = "none";
+  }
+  else {
+  document.getElementById("lePrixNosPosters").innerHTML = document.getElementById("leSelectPrixNosPosters").value + "€";
+  }
+
+});
+
+
+var select = document.querySelector('#leSelectPrixNosTshirts'),
+input = document.querySelector('input[type="button"]');
+
+select.addEventListener('change', () => {
+  if (document.getElementById("leSelectPrixNosTshirts").value === "") {
+  document.getElementById("lePrixNosTshirts").style.display = "none";
+  }
+  else {
+  document.getElementById("lePrixNosTshirts").innerHTML = document.getElementById("leSelectPrixNosTshirts").value + "€";
+  }
+
+});
+
+
+var select = document.querySelector('#leSelectPrixNosFigurines'),
+input = document.querySelector('input[type="button"]');
+
+select.addEventListener('change', () => {
+  if (document.getElementById("leSelectPrixNosFigurines").value === "") {
+  document.getElementById("lePrixNosFigurines").style.display = "none";
+  }
+  else {
+  document.getElementById("lePrixNosFigurines").innerHTML = document.getElementById("leSelectPrixNosFigurines").value + "€";
+  }
+
+});
+</script>
+
+</body>
 </html>

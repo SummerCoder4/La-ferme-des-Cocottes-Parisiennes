@@ -28,10 +28,29 @@
   <section class="actualitesHome centred">
     <h2>Actualités</h2>
     <div class="actualiteHome">
-      <div class="actu1"><img onmouseout="this.src='img/actu2.png'" onmouseover="this.src='img/rooster.png'" alt="" src='img/actu2.png'/><h3>Actualités 1</h3></div>
-      <div class="actu2"><img src="img/rooster.png" alt=""/><h3>Actualités 2</h3></div>
-      <div class="actu3"><img src="img/actu2.png" alt=""/><h3>Actualités 3</h3></div>
-    </div>
+      <div class="gallery">
+        <div class="gallery-container">
+          <div class="gallery-item gallery-item-1" data-index="1">
+            <img src="https://media.giphy.com/media/BlEfRAkBfEkHS/giphy.gif"><h3>Titre</h3>
+          </div>
+          <div class="gallery-item gallery-item-2" data-index="2">
+            <img  src="https://c.tenor.com/s3XRC53jcCsAAAAC/chicken-funny.gif">
+            <h3>Titre</h3>
+          </div>
+          <div class="gallery-item gallery-item-3" data-index="3">
+            <img  src="https://media.giphy.com/media/rwCX06Y5XpbLG/giphy-downsized-large.gif"><h3>Titre</h3>
+          </div>
+          <div class="gallery-item gallery-item-4" data-index="4">
+          <img src="https://media.giphy.com/media/31SrNCMhxhGltYSzv0/giphy.gif" ><h3>Titre</h3>
+        </div>
+          <div class="gallery-item gallery-item-5" data-index="5">
+            <img src="img/rooster.png">
+            <h3>Titre</h3>
+          </div>
+        </div>
+        <div class="gallery-controls"></div>
+      </div>
+  </div>
   </section>
   <section class="aProposHome centred">
     <h2>À propos de nous</h2>
@@ -48,14 +67,14 @@
         <h2>Notre philosophie</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum saepe laborum optio recusandae, nihil deserunt tempore iusto quod distinctio, pariatur et quaerat! Quasi deleniti mollitia et aliquam ratione, fugit quo!</p>
       </section>
-            
+      
       <section class="green">
         <img src="img/logowho/greengreen.png" alt="countryside" width="100px">
         <h2>Mettez vous au vert</h2>
         <p>Le temps de quelques heures.... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis corporis magnam tenetur, consectetur deserunt provident voluptatem commodi error eos aperiam maxime excepturi non quo magni. Deserunt autem recusandae officia lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis corporis magnam tenetur, </p>
       </section>
     </div>
-        
+  
     <section class="farm">
       <h2>Activités de la ferme</h2>
           <article>
@@ -84,9 +103,10 @@
   </main>
 <!-----------------------------------  FIN QUI SOMMES-NOUS ------------------------------------->   
   <div w3-include-html="footer.html"></div>
-
+  
 	<script>includeHTML();</script>
+  <script type="text/javascript" src="script/actualites.js"></script>
   <script src="script/darkMode.js"></script>
+  
 </body>
-
 </html>
