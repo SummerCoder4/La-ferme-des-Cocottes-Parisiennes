@@ -127,6 +127,7 @@ a:hover{
    }
     
      .imgoeufs{
+       display: none;
        max-width: 200px;
      }
      .letitre{
@@ -137,12 +138,10 @@ a:hover{
 
     .partoeufs {
     padding:  0px ;
-    margin: 20px 20px 20px 0px;
     }
 
     .partpoules {
     padding:  0px ;
-    margin: 20px 20px 20px 0px;
     }
 
     .imgposterpoules{
@@ -173,6 +172,31 @@ a:hover{
     .lesoeufs {
       flex-direction: column;
       }
+    .addToCart {
+      display: flex;
+      justify-content: center;
+    }
+    .lestitres {
+
+      margin: 20px 20px 20px 20px;
+    }
+.texteoeufs {
+
+  margin: 0px;
+}
+
+.dropdownPack {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.le-prix {
+  margin: 0px;
+  font-size: 30px;
+}
+
+
   }     
 /* ///////////////////////////////////////////// */
 /* ///////////// FIN MEDIA QUERIES ///////////// */
