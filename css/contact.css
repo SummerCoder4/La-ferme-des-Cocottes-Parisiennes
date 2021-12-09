@@ -1,36 +1,35 @@
-/* ///////////////////     DEBUT   CONTACT     /////////////////// */
 .contactTitle {
     display: flex;
     justify-content: center;
     margin-top: 4%;
   }
 
-  h4 {
-    display: flex;
-    justify-content: center;
+  h5 {
+    text-align: center;
     margin-top: 4%;
   }
 
   #contact {
     padding: 40px;
-    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
   }
 
   .poules-contact {
     display: flex;
     padding-bottom: 10px;
-    justify-content: space-evenly;
-    border-radius: 50%;
+    justify-content: center;
   }
 
   form {
     margin: 0 auto;
-    width: 300px;
+    width: 150px;
     padding-top: 20px;
   }
 
   label {
-    line-height: 2;
+    line-height: 3;
   }
 
   input[type="text"],
@@ -41,4 +40,10 @@
     margin-bottom: 10px;
   }
 
-  /* ///////////////////    FIN  CONTACT     /////////////////// */
+  .mapContact {
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+  }
