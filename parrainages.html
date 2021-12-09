@@ -139,7 +139,9 @@
       <a href="https://www.poulepourtous.com/" target="_blank">En savoir plus</a>
     </div>
     <div class="descriFormule1Mobile">
+      <div class="titreDescriFormule">
       <p>Adopter une poule</p>
+    </div>
       <br>    
       <p>En colaboration avec l’association POULE POUR TOUS nous proposons d'adopter une poule à la retraite à toutes personnes possédant un jardin.</p>
         <br> 
@@ -150,7 +152,7 @@
       <input placeholder="Votre adresse mail"></input>
     </div>
     <div class="addToCart addToCartformule1">
-      <button class="btn">Adopter</button>
+      <button id ="btnAdopter" class="btn">Adopter</button>
     </div>
   </div>
 </div>
@@ -298,17 +300,17 @@ btnParrainer.addEventListener('click' , () => {
  */  if  ([textareaNomPouleValue.value, textareaMailParraiangeValue.value, leSelectPrixF1.value].every(isEmpty)) {
    console.log([textareaNomPouleValue.value, textareaMailParraiangeValue.value, leSelectPrixF1.value])
 
-    document.getElementById("spanMerciParrainage1").style.color = "black";
+    document.getElementById("spanMerciParrainage2").style.color = "black";
     document.getElementById("spanMerciParrainage1").innerHTML = capitalizeFirstLetter(textareaNomPouleValue.value) + " vous remercie !";
-    document.getElementById("spanMerciParrainage2").innerHTML = "Nous vous recontacterons prochainement !";
+    document.getElementById("spanMerciParrainage2").innerHTML = "Nous vous recontacterons prochainement!";
 
   }
 
   else if (textareaNomPouleValue.value == "" || textareaMailParraiangeValue.value == "" || leSelectPrixF1.value == "" ) {
 
-    document.getElementById("spanMerciParrainage1").style.color = "red";
-    document.getElementById("spanMerciParrainage1").innerHTML = "Veuillez choisir une formule et/ou donner un nom à votre filleule.";
-    document.getElementById("spanMerciParrainage2").innerHTML = "";
+    document.getElementById("spanMerciParrainage2").style.color = "red";
+    document.getElementById("spanMerciParrainage1").innerHTML = "&#8203;";
+    document.getElementById("spanMerciParrainage2").innerHTML = "Pensez à remplir tous les champs ;)";
 
 
   }
