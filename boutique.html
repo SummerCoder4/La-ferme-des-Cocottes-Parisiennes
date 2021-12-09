@@ -51,10 +51,13 @@
                   </select>
               
                   <div class="le-prix">
-                    <p>5 €</p>
+                    <p id="lePrixNosOeufs">&#8203;</p>
                   </div>
                   <div class="addToCart addToCartepack">
-                    <button class="btn">Ajouter au panier</button>
+                    <button id="btnAjoutNosOeufs" class="btn btnAjoutPanierAll">Ajouter au panier</button>
+                  </div>
+                  <div>
+                    <p id="messageAjoutPanierNosOeufs">&#8203;</p>
                   </div>
               </div>
             </div>
@@ -67,13 +70,12 @@
               <div class="letitre">
                 <h2 class="lestitres">Nos Poules</h2>
               </div>
-              <div class="lesoeufs">
+              <div class="lesoeufs divDesPoules">
     
-                <img class="imgoeufs" src="img/poules-boutique.jpg" alt="Image de Poules">
+                <img class="imgoeufs " src="img/poules-boutique.jpg" alt="Image de Poules">
               
                 <div class="texteoeufs">
                   <div class="descriPack">
-                      <br>    
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt lorem ut velit suscipit, nec condimentum est fringilla. Pellentesque tempor erat eu lorem suscipit, eu viverra dui venenatis. Donec eget pellentesque ante. Donec facilisis posuere lectus, sed accumsan metus ultrices quis. Pellentesque habitan. </p>
                   </div>
               
@@ -91,11 +93,14 @@
                         <option id="leSelectPrixNosPoulesOption3" " value="45">Poule Sussex : 45 €</option>
                       </select>
     
-                      <div class="le-prix">
-                        <p>20 € unité</p>
+                      <div class="le-prix lePrixNosOeufs">
+                        <p id="lePrixNosPoules">&#8203;</p>
                       </div>
                       <div class="addToCart addToCartepack">
-                        <button class="btn">Ajouter au panier</button>
+                        <button id="btnAjoutNosPoules" class="btn btnAjoutPanierAll">Ajouter au panier</button>
+                      </div>
+                      <div>
+                        <p id="messageAjoutPanierNosPoules">&#8203;</p>
                       </div>
                   </div>
                 </div>
@@ -118,17 +123,21 @@
                       <a>Poster poule du 93 : 12 €</a>
                     </div> -->
                     <select id="leSelectPrixNosPosters">
-                      <option value="" disabled selected>Selectionnez votre formule</option>
+                      <option value="" disabled selected>Selectionnez votre poster</option>
                       <option id="leSelectPrixNosPostersOption1" " value="12">Poster poule rockeuse : 12 €</option>
                       <option id="leSelectPrixNosPostersOption2" " value="12">Poster poule du 93 : 12 €</option>
                     </select>
 
                     <div class="le-prix">
-                      <p>12 € unité</p>
+                      <p id="lePrixNosPosters">&#8203;</p>
                     </div>
                     <div class="addToCart addToCartepack">
-                      <button class="btn">Ajouter au panier</button>
+                      <button id="btnAjoutNosPosters" class="btn btnAjoutPanierAll">Ajouter au panier</button>
                     </div>
+                    <div>
+                      <p id="messageAjoutPanierNosPosters">&#8203;</p>
+                    </div>
+
                   </div>
                 </div>
                 <div class="elements">
@@ -142,18 +151,22 @@
                       <a>T-shirt poules résidentes : 35 €</a>
                     </div> -->
                     <select id="leSelectPrixNosTshirts">
-                      <option value="" disabled selected>Selectionnez votre formule</option>
+                      <option value="" disabled selected>Selectionnez votre T-shirt</option>
                       <option id="leSelectPrixNosTshirtsOption1" " value="25">T-shirt poule Matuidi Charo : 25 €</option>
                       <option id="leSelectPrixNosTshirtsOption2" " value="25">T-shirt poule bien mafé : 25 €</option>
                       <option id="leSelectPrixNosTshirtsOption3" " value="35">T-shirt poule résidentes : 35 €</option>
                     </select>
 
                     <div class="le-prix">
-                      <p>25 € unité</p>
+                      <p id="lePrixNosTshirts">&#8203;</p>
                     </div>
                     <div class="addToCart addToCartepack">
-                      <button class="btn">Ajouter au panier</button>
+                      <button id="btnAjoutNosTshirts" class="btn btnAjoutPanierAll">Ajouter au panier</button>
                     </div>
+                    <div>
+                      <p id="messageAjoutPanierNosTshirts">&#8203;</p>
+                    </div>
+
                   </div>
                 </div>
                 <div class="elements">
@@ -166,17 +179,21 @@
                       <a>Figurines de poules à tête chercheuse: 28 €</a>
                     </div> -->   
                     <select id="leSelectPrixNosFigurines">
-                      <option value="" disabled selected>Selectionnez votre formule</option>
+                      <option value="" disabled selected>Selectionnez votre figurine</option>
                       <option id="leSelectPrixNosFigurinesOption1" " value="45">Figurines de poules tueuses: 45 €</option>
                       <option id="leSelectPrixNosFigurinesOption2" " value="28">Figurines de poules à tête chercheuse: 28 €</option>
                     </select>
 
                  <div class="le-prix">
-                      <p>15 € unité</p>
-                    </div>
+                  <p id="lePrixNosFigurines">&#8203;</p>
+                </div>
                     <div class="addToCart addToCartepack">
-                      <button class="btn">Ajouter au panier</button>
+                      <button id="btnAjoutNosFigurines" class="btn btnAjoutPanierAll">Ajouter au panier</button>
                     </div>
+                    <div>
+                      <p id="messageAjoutPanierNosFigurines">&#8203;</p>
+                    </div>
+
                   </div>
                 </div>
               </div>
@@ -187,12 +204,125 @@
               includeHTML();
             </script>
             <script src="boutique.html"></script>
-           <script>
-             const bouton = document.querySelectorAll(".btn");
-             bouton.forEach(item=>item.addEventListener("click", () =>{
-               alert("Votre article a bien été ajouté au panier !");
-               console.log("bouton");
-             }));
-           </script>
-          </body>
+
+<script>
+
+btnAjoutNosOeufs.addEventListener('click' , () => {
+
+  const btnAjoutNosOeufs = document.getElementById("btnAjoutNosOeufs");
+  const messageAjoutPanierNosOeufs = document.getElementById("messageAjoutPanierNosOeufs");
+
+  document.getElementById("messageAjoutPanierNosOeufs").innerHTML = "Votre article a bien été ajouté au panier !";
+}) 
+
+btnAjoutNosPoules.addEventListener('click' , () => {
+
+  const btnAjoutNosPoules = document.getElementById("btnAjoutNosPoules");
+  const messageAjoutPanierNosPoules = document.getElementById("messageAjoutPanierNosPoules");
+
+  document.getElementById("messageAjoutPanierNosPoules").innerHTML = "Votre article a bien été ajouté au panier !";
+}) 
+
+btnAjoutNosPosters.addEventListener('click' , () => {
+
+  const btnAjoutNosPosters = document.getElementById("btnAjoutNosPosters");
+  const messageAjoutPanierNosPosters = document.getElementById("messageAjoutPanierNosPosters");
+
+  document.getElementById("messageAjoutPanierNosPosters").innerHTML = "Votre article a bien été ajouté au panier !";
+}) 
+
+
+btnAjoutNosTshirts.addEventListener('click' , () => {
+
+  const btnAjoutNosTshirts = document.getElementById("btnAjoutNosTshirts");
+  const messageAjoutPanierNosTshirts = document.getElementById("messageAjoutPanierNosTshirts");
+
+  document.getElementById("messageAjoutPanierNosTshirts").innerHTML = "Votre article a bien été ajouté au panier !";
+})
+
+
+btnAjoutNosFigurines.addEventListener('click' , () => {
+
+  const btnAjoutNosFigurines = document.getElementById("btnAjoutNosFigurines");
+  const messageAjoutPanierNosFigurines = document.getElementById("messageAjoutPanierNosFigurines");
+
+  document.getElementById("messageAjoutPanierNosFigurines").innerHTML = "Votre article a bien été ajouté au panier !";
+}) 
+
+</script>
+
+<script>
+
+var select = document.querySelector('#leSelectPrixNosOeufs'),
+input = document.querySelector('input[type="button"]');
+
+select.addEventListener('change', () => {
+  if (document.getElementById("leSelectPrixNosOeufs").value === "") {
+  document.getElementById("lePrixNosOeufs").style.display = "none";
+  }
+  else {
+  document.getElementById("lePrixNosOeufs").innerHTML = document.getElementById("leSelectPrixNosOeufs").value + "€";
+  }
+
+});
+
+
+var select = document.querySelector('#leSelectPrixNosPoules'),
+input = document.querySelector('input[type="button"]');
+
+select.addEventListener('change', () => {
+  if (document.getElementById("leSelectPrixNosPoules").value === "") {
+  document.getElementById("lePrixNosPoules").style.display = "none";
+
+  }
+  else {
+  document.getElementById("lePrixNosPoules").innerHTML = document.getElementById("leSelectPrixNosPoules").value + "€";
+  }
+
+});
+
+
+var select = document.querySelector('#leSelectPrixNosPosters'),
+input = document.querySelector('input[type="button"]');
+
+select.addEventListener('change', () => {
+  if (document.getElementById("leSelectPrixNosPosters").value === "") {
+  document.getElementById("lePrixNosPosters").style.display = "none";
+  }
+  else {
+  document.getElementById("lePrixNosPosters").innerHTML = document.getElementById("leSelectPrixNosPosters").value + "€";
+  }
+
+});
+
+
+var select = document.querySelector('#leSelectPrixNosTshirts'),
+input = document.querySelector('input[type="button"]');
+
+select.addEventListener('change', () => {
+  if (document.getElementById("leSelectPrixNosTshirts").value === "") {
+  document.getElementById("lePrixNosTshirts").style.display = "none";
+  }
+  else {
+  document.getElementById("lePrixNosTshirts").innerHTML = document.getElementById("leSelectPrixNosTshirts").value + "€";
+  }
+
+});
+
+
+var select = document.querySelector('#leSelectPrixNosFigurines'),
+input = document.querySelector('input[type="button"]');
+
+select.addEventListener('change', () => {
+  if (document.getElementById("leSelectPrixNosFigurines").value === "") {
+  document.getElementById("lePrixNosFigurines").style.display = "none";
+  }
+  else {
+  document.getElementById("lePrixNosFigurines").innerHTML = document.getElementById("leSelectPrixNosFigurines").value + "€";
+  }
+
+});
+</script>
+
+</body>
 </html>

@@ -9,20 +9,27 @@
     flex-direction: row;
     }
     
+    .divDesPoules {
+      display: flex;
+      flex-direction: row-reverse;
+    }
 .imgoeufs {
-    min-width: 400px;
-    max-width: 450px;
+    min-width: 500px;
     border-radius: 50%;
     justify-content: flex-start;
     }
     
 .texteoeufs {
-margin:  20px 50px 20px 50px;
+   margin: 20px 50px 20px 50px;
+   padding-top: 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
     
 .boutonmenu1 {
     background-color: rgb(238, 235, 52);
-    color:blueviolet;
+    color:var(--third-color)
     border: none;
     cursor: pointer;
     padding:10px;
@@ -40,7 +47,6 @@ a:hover{
     
     .dropdownPack {
     position: relative;
-    margin-bottom: 40px;
     }
     
     .dropdownPack-child {
@@ -66,7 +72,7 @@ a:hover{
         }
         
         .addToCarte button{
-        color:blueviolet;
+        color:var(--third-color)
         width: 120px;
         height: 40px;
         background-color: #3D44D9;
@@ -83,7 +89,7 @@ a:hover{
          width: 2em;
          margin-top: -2.5em;
          font-size: xxx-large;
-         color: blue;
+         color: var(--third-color)
           
       }
     /* la boutique */
@@ -92,7 +98,6 @@ a:hover{
         justify-content: space-around;
         align-items: center;
         text-align: center;
-        color:blueviolet;
         margin:10px;
         flex-wrap: wrap;
       }
@@ -111,6 +116,9 @@ a:hover{
       max-width: 450px;
      }
 
+/* //////////////////////////////////////////// */
+/* /////////// DEBUT MEDIA QUERIES /////////// */
+/* //////////////////////////////////////////// */
      
   @media screen and (max-width: 650px) {
 
@@ -165,4 +173,7 @@ a:hover{
     .lesoeufs {
       flex-direction: column;
       }
-  }
+  }     
+/* ///////////////////////////////////////////// */
+/* ///////////// FIN MEDIA QUERIES ///////////// */
+/* ///////////////////////////////////////////// */
