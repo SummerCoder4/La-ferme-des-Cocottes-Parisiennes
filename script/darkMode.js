@@ -1,7 +1,5 @@
 const darkMode = document.querySelector('.darkMode') 
-
 const audio = new Audio('img/0440.mp3')
-
 
 darkMode.addEventListener('click', () => {
 
@@ -20,6 +18,3 @@ darkMode.addEventListener('click', () => {
  
   }
 })
-
-
-
