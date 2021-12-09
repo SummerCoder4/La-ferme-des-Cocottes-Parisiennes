@@ -6,6 +6,7 @@
     align-items: center;
     padding-top: 120px;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .lespoules2 {
@@ -27,22 +28,125 @@
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
-    background-color: #d8d5cf;
+    background-color: whitesmoke ;
+    border: 5px solid var(--second-color);
     margin: 1rem;
     width: 30%;
     height: 470px;
     align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+/*     #f7eed6 */
 }
 
 .poule__contenu {
     padding: 1rem;
 }
 
+.flipChicken {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.flipChicken:hover {
+  transform: rotateY(180deg);
+}
+
 .poulettes {
-    width: 80%;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 50%;
+}
+
+.derriere {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
 }
 
 .poule__desc {
   display: none;
   padding: 1rem;
 }
+
+.poules__popup-container {
+  position: fixed;
+  width: 350px;
+  height: 500px;
+  background-color: var(--primary-color);
+  right: 0;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  padding-bottom: 15px;
+  display: none;
+}
+
+.poules__popup-title {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.poules__popup-message {
+  border: 2px solid var(--third-color);
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  margin-bottom: 0.5rem;
+  border-radius: 20px;
+  padding: 0.5rem;
+}
+
+.poules__popup-message > p:nth-child(2n+1){
+  padding: 5px;
+  text-align: left;
+}
+
+.poules__popup-message> p:nth-child(2n){
+  text-align: right;
+}
+
+.poules__popup-close {
+  padding: 0.5rem;
+}
+
+.poules__popup-text {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 650px) { 
+    .poules__container{
+      width: 100%;
+      float: right;
+      height: 275px;
+      flex-direction: row-reverse;
+      padding: 0.3rem;
+      margin: 0.3rem;
+      justify-content: flex-start;
+    }
+  
+    .poules__container:nth-child(2n) {
+      flex-direction: row;
+    }
+  
+    .poulettes {
+      width: 50%;
+    }
+  
+    .poule__desc {
+      display: block;
+    }
+  
+  }
+  
+  @media screen and (min-width: 651px) and (max-width: 1080px) {
+    .poules__container {
+      width: 45%;
+    }
+  }
