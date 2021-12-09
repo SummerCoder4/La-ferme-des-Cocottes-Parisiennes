@@ -10,14 +10,15 @@
     }
     
 .imgoeufs {
-    width: 500px;
-    border-radius: 0px 15px 15px 0px;
+    min-width: 400px;
+    max-width: 450px;
+    border-radius: 50%;
     justify-content: flex-start;
     }
     
-.texteoeuf {
-    padding: 20px;
-    }
+.texteoeufs {
+margin:  20px 50px 20px 50px;
+}
     
 .boutonmenu1 {
     background-color: rgb(238, 235, 52);
@@ -90,28 +91,27 @@ a:hover{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding-top: 40px;
-        flex-wrap: wrap;
         text-align: center;
         color:blueviolet;
-     }
-     .lestitres{
-       margin-top: 40px;
-       font-size: 2em;
-     }
+        margin:10px;
+        flex-wrap: wrap;
+      }
+   
+.lestitres{
+   margin: 40px 40px 40px 40px;
+}
     
      .imgposterpoules{
-        width: 550px;
-        height: 550px;
+      max-width: 450px;
      }
      .imgt-shirt{
-        width: 550px;
-        height: 550px;
+      max-width: 450px;
      }
      .imgfigurines{
-        width: 550px;
-        height: 550px;
+      max-width: 450px;
      }
+
+     
   @media screen and (max-width: 650px) {
 
    i{
