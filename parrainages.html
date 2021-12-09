@@ -150,10 +150,14 @@
     </div>
 
     <div class="textareaMailParraiange">
-      <input placeholder="Votre adresse mail"></input>
+      <input id ="inputMailAdopter" placeholder="Votre adresse mail"></input>
     </div>
     <div class="addToCart addToCartformule1">
       <button id ="btnAdopter" class="btn">Adopter</button>
+      <div id="spanMerciAdopter" class="merciAdopter">
+        <span id="spanMerciAdopter1">&#8203;</span> 
+        <span id="spanMerciAdopter2"> &#8203;</span>
+      </div>
     </div>
   </div>
 </div>
@@ -296,22 +300,25 @@ btnParrainer.addEventListener('click' , () => {
     const textareaNomPouleValue = document.getElementById("textareaNomPouleValue");
     const textareaMailParraiangeValue = document.getElementById("textareaMailParraiangeValue");
     const leSelectPrixF1 = document.getElementById("leSelectPrixF1");
-    const isEmpty = (number) => number !== "";
+    const isNotEmpty = (number) => number !== "";
+    const isEmpty = (number) => number === "";
+
     
 
 /*   if (textareaNomPouleValue.value !== "" && textareaMailParraiangeValue.value !== "") {
- */  if  ([textareaNomPouleValue.value, textareaMailParraiangeValue.value, leSelectPrixF1.value].every(isEmpty)) {
+ */  if  ([textareaNomPouleValue.value, textareaMailParraiangeValue.value, leSelectPrixF1.value].every(isNotEmpty)) {
    console.log([textareaNomPouleValue.value, textareaMailParraiangeValue.value, leSelectPrixF1.value])
 
-    document.getElementById("spanMerciParrainage2").style.color = "black";
+   /*  document.getElementById("spanMerciParrainage2").style.color = "black"; */
     document.getElementById("spanMerciParrainage1").innerHTML = capitalizeFirstLetter(textareaNomPouleValue.value) + " vous remercie !";
     document.getElementById("spanMerciParrainage2").innerHTML = "Nous vous recontacterons prochainement!";
 
   }
 
-  else if (textareaNomPouleValue.value == "" || textareaMailParraiangeValue.value == "" || leSelectPrixF1.value == "" ) {
+/*   else if (textareaNomPouleValue.value == "" || textareaMailParraiangeValue.value == "" || leSelectPrixF1.value == "" ) { */  
+else if  ([textareaNomPouleValue.value, textareaMailParraiangeValue.value, leSelectPrixF1.value].every(isEmpty)) {
 
-    document.getElementById("spanMerciParrainage2").style.color = "red";
+    /* document.getElementById("spanMerciParrainage2").style.color = "red"; */
     document.getElementById("spanMerciParrainage1").innerHTML = "&#8203;";
     document.getElementById("spanMerciParrainage2").innerHTML = "Pensez à remplir tous les champs ;)";
 
@@ -319,6 +326,43 @@ btnParrainer.addEventListener('click' , () => {
   }
 
 })
+
+
+
+
+
+const btnAdopter = document.getElementById("btnAdopter");
+
+
+
+btnAdopter.addEventListener('click' , () => {
+
+
+const textareaMailParraiange = document.getElementById("inputMailAdopter")
+
+if (textareaMailParraiange.value !== "") {
+
+document.getElementById("spanMerciAdopter1").innerHTML = "Merci ! Nous vous recontacterons prochainement !";
+
+
+}
+
+else {
+
+  document.getElementById("spanMerciAdopter1").innerHTML = "Veuillez renseigner une adresse mail.";
+  textareaMailParraiange.style.borderColor = "red";
+
+
+}
+
+})
+
+
+
+
+
+
+
 
 </script>
 

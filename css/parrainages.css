@@ -504,6 +504,7 @@ padding: 20px 20px 00px 20px;
 
 .laFormule1 {
 justify-content: center;
+padding-top: 20px;
 
 }
 .texteFormule1 {
@@ -533,8 +534,10 @@ justify-content: flex-end;
 }
 
 .addToCartformule1 {
-display: flex;
-justify-content: flex-end;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .btnEtTexte {
@@ -551,6 +554,13 @@ margin: 0px 0px 10px 0px;
 }
 
 .merciParrainage  {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0px;
+}
+
+..merciAdopter  {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -576,7 +586,6 @@ flex-direction: row;
 }
 
 .textareaNomPoule input {
-max-width: 200px;
 height: 40px;
 resize: none;
 justify-content: flex-start;

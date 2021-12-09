@@ -671,10 +671,10 @@ article > .btn {
     justify-content: flex-start;
   }
 
-  .poules__container:nth-child(2n) {
+/*   .poules__container:nth-child(2n) {
     flex-direction: row;
   }
-
+ */
   .poulettes {
     width: 50%;
   }

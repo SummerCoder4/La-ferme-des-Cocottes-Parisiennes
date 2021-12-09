@@ -1,34 +1,49 @@
 const lePopUp = document.querySelector(".poules__popup-container")
 
-function lesPoules() {
+let Nicole ="Nicole"
+let Eleonor ="Eleonor"
+let Sabrina ="Sabrina"
+let Christelle ="Christelle"
+let Mystic ="Mystic"
+let Edith ="Edith"
+let Georges ="Georges"
+
+
+function lesPoules(a) {
+  console.log("fun" + a)
   lePopUp.style.display = "block";
+  nomDeLaPouleQuiParle = a
+  return nomDeLaPouleQuiParle;
+  
 }
 
 function fermerLesPoules() {
   lePopUp.style.display = "none";
+  console.log(nomDeLaPouleQuiParle)
+
 }
 
 
 const dataPoule = [
   "Cocote ?", "COCOTE", "Tecoco ?", "Teco cocotte ?", "coco teco ?", "COTECOTTE", "Cocote coco", "Eh merde", "Cocote cocococoTTEE",
-  "Cococotte", "tetetetecoco", "Kikeriki", "Cock-a-doodle-do", "Kokokog et Kekele", "Kokekoko "
+  "Cococotte", "tetetetecoco", "Kikeriki", "Cock-a-doodle-do", "Kokokog", "Kokekoko "
 ];
 
 const echange = document.querySelector(".poules__popup-message");
 let randomCot;
 
-
 document.addEventListener("DOMContentLoaded", () => {
   const inputField = document.getElementById("input");
   	inputField.addEventListener("keydown", function(e) {
-    	if (e.code === "Enter") {
-          const question = document.createElement("p");
-          question.innerHTML = inputField.value;
-          inputField.value = "";
+    	if (e.code === "Enter" && inputField.value !== "") {
+        const question = document.createElement("p");
+        question.innerHTML = "Vous : <br>" + inputField.value;
+        inputField.value = "";
         echange.appendChild(question);
 				randomCot = dataPoule[Math.floor(Math.random() * dataPoule.length)];
 				const answer = document.createElement("p");
-				answer.innerHTML = randomCot;
+        console.log(nomDeLaPouleQuiParle.value)
+				answer.innerHTML = `${lesPoules(nomDeLaPouleQuiParle)}: <br>${randomCot}`;
 				echange.appendChild(answer);
      };
     });
