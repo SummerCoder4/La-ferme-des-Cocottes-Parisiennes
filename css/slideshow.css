@@ -1,153 +1,5 @@
-.slideshow img, .slideshow2 img {
-	max-width: 100%
-}
-
-.slideshow, .slideshow2 {
-	border:5px solid white;
-	box-shadow:0 0 5px hsla(0,0%,0%,.5);
-	overflow:hidden;
-	width: 92.3077%;
-	margin:2rem auto;
-	position:relative
-}
-			
-.slideshow ul {	
-	padding: 49.75% 0 0 0;
-	margin:0;
-	position:relative
-}
-
-.slideshow2 ul {
-	padding: 66.67% 0 0 0;
-	margin:0;
-	position:relative
-}
-
-.slideshow li, .slideshow2 li {	
-	top:0;
-	left:0;
-	animation:slideshow 25s ease infinite;
-	position:absolute;
-	opacity:0;
-	list-style-type:none
-}
-
-.slideshow li:nth-child(2){animation-delay:5s}
-.slideshow li:nth-child(3){animation-delay:10s}
-.slideshow li:nth-child(4){animation-delay:15s}
-.slideshow li:nth-child(5){animation-delay:20s}
-
-.slideshow2 li:nth-child(2){animation-delay:5s}
-.slideshow2 li:nth-child(3){animation-delay:10s}
-.slideshow2 li:nth-child(4){animation-delay:15s}
-.slideshow2 li:nth-child(5){animation-delay:20s}
-
-@keyframes slideshow{		
-	0%{opacity:0}
-	10%{opacity:1}
-	20%{opacity:1}
-	25%{opacity:0}
-	100%{opacity:0}
-} 
-	
-@keyframes slideshow2 {		
-	0%{opacity:0}
-	10%{opacity:1}
-	20%{opacity:1}
-	25%{opacity:0}
-	100%{opacity:0}
-} 
-
-.slideshow span, .slideshow2 span{
-	background:rgba(0,0,0,0.7);
-	height:40px;
-	align-items: center;
-	justify-content: center;
-	display: flex;
-	color:white;
-	position:absolute;
-	bottom:0;
-	right:0;
-	left:0
-}
-
-.mySlides span {
-	background:rgba(0,0,0,0.7);
-	height:40px;
-	align-items: bottom;
-	justify-content: center;
-	display: flex;
-	color:white;
-	position:absolute;
-	bottom:0;
-	right:0;
-	left:0
-}
-
-/*****barre progression *****/
-
-.barre_progression {
-	position:absolute;
-	bottom:37px;
-	height:5px;
-	background:white;
-	animation:barre_progression 25s ease-out infinite	
-}
-
-.barre_progression2 {
-	position:absolute;
-	bottom:38px;
-	height:5px;
-	background:white;
-	animation:barre_progression 25s ease-out infinite	
-}
-
-/*****animation barre progression *****/    
-@keyframes barre_progression {
-0%,20%,40%,60%,80%,100%{width:0%;opacity:0}
-4%,24%,44%,64%,84%{width:0%;opacity:.3}
-16%,36%,56%,76%,96%{width:100%;opacity:.7}
-17%,37%,57%,77%,97%{width:100%;opacity:.3}
-18%,38%,58%,78%,98%{width:100%;opacity:0}
-}
-
-@media screen and (min-width: 650px)
-{
-  .slideshow, .slideshow2 {
-  	border:5px solid white;
-  	box-shadow:0 0 5px hsla(0,0%,0%,.5);
-  	overflow:hidden;
-    width: 600px;
-    margin:2rem auto;
-    position:relative
-  }
-                
-  .slideshow ul {	
-    padding: 49.75% 0 0 0;
-    margin:0;
-    position:relative
-  }
-    
-  .slideshow2 ul {
-    padding: 66.67% 0 0 0;
-    margin:0;
-    position:relative
-  }
-	.barre_progression {
-		position:absolute;
-		bottom:36px;
-		height:5px;
-		background:white;
-		animation:barre_progression 25s ease-out infinite	
-	}
-		
-	.barre_progression2 {
-		position:absolute;
-		bottom:38px;
-		height:5px;
-		background:white;
-		animation:barre_progression 25s ease-out infinite	
-	}
+h4 {
+	width: unset;
 }
 
 .menu {
@@ -166,66 +18,218 @@
 	text-align: center;
 }
 
-/* Slider Section */
-/* Slideshow container */
-/*
-.slideshow-container {
-	max-width: 800px;
-	position: relative;
-	margin: 20px;
+.slider {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+}
+	
+.name-food { 
+	grid-area: 1 / 1 / 2 / 2;
+	text-align: center;
+}
+
+.slideshow {
+	grid-area: 2 / 1 / 3 / 2;
+}
+
+.petitpoints {
+	grid-area: 3 / 1 / 4 / 2;
+}
+
+.name-drink { 
+	grid-area: 1 / 1 / 2 / 2;
+	text-align: center;
+}
+
+.slideshow2 {
+	grid-area: 2 / 1 / 3 / 2;
+}
+
+.petitscercles {
+	grid-area: 3 / 1 / 4 / 2;
+	justify-self: center;
+}
+
+.mySlides span, .mySlides-2 span {
+	background:rgba(0,0,0,0.7);
+	height:30px;
 	display: flex;
 	justify-content: center;
+	color:white;
+	position:relative;
+	bottom:0;
+	right:0;
+	left:0;
+	text-align: center;
 }
-  
+
+/* Slider Section */
+/* Slideshow container */
+.slideshow, .slideshow2 {
+	display: flex;
+	flex-direction: row;
+  justify-content: center;
+  width: 90%;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
 /* Hide the images by default */
-/*
 .mySlides {
-	display: none;
+  display: none;
+  justify-content: center;
+}
+
+.mySlides img, .mySlides-2 img{
+  /*margin: 20px;*/
+  display: flex;
 	justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+	height: auto;
 }
-  
-.mySlides img{
-	margin: 20px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 80%;
+
+.mySlides-2 {
+  display: none;
+  justify-content: center;
 }
-    
+
 /* The dots/bullets/indicators */
-/*
-dot {
-	cursor: pointer;
-	height: 15px;
-	width: 15px;
-	margin: 0 2px;
-	background-color: #bbb;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
+.dot, .dot-2 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
-  
-.active, .dot:hover {
-	transition-duration: 1s;
-	background-color: #717171;
+
+.active, .dot:hover, .dot-2:hover {
+  transition-duration: 2s;
+  background-color: #717171;
 }
-  
+
 /* Fading animation */
-/*
-fade {
-	-webkit-animation-name: fade;
-	-webkit-animation-duration: 1.5s;
-	animation-name: fade;
-	animation-duration: 1.5s;
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
-  
+
 @-webkit-keyframes fade {
-	from {opacity: .4}
-	to {opacity: 1}
+  from {opacity: .4}
+  to {opacity: 1}
 }
-  
+
 @keyframes fade {
-	from {opacity: .4}
-	to {opacity: 1}
+  from {opacity: .4}
+  to {opacity: 1}
 }
-*/
+
+@media screen and (min-width: 748px) and (max-width: 1180px){
+	.general {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.slider {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, auto);
+		grid-column-gap: 10px;
+		grid-row-gap: 10px;
+		width: 748px;
+	}
+
+	.name-food {
+		grid-area: 1 / 1 / 2 / 2;
+	}
+
+	.slideshow {
+		grid-area: 2 / 1 / 3 / 2;
+	}
+
+	.petitpoints {
+		grid-area: 3 / 1 / 4 / 2;
+		margin-bottom: 20px;
+	}
+	
+	.name-drink {
+		grid-area: 1 / 1 / 2 / 2;
+	}
+
+	.slideshow2 {
+		grid-area: 2 / 1 / 3 / 2;
+	}
+
+	.petitscercles {
+		grid-area: 3 / 1 / 4 / 2;
+		margin-bottom: 20px;
+		justify-self: center;
+	}	
+}
+
+@media screen and (min-width: 1181px) { 
+	.general {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.slider {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		width: 1180px;
+		justify-content: center;
+	}
+	
+	.name-food { 
+		grid-area: 1 / 1 / 3 / 2; 
+		text-align: center;
+		align-self: center;
+	}
+
+	.name-drink { 
+		grid-area: 1 / 2 / 3 / 3; 
+		text-align: center;
+		align-self: center;
+	}
+
+	.slideshow { 
+		grid-area: 1 / 2 / 2 / 3; 
+		width: 758px;
+		margin-bottom: 10px;
+		margin-left: 1px;
+		margin-right: 1px;
+	}
+
+	.slideshow2 { 
+		grid-area: 1 / 1 / 2 / 2;
+		width: 758px;
+		margin-bottom: 10px; 
+	}
+
+	.petitpoints { 
+		grid-area: 2 / 2 / 3 / 3;
+		margin-bottom: 10px;
+		margin-left: 1px;
+		margin-right: 1px;
+	}
+
+	.petitscercles {
+		grid-area: 2 / 1 / 3 / 2; 
+		justify-self: center;
+		margin-bottom: 10px;
+	} 
+}
