@@ -14,12 +14,19 @@ function lesPoules(a) {
   lePopUp.style.display = "block";
   nomDeLaPouleQuiParle = a
   return nomDeLaPouleQuiParle;
-  
 }
 
 function fermerLesPoules() {
   lePopUp.style.display = "none";
   console.log(nomDeLaPouleQuiParle)
+
+}
+
+function resetChat() {
+ 
+  const removeElements = (elms) => elms.forEach(el => el.remove());
+
+  removeElements( document.querySelectorAll(".classAsupprimer") );
 
 }
 
@@ -38,12 +45,14 @@ document.addEventListener("DOMContentLoaded", () => {
     	if (e.code === "Enter" && inputField.value !== "") {
         const question = document.createElement("p");
         question.innerHTML = "Vous : <br>" + inputField.value;
-        inputField.value = "";
+        question.classList.add("classAsupprimer");
+         inputField.value = "";
         echange.appendChild(question);
 				randomCot = dataPoule[Math.floor(Math.random() * dataPoule.length)];
 				const answer = document.createElement("p");
         console.log(nomDeLaPouleQuiParle.value)
 				answer.innerHTML = `${lesPoules(nomDeLaPouleQuiParle)}: <br>${randomCot}`;
+        answer.classList.add("classAsupprimer");
 				echange.appendChild(answer);
      };
     });
