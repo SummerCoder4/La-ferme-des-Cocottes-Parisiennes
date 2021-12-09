@@ -54,7 +54,7 @@
   margin: 0 auto;
   position: relative;
 }
-.gallery-item > img {width: 100%; border-radius: 150px;}
+.gallery-item > img {width: 100%; height: 100%; border-radius: 150px;}
 .gallery-item {
   height: 150px;
   opacity: 0;
@@ -340,7 +340,6 @@ article img {
   }
   .who {
     display: flex;
-    flex-flow: row wrap;
     justify-content: center ;  
   }
   .philogreen {
