@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="script/starter.js"></script>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/residentes.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" type="image/png" href="img/chickenIco.png"/>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
-    <title>Nos résidentes - La ferme des Cocottes Parisiennes</title>
-  </head>
-  <body>
+   <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="script/starter.js"></script>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/residentes.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="shortcut icon" type="image/png" href="img/chickenIco.png"/>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+        <title>Nos résidentes - La ferme des Cocottes Parisiennes</title>
+    </head>
+    <body class="light">
       <header>
         <div w3-include-html="navbar.html"></div>
         <script>
           includeHTML();
         </script>
       </header>
-      <div class="lespoules">
-        <div class="poules__container">
-          <div class="flipChicken"> <!-- EQUIVALENT DE LA CARTE -->
-            <img class="poulettes" src=".\img\poulet1.jpg" alt="Image poulet 1"> <!-- AVANT -->
-            <div class="derriere">Voici Nicole, cette poule est une grande dormeuse mais le contact avec les clients ne la dérange pas.</div> <!-- ARRIERE -->
+        <div class="darkMode">Nuit</div>
+        <div class="lespoules">
+          <div class="poules__container">
+          <div class="flipChicken"> 
+            <img class="poulettes" src=".\img\poulet1.jpg" alt="Image poulet 1"> 
+            <div class="derriere">Voici Nicole, cette poule est une grande dormeuse mais le contact avec les clients ne la dérange pas.</div> 
           </div>
           <div class="poules__bio">
             <p class="poule__contenu">Nicole</p>
@@ -109,9 +110,10 @@
       </div>
       <!-- FOOTER -->
       <div w3-include-html="footer.html"></div>
-      <script src="/script/residentes.js"></script>
-      <script>
-        includeHTML();
-      </script>
-  </body>
+			<script>
+				includeHTML();
+			</script>
+      <script src="script/darkMode.js"></script>
+      <script src="/script/residentes.js"></script>     
+</body>
 </html>

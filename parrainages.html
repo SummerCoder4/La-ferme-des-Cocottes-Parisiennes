@@ -12,7 +12,8 @@
     <script type="text/javascript" src="script/starter.js"></script>
     <title>Parrainages - La ferme des Cocottes Parisiennes</title>
 </head>
-<body>
+<body class="light">
+  <div class="darkMode">Nuit</div>
   <header>
     <div w3-include-html="navbar.html"></div>
 		<script>
@@ -29,24 +30,27 @@
   </div>
 
 <!-- ////////////////////////////////////////////////////////////////////////////   FORMULE 1   ///////////////////////////////////////////////////////////////////////////////// -->
-<div class="rondJaune" |=""><img src="img/Ellipse 1.png" alt=""></div>
 
-<div class="rondRose" |=""></div>
 
 <div class="laFormule1">
   <img class="pouleFormule1 imgPouleParrainage" src="img/poule_formule1.jpg" alt="Une poule dans l'herbe">
   <div class="texteFormule1">
     <div class="descriFormule1">
+      <div class="titreDescriFormule">
         <p>Parrainer une poule </p>
+      </div>        
         <br>  
         <p>Formule 1 : Vous parrainez/marrainez une poule pendant 1 an (du 1er janvier au 31 décembre) en participant à son achat à hauteur 50% du prix de la poule, soit 5€.</p>
-        <br>  
         <p>Formule 2 : L'ensemble de la formule 1 + des prix préférentiels et une priorité sur les oeufs de votre filleule. 30€</p>
         <br>  
         <a href="" target="_blank">En savoir plus</a>
     </div>
+
+    
     <div class="descriFormule1Mobile">
-      <p>Parrainer une poule </p>
+      <div class="titreDescriFormule">
+        <p>Parrainer une poule </p>
+      </div> 
       <br>  
       <p>Formule 1 : Parrainez une poule pendant 1 an pour 5€.</p>
       <br>  
@@ -55,24 +59,34 @@
       <a href="" target="_blank" target="_blank">En savoir plus</a>
     </div>
     <select id="leSelectPrixF1">
-      <option value="rien" disabled selected>Selectionnez votre formule</option>
-      <option value="5">Formule 1 = 5€</option>
-      <option value="30">Formule 2 = 30€</option>
+      <option value="" disabled selected>Selectionnez votre formule</option>
+      <option id="leSelectPrixF1Option1" " value="5">Formule 1 = 5€</option>
+      <option id="leSelectPrixF1Option2" " value="30">Formule 2 = 30€</option>
     </select>
     <div class="textareaNomPoule">
-      <textarea placeholder="Choix du nom de votre poule"></textarea>
-      <button>Vérification</button>
+      <input id ="textareaNomPouleValue" placeholder="Choix du nom de votre poule"></input>
+      <button class="btn btnVerif" id="btnVerif">Vérification</button>
     </div>
+    <div class="textareaMailParraiange">
+      <input id ="textareaMailParraiangeValue" placeholder="Votre adresse mail"></input>
+    </div>
+
     <div class="lePrix lePrix1">
-      <p id="lePrixF1">10€</p>
+      <p id="lePrixF1">&#8203;</p>
     </div>
 <!--     <button onclick="changePrixF1()">Change prix</button>
  -->
-    <div class="addToCart addToCartformule1">
-      <button>Parrainer</button>
+    <div class="addToCart addToCartformule1 btnEtTexte">
+      <button id="btnParrainer" class="btn">Parrainer</button>
+      <div id="spanMerciParrainage" class="merciParrainage">
+        <span id="spanMerciParrainage1">&#8203;</span> 
+        <span id="spanMerciParrainage2"> &#8203;</span>
+      </div>
     </div>
+
+
     <div class="addToCart addToCartformule1Mobile">
-      <button>Parrainer</button>
+      <button class="btn">Parrainer</button>
     </div>
   </div>
 </div>
@@ -83,14 +97,21 @@
   <img class="pouleFormule2 imgPouleParrainage" src="img/pouleDesert.jpg" alt="Six poules sur du sable">
   <div class="texteFormule2">
     <div class="descriFormule2">
+      <div class="titreDescriFormule">
         <p>Faire un don</p>
+      </div> 
+        
         <br>    
         <p>Participer au financement d'une poule pondeuse qui sera envoyée, en collaboration avec l'association les Enfants du désert, au Maroc ou en Argentine. Cela permettra d'offrir aux personnes présentent sur place une source de nourriture stable et réguliére.</p>
     </div>
+
+
     <div class="descriFormule2Mobile">
-      <p>Faire un don</p>
+      <div class="titreDescriFormule">
+        <p>Faire un don</p>
+      </div> 
       <br>    
-      <p>En colaboration avec l’association les Enfants du désert nous proposons de participer au financement et l'envoie d'une poule pondeuse dans un pays en voie de developpement</p>
+      <p>En colaboration avec l’association les Enfants du désert nous proposons de participer au financement et l'envoie d'une poule pondeuse dans un pays dans le besoin</p>
   </div>
     <br>  
     <a href="https://enfantsdudesert.org/" target="_blank">En savoir plus</a>
@@ -98,7 +119,7 @@
       <p>10 €</p>
     </div>
     <div class="addToCart addToCartformule2">
-      <button>Faire un don</button>
+      <button class="btn">Faire un don</button>
     </div>
   </div>
 </div>
@@ -109,7 +130,9 @@
   <img class="pouleFormule1 imgPouleParrainage" src="img/adopterPoule.jpg" alt="Une fille caresse le ventre d'une poule blanche">
   <div class="texteFormule1">
     <div class="descriFormule1">
-      <p>Adopter une poule</p>
+      <div class="titreDescriFormule">
+        <p>Adopter une poule</p>
+      </div> 
       <br>    
       <p>Les poules peuvent pondre jusqu’à l’âge de 5 ans mais leur productivité diminuant dès leurs 18 mois, elles sont purement et simplement envoyées à l’abattoir.
         Pour leur éviter une fin certaine, Nous nous associons avec l’association POULE POUR TOUS et proposons d'adopter une poule à toutes les personnes possédant un jardin, tout en reclyclant les déchets alimentaires et en ayant la possibilité de récolter des œufs frais. </p>
@@ -123,14 +146,19 @@
         <br> 
       <a href="https://www.poulepourtous.com/" target="_blank">En savoir plus</a>
     </div>
+
+    <div class="textareaMailParraiange">
+      <input placeholder="Votre adresse mail"></input>
+    </div>
     <div class="addToCart addToCartformule1">
-      <button>Adopter</button>
+      <button class="btn">Adopter</button>
     </div>
   </div>
 </div>
 
-<div class="rondJaune2"></div>
-<div class="rondRose2"></div>
+
+
+
 
 <!-- ////////////////////////////////////////////////////////////////////////////   VOS FILLEULES   ///////////////////////////////////////////////////////////////////////////////// -->
 
@@ -178,15 +206,38 @@
   </div>
 </div> -->
 
+<div class="rondJaune" |=""><img src="img/Ellipse 1.png" alt=""></div>
+<div class="boiteRose"> 
+  <div class="rondRose"><img src="" alt=""></div>
+</div>
+<div class="boiteJaune2">
+  <div class="rondJaune2"><img src="" alt=""></div>
+</div>
+<div class="boiteJaune3">
+  <div class="rondJaune3"><img src="" alt=""></div>
+</div>
+<div class="boiteRose2">
+  <div class="rondRose2"><img src="" alt=""></div>
+</div>
+<div class="boiteRose3">
+  <div class="rondRose3"><img src="" alt=""></div>
+</div>
+<div class="boiteRose4">
+  <div class="rondRose4"><img src="" alt=""></div>
+</div>
+
 
 <!-- ////////////////////////////////////////////////////////////////////////////   FOOTER   ///////////////////////////////////////////////////////////////////////////////// -->
 
 <div w3-include-html="footer.html"></div>
+
 	<script>
 		includeHTML();
 	</script>
+  <script src="script/darkMode.js"></script>
 
-<!--
+
+<!-- <script>
 function changePrixF1() {
   if (document.getElementById("leSelectPrixF1").value === "rien") {
     document.getElementById("lePrixF1").style.display = "none";
@@ -194,8 +245,117 @@ function changePrixF1() {
   else {
   document.getElementById("lePrixF1").innerHTML = document.getElementById("leSelectPrixF1").value + "€";
   }
+}
+</script>  -->
+
+<script>
+/* 
+var select = document.querySelector('#leSelectPrixF1'),
+    input = document.querySelector('input[type="button"]');
+    
+select.addEventListener('change', () => {
+  if (document.getElementById("leSelectPrixF1").value === "rien") {
+    document.getElementById("lePrixF1").style.display = "none";
+  }
+  else {
+  document.getElementById("lePrixF1").innerHTML = document.getElementById("leSelectPrixF1").value + "€";
+  }
+
+}); */
+
+
+
+
+var select = document.querySelector('#leSelectPrixF1'),
+    input = document.querySelector('input[type="button"]');
+    
+select.addEventListener('change', () => {
+  if (document.getElementById("leSelectPrixF1").value === "") {
+    document.getElementById("lePrixF1").style.display = "none";
+  }
+  else {
+  document.getElementById("lePrixF1").innerHTML = document.getElementById("leSelectPrixF1").value + "€";
+  }
+
+});
 
 </script>
- -->
+
+<script>
+
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+const btnParrainer = document.getElementById("btnParrainer");
+
+btnParrainer.addEventListener('click' , () => {
+
+    const textareaNomPouleValue = document.getElementById("textareaNomPouleValue");
+    const textareaMailParraiangeValue = document.getElementById("textareaMailParraiangeValue");
+    const leSelectPrixF1 = document.getElementById("leSelectPrixF1");
+    const isEmpty = (number) => number !== "";
+    
+
+/*   if (textareaNomPouleValue.value !== "" && textareaMailParraiangeValue.value !== "") {
+ */  if  ([textareaNomPouleValue.value, textareaMailParraiangeValue.value, leSelectPrixF1.value].every(isEmpty)) {
+   console.log([textareaNomPouleValue.value, textareaMailParraiangeValue.value, leSelectPrixF1.value])
+
+    document.getElementById("spanMerciParrainage1").style.color = "black";
+    document.getElementById("spanMerciParrainage1").innerHTML = capitalizeFirstLetter(textareaNomPouleValue.value) + " vous remercie !";
+    document.getElementById("spanMerciParrainage2").innerHTML = "Nous vous recontacterons prochainement !";
+
+  }
+
+  else if (textareaNomPouleValue.value == "" || textareaMailParraiangeValue.value == "" || leSelectPrixF1.value == "" ) {
+
+    document.getElementById("spanMerciParrainage1").style.color = "red";
+    document.getElementById("spanMerciParrainage1").innerHTML = "Veuillez choisir une formule et/ou donner un nom à votre filleule.";
+    document.getElementById("spanMerciParrainage2").innerHTML = "";
+
+
+  }
+
+})
+
+</script>
+
+<script>
+
+const nomArrayPoule = ["Nicole", "Sabrina", "Eleonor", "Christelle", "Mystic", "Edith", "Georges"];
+const doublon = (nomPouleDoublon) => nomPouleDoublon !== "";
+
+
+const btnVerif = document.getElementById("btnVerif");
+
+
+btnVerif.addEventListener('click' , () => {
+
+  const textareaNomPouleValue = document.getElementById("textareaNomPouleValue");
+  const btnVerif = document.getElementById("btnVerif");
+
+
+
+if (nomArrayPoule.includes(capitalizeFirstLetter(textareaNomPouleValue.value))) {
+  document.getElementById("textareaNomPouleValue").style.borderColor = "red";
+  document.getElementById("textareaNomPouleValue").style.borderWidth = "3px";
+  btnVerif.style.background = "darkred";
+
+
+
+}
+else {
+  document.getElementById("textareaNomPouleValue").style.borderColor = "lightgreen";
+  document.getElementById("textareaNomPouleValue").style.borderWidth = "3px";
+  btnVerif.style.background = "green";
+
+
+
+
+}
+
+})
+</script>
+
 </body>
 </html>

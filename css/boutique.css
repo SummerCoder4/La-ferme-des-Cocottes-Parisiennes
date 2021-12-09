@@ -9,19 +9,27 @@
     flex-direction: row;
     }
     
-    .imgoeufs {
-    width: 500px;
-    border-radius: 0px 15px 15px 0px;
+    .divDesPoules {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+.imgoeufs {
+    min-width: 500px;
+    border-radius: 50%;
     justify-content: flex-start;
     }
     
-    .texteoeuf {
-    padding: 20px;
-    }
+.texteoeufs {
+   margin: 20px 50px 20px 50px;
+   padding-top: 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
     
-    .boutonmenu1 {
+.boutonmenu1 {
     background-color: rgb(238, 235, 52);
-    color:blueviolet;
+    color:var(--third-color)
     border: none;
     cursor: pointer;
     padding:10px;
@@ -29,13 +37,12 @@
     font-size: 18px;
     }
     
-    .boutonmenu1:hover {
-     background-color: #3D44D9;
+.boutonmenu1:hover {
+    background-color: #3D44D9;
     }
-    
+
     .dropdownPack {
     position: relative;
-    display: inline-block;
     }
     
     .dropdownPack-child {
@@ -61,81 +68,132 @@
         }
         
         .addToCarte button{
-        color:blueviolet;
+        color:var(--third-color)
         width: 120px;
         height: 40px;
         background-color: #3D44D9;
         border-radius: 15px;
         border: 0px;
         }
+      hr{
+         width: 100%;
+      }
+      i{
+         position: fixed;
+         right: 0;
+         top: 50%;
+         width: 2em;
+         margin-top: -2.5em;
+         font-size: xxx-large;
+         color: var(--third-color)
+          
+      }
     /* la boutique */
     .articles {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding-top: 40px;
-        flex-wrap: wrap;
         text-align: center;
-        color:blueviolet;
-     }
-     .lestitres{
-       margin-top: 40px;
-     }
+        margin:10px;
+        flex-wrap: wrap;
+      }
+   
+.lestitres{
+   margin: 40px 40px 40px 40px;
+}
     
      .imgposterpoules{
-        width: 550px;
-        height: 550px;
+      max-width: 450px;
      }
      .imgt-shirt{
-        width: 550px;
-        height: 550px;
+      max-width: 450px;
      }
      .imgfigurines{
-        width: 550px;
-        height: 550px;
+      max-width: 450px;
      }
-     @media screen and (max-width: 650px) {
-     .descriPack{
-       display: none;
 
-     }
+/* //////////////////////////////////////////// */
+/* /////////// DEBUT MEDIA QUERIES /////////// */
+/* //////////////////////////////////////////// */
+     
+  @media screen and (max-width: 650px) {
+
+   i{
+      font-size: xx-large;
+   }
+    
      .imgoeufs{
+       display: none;
        max-width: 200px;
      }
      .letitre{
     
        margin: 20px;
      }
-    }     
+         
 
-.partoeufs {
-padding:  0px ;
-margin: 20px 20px 20px 0px;
-height: 200px;
+    .partoeufs {
+    padding:  0px ;
+    }
+
+    .partpoules {
+    padding:  0px ;
+    }
+
+    .imgposterpoules{
+      width: 90%;
+      height: auto;
+      
+   }
+   .imgt-shirt{
+      width: 90%;
+      height: auto;
+     
+   }
+   .imgfigurines{
+      width: 90%;
+      height: auto;
+      
+   }
+
+    .texteoeuf {
+    padding: 10px;  
+    }
+
+
+    article > .btn {
+      width: 100px;
+      height: 30px;
+    }
+    .lesoeufs {
+      flex-direction: column;
+      }
+    .addToCart {
+      display: flex;
+      justify-content: center;
+    }
+    .lestitres {
+
+      margin: 20px 20px 20px 20px;
+    }
+.texteoeufs {
+
+  margin: 0px;
 }
 
-.partpoules {
-padding:  0px ;
-margin: 20px 20px 20px 0px;
-height: 200px;
+.dropdownPack {
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
-.imgposterpoules {
-  width: 90%;
-  /* height: 550px; */
-  /*   margin: 50px;*/ 
-  /* margin: 0; */
+.le-prix {
+  margin: 0px;
+  font-size: 30px;
 }
 
-.texteoeuf {
-padding: 10px;  
-}
 
-.partgoodies {
-max-height: 200px; 
-}
-
-article > .btn {
-  width: 100px;
-  height: 30px;
-}
+  }     
+/* ///////////////////////////////////////////// */
+/* ///////////// FIN MEDIA QUERIES ///////////// */
+/* ///////////////////////////////////////////// */

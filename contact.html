@@ -10,11 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	  <link rel="shortcut icon" type="image/png" href="img/chickenIco.png"/>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="script/starter.js"></script>
+    <script src="script/starter.js"></script>
     <title>Contact - La ferme des Cocottes Parisiennes</title>
 
 </head>
-<body>
+<body class="light">
+  <div class="darkMode"> Nuit </div>
 
   <header>
 		<div w3-include-html="navbar.html"></div>
@@ -22,50 +23,31 @@
 			includeHTML();
 		</script>
 	</header>
+    
     <h2 class="contactTitle">Dites-nous tout !</h2>
 
-    <h4>Retrouvez-vous à notre point de vente habituel du lundi au samedi de 7h à 20h sans interruption ! 
+    <h5>Retrouvez-vous à notre point de vente habituel du lundi au samedi de 7h à 20h sans interruption ! 
       <br /><br />
       Je vous invite à nous contacter via le formulaire ci-dessous pour toute question éventuelle.
-    </h4>
+    </h5>
     <section id="contact">
       <div class="poules-contact">
         <img src="img/poussin.png" alt="ImageContact1"
-          height="300"
-          width="300"
-        />
-        <img src="img/poule.png" alt="ImageContact2"
-          height="300"
-          width="300"
+          height="250"
+          width="250"
         />
       </div>
-      <!-- <form name="form4" action="">
-          <label for="name">Nom et Prénom :</label><br />
-          <input type="text" id="name" name="name" placeholder="Eddy Malou" /><br />
-          <label for="email">Email :</label><br />
-          <input type="email" id="email" name="email" placeholder="exemple@gmail.com"
-        /><br /> -->
-        <script type="text/javascript">
-          function ValiderMail(formulaire) {
-             if (formulaire.mail.value.indexOf("@",0)<0) {alert("Adresse mail saisie invalide.\nLe formulaire ne sera pas validé.")}
-             else {
-                alert("formulaire validé.\nPour valider un formulaire : formulaire.submit()");
-                // Pour valider le formulaire en javascript :
-                // formulaire.submit()
-             }
-          }
-       </script>
        <label for="message">Message :</label><br />
        <textarea id="message" name="message"></textarea>
-       <form name="form4" action="">
+       <form name="form4" action="#">
           <h4>Entrez une adresse mail valide (du type nom@domaine.com)</h4>
           <br />
-          <input type="texte" name="mail">
+          <input type="text" name="mail">
           <br /><br />
           <input class="btn" type="button" value="Envoyer" onclick="ValiderMail(this.form)">
        </form>
         <br /><br />
-        </form>
+        <iframe class="mapContact" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1312.3224347963446!2d2.252372400972124!3d48.86498199659364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1cb042fbe2def12c!2zNDjCsDUxJzUzLjkiTiAywrAxNScxMS43IkU!5e0!3m2!1sfr!2sfr!4v1638896903830!5m2!1sfr!2sfr" width="250" height="400" allowfullscreen="" loading="lazy"></iframe>
     </section>
     <!-- FOOTER -->
     <div w3-include-html="footer.html"></div>
@@ -73,5 +55,8 @@
         includeHTML();
       </script>
     <script type="text/javascript" src="script/contact.js"></script>
+    <script src="script/contact.js"></script>
+    <script src="script/darkMode.js"></script>
+  
   </body>
 </html>
