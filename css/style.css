@@ -7,6 +7,7 @@
     --font-titre : 'Outfit', sans-serif, 600;
     --font-content : 'Lato', sans-serif;
 }
+
 * {
   box-sizing: border-box;
   text-decoration: none;
@@ -35,7 +36,6 @@ ul li {
   padding: 0;
   list-style: none;
 }
-
 
 /* 80 vw */
 .partgoodies, .partoeufs, .partpoules, h5, #contact, .lespoules {
@@ -73,15 +73,23 @@ a {
   transform: translateX(-50%);
 }
 
+p {
+  font-size: 1em; 
+  line-height: 1.5;
+}
 
-p {font-size: 1em; line-height: 1.5;}
-
-h1{ 
+h1 { 
   font-family: var(--font-titre);
   font-size: 3em;
   font-weight: 600;
   text-transform: uppercase;
   color: var(--second-color);
+  text-align: center;
+}
+
+h1 > span {
+    font-size: smaller;
+    font-weight: lighter;
 }
 
 h2 {
@@ -116,6 +124,7 @@ h3 {
   background-color: var(--second-color);
   border:var(--third-color) solid 3px;
 }
+
 /* MENU NAVIGATION */
  header {
   z-index: 1000000000;
@@ -163,6 +172,12 @@ h3 {
   transform: translateY(-50%);
 }
 
+.rondJaune {
+  position: absolute;
+  left: -150px;
+  z-index: -1;
+}
+
 .container-lignes {
   width: 40px;
   height: 40px;
@@ -180,13 +195,16 @@ h3 {
   height: 5px;
   background:var(--third-color);
 }
-.ligne:nth-child(1){
+
+.ligne:nth-child(1) {
   top: 0px;
 }
-.ligne:nth-child(2){
+
+.ligne:nth-child(2) {
   top: 15px;
 }
-.ligne:nth-child(3){
+
+.ligne:nth-child(3) {
   top: 30px;
 }
 
@@ -196,6 +214,7 @@ h3 {
   transform 0.2s ease-in-out,
   top 0.2s 0.2s ease-in-out;
 }
+
 .b1 .ligne:nth-child(2) {
   transition: opacity 0.2s 0.2s ease-in-out;
 } 
@@ -207,10 +226,12 @@ h3 {
   top 0.2s  ease-in-out,
   transform 0.2s 0.2s ease-in-out;
 }
+
 .b1.active .ligne:nth-child(2){
   transition: opacity 0.2s ease-in-out;
   opacity: 0;
 }
+
 .b1.active .ligne:nth-child(3){
   top: 15px;
   transform: rotate(-45deg);
@@ -218,427 +239,6 @@ h3 {
   top 0.2s  ease-in-out,
   transform 0.2s 0.2s ease-in-out;
 }
-
-/* //////////////////////////////////////////////////////     DEBUT     PARRAINAGES      ///////////////////////////////////////////////////////////////// */
-
-/* .laPrez {
-  display: block;
-  padding: 50px 20px 50px 20px;
-}
-
-.laPrezMobile {
-  display: none;
-  padding: 50px 20px 50px 20px;
-}
-  
-.laPrez > p {
-  justify-content: flex-start;
-}
-  
-.laFormule1 {
-  display: flex;
-  flex-direction: row;
-}
-  
-.pouleFormule1 {
-  width: 500px;
-  border-radius: 0px 15px 15px 0px;
-  justify-content: flex-start;
-}
-  
-.texteFormule1 {
-  margin: 20px;
-  margin-bottom: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-  
-.descriFormule1 > p {
-  justify-content: flex-start;
-}
-
-.descriFormule1Mobile {
-  justify-content: flex-start;
-  display: none;
-}
-  
-select {
-  font-family: var(--font-content);padding: 5px;
-  margin: 20px 0px 20px 0px;
-  width: 291px;
-  height: 40px;
-  background-color: white;
-}
-  
-.textareaNomPoule {
-  display: flex;
-  flex-direction: row;
-}
-  
-.textareaNomPoule textarea { */
-  /* width: 291px;
-  height: 40px;
-  resize: none;
-  justify-content: flex-start;
-  font-family: var(--font-content);
-  padding: 10px;
-}
-  
-.textareaNomPoule button {
-  width: 100px;
-  height: 40px;
-  justify-content: flex-start;
-  font-family: var(--font-content);
-}
-  
-.lePrix {
-  margin: 20px 0px 20px 0px;
-  font-size: 30px;
-}
-  
-.lePrix1 > p {
-  justify-content: flex-start;
-}
-  
-.addToCart button{
-  border-radius: 25px;
-  padding: 10px;
-  border: solid 3px var(--third-color);
-  background: var(--third-color);
-  color: rgb(235, 235, 235);
-  font: var(--font-titre);
-}
-  
-.addToCartformule1Mobile{
-  display: none;
-}
-
-.addToCartformule2 {
-  display: flex;
-  justify-content: flex-end;   
-}
-
-.laFormule2 {
-  display: flex;
-  flex-direction: row-reverse;
-  margin: 30px 0px 0px 0px;
-}
-  
-.pouleFormule2 {
-  width: 500px;
-  border-radius: 15px 0px 0px 15px;
-  justify-content: flex-start;
-}
-
-.texteFormule2 {
-  margin: 30px;
-  margin-bottom: 0px;
-  justify-content: flex-start;
-
-}
-
-.texteFormule2 a{
-display: flex;
-justify-content: flex-end;
-} */
-
-
-/* .descriFormule2 > p{
-  justify-content: flex-start;
-}
-
-.descriFormule2Mobile > p{
-  display: none;
-} */
-
-/* .plusMoins {
-  margin: 50px 0px 50px 0px;
-  align-items: flex-start;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-.plusMoins textarea {
-  width: 75px;
-  height: 50px;
-  resize: none;
-  white-space: normal;
-  text-align: justify;
-  -moz-text-align-last: center;
-  text-align-last: center;
-  font-size: 20px;
-  margin: 0px 10px 0px 10px;
-  overflow:hidden;
-  rows:1; 
-  disabled:true;
-}
-
-.plusMoins button {
-  width: 50px;
-  height: 50px;
-  font-size: 30px;
-} */
-
-/* .lePrix2 > p {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.addToCartformule2 {
-  display: flex;
-  justify-content: flex-end;   
-}
-
-.titleParrainages {
-  text-align: center;
-  margin: 50px;
-}
-
-.filleulesMalheureusement {
-  font-size: 24px;
-  line-height: 42px;
-  text-align: center;
-  margin: 150px;
-}
-
-.medailles {
-  display: flex;
-  flex: row;
-  padding: 50px;
-  min-height: 800px;
-  align-content: center;
-  justify-content: space-evenly;
-}
-.medailleSolo {
-  display: flex;
-  flex-direction: column;
-  max-width: 300px;
-  align-items: center;
-  box-shadow: 5px 10px 5px lightgrey;
-  margin: 10px 20px 10px 20px;
-} */
-
-/* .medailles img {
-  width: 150px;
-}  
-
-.medailleTxt > p {
-  font-size: 30px;
-  text-align: center;
-}
-  
-.medailleComment > p {
-    padding: 20px;
-}
-
-.medailleOr {
-  align-self: flex-start;
-}
-
-.medailleArgent {
-  align-self: center;
-}
-
-.medailleBronze  {
-  align-self: flex-end;
-} */
-
-
-  /* //////////////////////////////////////////////////////     FIN     PARRAINAGES      ///////////////////////////////////////////////////////////////// */
-
-  
-/* Boutique */
-/* les oeufs et les poules */
-/* .letitre {
-    text-align: center;   
-}
-
-.lesoeufs {
-  display: flex;
-  flex-direction: row;
-}
-    
-.imgoeufs {
-  width: 500px;
-  border-radius: 0px 15px 15px 0px;
-  justify-content: flex-start;
-}
-    
-.texteoeuf {  
-  padding: 20px;
-}
-    
-    .boutonmenu1 {
-    background-color: rgb(238, 235, 52);
-    color:blueviolet;
-    border: none;
-    cursor: pointer;
-    padding:10px;
-    margin-top:20px;
-    font-size: 18px;
-    }
-     */
-    /* .boutonmenu1:hover {
-     background-color: #3D44D9;
-    }
-    
-.dropdownPack {
-  position: relative;
-  display: inline-block;
-}
-    
-.dropdownPack-child {
-  display: none;
-  background-color: rgb(238, 235, 52);
-  min-width: 50px;
-  }
-    
-.dropdownPack-child a {
-  color:blueviolet;
-  padding:10px;
-  text-decoration: none;
-  display: block;
-  }
-    
-    .dropdownPack:hover .dropdownPack-child {
-    display: block;
-    } */
-    
-        /* .le-prix {
-        margin: 0px 0px 20px 0px;
-        font-size: 30px;
-        }
-        
-        .addToCarte button{
-        color:blueviolet;
-        width: 120px;
-        height: 40px;
-        background-color: #3D44D9;
-        border-radius: 15px;
-        border: 0px;
-        } */
-    /* la boutique */
-    /* .articles {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding-top: 40px;
-        flex-wrap: wrap;
-        text-align: center;
-        color:blueviolet;
-     }
-     .lestitres{
-       margin-top: 40px;
-     }
-    
-     .imgposterpoules{
-        width: 550px;
-        height: 550px;
-     }
-     .imgt-shirt{
-        width: 550px;
-        height: 550px;
-     } */
-     /* .imgfigurines{
-        width: 550px;
-        height: 550px;
-     }
-     @media screen and (max-width: 650px) {
-     .descriPack{
-       display: none;
-
-     }
-     .imgoeufs{
-       max-width: 200px;
-     }
-     .letitre{
-    
-       margin: 20px;
-     }
-    }      */
-
-/* .partoeufs {
-padding:  0px ;
-margin: 20px 20px 20px 0px;
-height: 200px;
-}
-
-.partpoules {
-padding:  0px ;
-margin: 20px 20px 20px 0px;
-height: 200px;
-}
-
-.imgposterpoules {
-  width: 90%; */
-  /* height: 550px; */
-  /*   margin: 50px;*/ 
-  /* margin: 0; */
-/* }
-
-.texteoeuf {
-padding: 10px;  
-}
-
-.partgoodies {
-max-height: 200px; 
-}
-
-article > .btn {
-  width: 100px;
-  height: 30px;
-} */
-
-/* residentes photos */
-
-/* .lespoules {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 120px;
-    flex-wrap: wrap;
-}
-
-.lespoules2 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 200px;
-}
-
-.coq1 {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
-
-.poules__container {
-    display: flex;
-    flex-direction: column; */
-    /* justify-content: center;
-    padding: 1rem;
-    background-color: #d8d5cf;
-    margin: 1rem;
-    width: 30%;
-    height: 470px;
-    align-items: center;
-}
-
-.poule__contenu {
-    padding: 1rem;
-}
-
-.poulettes {
-    width: 80%;
-}
-
-.poule__desc {
-  display: none;
-  padding: 1rem;
-} */
 
 @media screen and (max-width: 650px) { 
   /* residentes */
@@ -652,10 +252,10 @@ article > .btn {
     justify-content: flex-start;
   }
 
-  .poules__container:nth-child(2n) {
+/*   .poules__container:nth-child(2n) {
     flex-direction: row;
   }
-
+ */
   .poulettes {
     width: 50%;
   }
@@ -665,8 +265,6 @@ article > .btn {
   }
 
   /* Parrainages */  
-  
-
   /* MENU */
   
   #menuDesktop {display: none;}
@@ -738,7 +336,9 @@ footer {
   align-items: center;
 }
 
-.linkFooter {text-transform: none;}
+.linkFooter {
+  text-transform: none;
+}
 
 .trait{
     width: 0%;
@@ -751,6 +351,7 @@ footer {
 .footerLeft {
   grid-area: 1;
 }
+
 footer > div, p {
     padding: 5px;
 }
@@ -797,23 +398,31 @@ span.maj{
 }
 
 @media screen and (max-width: 650px) {
-    footer{
+    footer {
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
     }
+
     .containerFooter {
       display: flex;
       flex-direction: column-reverse;
 
     }
 
-    .soc{text-align: center; padding-bottom: 15px;}
+    .soc{
+      text-align: center; 
+      padding-bottom: 15px;
+    }
+    
     .societe{
         padding: 15px;
         width: 100%;
     }
-    .footerLeft {padding-top: 15px;}
+
+    .footerLeft {
+      padding-top: 15px;
+    }
 
     .trait{
         border-top: solid 3px;
@@ -822,10 +431,66 @@ span.maj{
         width: 70%;
         height: 0;
     }
+
     .animaPoule {left: 0;}
 }
+
 @media screen and (min-width: 651px) and (max-width: 1080px) {
   .poules__container {
     width: 45%;
   }
+}
+
+/* Dark Mode*/
+.darkMode {
+  position: absolute;
+  top: 150px; 
+  right: 10px; 
+  width: 60px; 
+  height: 60px; 
+  border-radius: 50%; 
+  background-color: #1E1F33;
+  color: #F2DA5E;
+  border: 1px solid #1E1F33;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  cursor: pointer; 
+}
+
+body.dark {
+  color: #DDDDDD; 
+  background: #1E1F33; 
+} 
+
+body.dark .darkMode {
+  background-color: #F2DA5E;
+  border: 1px solid #F2DA5E;
+  color: #3D44D9;
+}
+
+body.dark h2 {
+  color: #F2C2C2; 
+}
+
+body.dark .philo>* {
+  color: #3D44D9; 
+}
+
+body.dark .rondJaune>img {
+  opacity: 80%;
+}
+
+body.dark header {
+  background-color:  #1E1F33;
+  border-bottom: 5px solid #3D44D9;
+}
+
+body.dark ul a {
+  color: #F2DA5E; 
+}
+
+body.dark footer, body.dark .menuDeroulant, body.dark #menuMobile{
+  background-color: #1E1F33;
+  color: #F2DA5E; 
 }

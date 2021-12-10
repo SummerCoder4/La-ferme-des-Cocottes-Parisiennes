@@ -10,12 +10,13 @@
         <link rel="shortcut icon" type="image/png" href="img/chickenIco.png"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/37bee4d75f.js" crossorigin="anonymous"></script>
+        <!--<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">-->
+        <!--<script src="https://kit.fontawesome.com/37bee4d75f.js" crossorigin="anonymous"></script>-->
         <script type="text/javascript" src="script/starter.js"></script>
         <title>La Boutique - La ferme des Cocottes Parisiennes</title>
     </head>
-    <body>
+    <body class="light">
+      <div class="darkMode">Nuit</div>
       <header>
         <div w3-include-html="navbar.html"></div>
         <script>
@@ -24,7 +25,8 @@
       </header>
       <br/>
       <i class="fas fa-shopping-basket"></i>
-        <!-------------------------------------------------------------Les oueufs-------------------------------------------------------------->
+
+        <!-------------------------------------------------------------Les oeufs-------------------------------------------------------------->
         <section class="partoeufs">
           <div class="letitre">
             <h2 class="lestitres">Nos oeufs</h2>
@@ -217,12 +219,14 @@
 <div class="boiteRose4">
   <div class="rondRose4"><img src="" alt=""></div>
 </div>
-            <!-- FOOTER -->        
-            <div w3-include-html="footer.html"></div>
-            <script>
-              includeHTML();
-            </script>
-            <script src="boutique.html"></script>
+<!-- FOOTER -->        
+<div w3-include-html="footer.html"></div>
+<script>includeHTML();</script>
+<script src="script/darkMode.js"></script>
+            
+       
+
+<!--<script src="boutique.html"></script>-->
 
 <script>
 

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+   <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,74 +13,140 @@
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
         <title>Nos résidentes - La ferme des Cocottes Parisiennes</title>
     </head>
-    <body>
+    <body class="light">
       <header>
         <div w3-include-html="navbar.html"></div>
-		    <script>
-			    includeHTML();
-		    </script>
+        <script>
+          includeHTML();
+        </script>
       </header>
+        <div class="darkMode">Nuit</div>
         <div class="lespoules">
           <div class="poules__container">
-              <img class="poulettes" src=".\img\poulet1.jpg" alt="Image poulet 1">
-              <div class="poules__bio">
-                  <p class="poule__contenu">Nicole</p>
-                  <p class="poule__desc">
-                    lorem ipsum 
-                  </p>
-              </div>
-          </div>
-          <div class="poules__container">
-            <img class="poulettes" src=".\img\poulet2.jpg" alt="Image poulet 1">
-            <div class="poules__bio"></div>
-            <p class="poule__contenu">Sabrina</p>
-            <p class="poule__desc">
-              lorem ipsum
-          </div>
-          <div class="poules__container">
-            <img class="poulettes" src=".\img\poulet3.jpg" alt="Image poulet 1">
-            <div class="poules__bio"></div>
-            <p class="poule__contenu">Eleonor</p>
-            <p class="poule__desc">
-              lorem ipsum
-          </div>
-          <div class="poules__container">
-            <img class="poulettes" src=".\img\pouletect.jpg" alt="Image poulet 1">
-            <div class="poules__bio"></div>
-            <p class="poule__contenu">Christelle</p>
-            <p class="poule__desc">
-              lorem ipsum
-          </div>
-          <div class="poules__container">
-            <img class="poulettes" src=".\img\poulet5.jpg" alt="Image poulet 1">
-            <div class="poules__bio"></div>
-            <p class="poule__contenu">Mystic</p>
-            <p class="poule__desc">
-              lorem ipsum
-          </div>
-          <div class="poules__container">
-            <img class="poulettes" src=".\img\poulet6.jpg" alt="Image poulet 1">
-            <div class="poules__bio"></div>
-            <p class="poule__contenu">Edith</p>
-            <p class="poule__desc">
-              lorem ipsum
-          </div>
-          <div class="poules__container">
-            <img class="poulettes" src=".\img\coq2.jpg" alt="Image poulet 1">
-            <div class="poules__bio"></div>
-            <p class="poule__contenu">Georges</p>
-            <p class="poule__desc">
-              lorem ipsum
-          </div>
-          
+          <img class="poulettesMobile" src=".\img\poulet1Mobile.jpg" alt="Image poulet 1"> 
+          <p class="poule__contenuMobile">Nicole</p>
+          <div class="derriereMobile">Voici Nicole, cette poule est une grande dormeuse mais le contact avec les clients ne la dérange pas.</div> 
 
+          <div class="flipChicken"> 
+            <img class="poulettes" src=".\img\poulet1.jpg" alt="Image poulet 1"> 
+            <div class="derriere">Voici Nicole, cette poule est une grande dormeuse mais le contact avec les clients ne la dérange pas.</div> 
+          </div>
+          <div class="poules__bio">
+            <p class="poule__contenu">Nicole</p>
+            <p class="poule__desc">lorem ipsum</p>
+          </div>
+          <button class="btn" onclick="lesPoules(Nicole);resetChat();">CotCot</button>
         </div>
+        <div class="poules__container">
+          <img class="poulettesMobile" src=".\img\poulet2Mobile.jpg" alt="Image poulet 1"> 
+          <p class="poule__contenuMobile">Sabrina</p>
+          <div class="derriereMobile">Sabrina est la grande bavarde de notre bar à poule, tout le temps à discuter des différents potins avec Christelle.</div> 
+
+          <div class="flipChicken"> 
+            <img class="poulettes" src=".\img\poulet2.jpg" alt="Image poulet 1"> 
+            <div class="derriere">Sabrina est la grande bavarde de notre bar à poule, tout le temps à discuter des différents potins avec Christelle.</div> 
+          </div>
+          <div class="poules__bio">
+            <p class="poule__contenu">Sabrina</p>
+            <p class="poule__desc">lorem ipsum </p>
+          </div>
+          <button class="btn" onclick="lesPoules(Sabrina);resetChat();">CotCot</button>
+        </div>
+        <div class="poules__container">
+          <img class="poulettesMobile" src=".\img\poulet3Mobile.jpg" alt="Image poulet 1"> 
+          <p class="poule__contenuMobile">Eleonor</p>
+          <div class="derriereMobile">Eleonor est une poule qui nous a rejoins récemment car elle provenait d'une ferme qui à malheureusement fermée.</div> 
+
+
+          <div class="flipChicken"> 
+            <img class="poulettes" src=".\img\poulet3.jpg" alt="Image poulet 1"> 
+            <div class="derriere">Eleonor est une poule qui nous a rejoins récemment car elle provenait d'une ferme qui à malheureusement fermée.</div> 
+          </div>
+          <div class="poules__bio">
+            <p class="poule__contenu">Eleonor</p>
+            <p class="poule__desc">lorem ipsum </p>
+          </div>
+          <button class="btn" onclick="lesPoules(Eleonor);resetChat();">CotCot</button>
+        </div>
+        <div class="poules__container">
+          <img class="poulettesMobile" src=".\img\pouletectMobile.jpg" alt="Image poulet 1"> 
+          <p class="poule__contenuMobile">Christelle</p>
+          <div class="derriereMobile">Christelle est la grande amie de notre Eleonor national, elle est tout le temps entrain de papoter.</div> 
+
+
+          <div class="flipChicken"> 
+            <img class="poulettes" src=".\img\pouletect.jpg" alt="Image poulet 1"> 
+            <div class="derriere">Christelle est la grande amie de notre Eleonor national, elle est tout le temps entrain de papoter.</div> 
+          </div>
+          <div class="poules__bio">
+            <p class="poule__contenu">Christelle</p>
+            <p class="poule__desc">lorem ipsum </p>
+          </div>
+          <button class="btn" onclick="lesPoules(Christelle);resetChat();" >CotCot</button>
+        </div>
+        <div class="poules__container">
+          <img class="poulettesMobile" src=".\img\poulet5Mobile.jpg" alt="Image poulet 1"> 
+          <p class="poule__contenuMobile">Mystic</p>
+          <div class="derriereMobile">Comme son nom l'indique cette poule est mystique au seins de notre bar, par son caractere et son allure elle est LA poule à venir visiter.</div> 
+
+
+          <div class="flipChicken"> 
+            <img class="poulettes" src=".\img\poulet5.jpg" alt="Image poulet 1"> 
+            <div class="derriere">Comme son nom l'indique cette poule est mystique au seins de notre bar, par son caractere et son allure elle est LA poule à venir visiter.</div> 
+          </div>
+          <div class="poules__bio">
+            <p class="poule__contenu">Mystic</p>
+            <p class="poule__desc">lorem ipsum </p>
+          </div>
+          <button class="btn" onclick="lesPoules(Mystic)">CotCot</button>
+        </div>
+        <div class="poules__container">
+          <img class="poulettesMobile" src=".\img\poulet6Mobile.jpg" alt="Image poulet 1">
+          <p class="poule__contenuMobile">Edith</p>
+          <div class="derriereMobile">Edith est une poule discrete mais qui sait faire ressortir son fort caractère et remettre à sa place ses colocataires ou même certains clients.</div> 
+ 
+
+          <div class="flipChicken"> 
+            <img class="poulettes" src=".\img\poulet6.jpg" alt="Image poulet 1"> 
+            <div class="derriere">Edith est une poule discrete mais qui sait faire ressortir son fort caractère et remettre à sa place ses colocataires ou même certains clients.</div> 
+          </div>
+          <div class="poules__bio">
+            <p class="poule__contenu">Edith</p>
+            <p class="poule__desc">lorem ipsum </p>
+          </div>
+          <button class="btn" onclick="lesPoules(Edith);resetChat();">CotCot</button>
+        </div> 
+        <div class="poules__container">
+          <img class="poulettesMobile" src=".\img\coq2Mobile.jpg" alt="Image poulet 1"> 
+          <p class="poule__contenuMobile">Georges</p>
+          <div class="derriereMobile">Georges est la force tranquille de notre bar, il est convivial et ne fais jamais d'histoire, c'est clairement le mal dominant.</div> 
+
+
+          <div class="flipChicken"> 
+            <img class="poulettes" src=".\img\coq2.jpg" alt="Image poulet 1"> 
+            <div class="derriere">Georges est la force tranquille de notre bar, il est convivial et ne fais jamais d'histoire, c'est clairement le mal dominant.</div> 
+          </div>
+          <div class="poules__bio">
+            <p class="poule__contenu">Georges</p>
+            <p class="poule__desc">lorem ipsum </p>
+          </div>
+          <br>
+          <button class="btn" onclick="lesPoules(Georges);resetChat();">CotCot</button>
+        </div>
+        <div class="poules__popup-container">
+          <h2 class="poules__popup-title">Discussion</h2>
+          <div class="poules__popup-message">
+            <input id="input" class="inputChatPoules" type="text" placeholder="" autocomplete="off"/>
+          </div>
+          <button class="btn btnFermerChat" onclick="fermerLesPoules()">Quitter</button>          
+        </div>
+      </div>
       <!-- FOOTER -->
       <div w3-include-html="footer.html"></div>
 			<script>
 				includeHTML();
 			</script>
-
-      
+      <script src="script/darkMode.js"></script>
+      <script src="/script/residentes.js"></script>     
 </body>
 </html>

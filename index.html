@@ -12,7 +12,8 @@
     <script type="text/javascript" src="script/starter.js"></script>
     <title>La ferme des Cocottes Parisiennes</title>
 </head>
-<body>
+<body class="light">
+  <div class="darkMode">Nuit</div>
   <header>
 		<div w3-include-html="navbar.html"></div>
 		<script>
@@ -21,7 +22,7 @@
   </header>
   <section class="fullWidthHomeBG">
     <div class="fullWidthHome">
-      <h1>Bienvenue à la ferme des Cocottes Parisiennes</h1>
+      <h1><span>La ferme</span><br> des Cocottes Parisiennes</h1>
     </div>
   </section>
   <section class="actualitesHome centred">
@@ -58,54 +59,54 @@
     <div class="imgPictureHome"><img src="img/profilpicture.png"></div>
   </section>
 
-    <!------------------------------------  QUI SOMMES-NOUS -------------------------------------->
-    <main class="who">
-        <div class="philogreen">
-        <section class="philo">
-            <img src="img/logowho/pink.png" alt="sponsorship" width="400px">
-            <h2>Notre philosophie</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum saepe laborum optio recusandae, nihil deserunt tempore iusto quod distinctio, pariatur et quaerat! Quasi deleniti mollitia et aliquam ratione, fugit quo!</p>
-        </section>
-            
-        <section class="green">
-            <img src="img/logowho/greengreen.png" alt="countryside" width="100px">
-            <h2>Mettez vous au vert</h2>
-            <p>Le temps de quelques heures.... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis corporis magnam tenetur, consectetur deserunt provident voluptatem commodi error eos aperiam maxime excepturi non quo magni. Deserunt autem recusandae officia lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis corporis magnam tenetur, </p>
-        </section>
-        </div>
-        
-        <section class="farm">
-            <h2>Activités de la ferme</h2>
-            <article>
-                <div class="farmer">
-                    <img src="img/logowho/farmer.png" alt="farmer" width="100px">
-                    <input class="btn" type="button" value="Fermier d'un jour">
-                </div>
-                <div class="chicken">
-                    <img src="img/logowho/chicken.png" alt="chicken" width="100px">
-                    <input class="btn" type="button" value="Rencontrez nos poules">
-                </div>
-                <div class="heart">
-                    <img src="img/logowho/heart.png" alt="sponsorship" width="100px">
-                    <input class="btn" type="button" value="Devenez parrain">
-                </div>
-                <div class="bar">
-                    <img src="img/logowho/bar.png" alt="Bar à poule" width="100px">
-                    <input class="btn" type="button" value="Bar à poule">
-                </div>
-                <div class="shop">
-                    <img src="img/logowho/shop.png" alt="Shop" width="100px">
-                    <input class="btn" type="button" value="La boutique"> 
-                </div>
-            </article>
-        </section>
-    </main>
-    <!-----------------------------------  FIN QUI SOMMES-NOUS ------------------------------------->   
+<!------------------------------------  QUI SOMMES-NOUS -------------------------------------->
+  <main class="who">
+    <div class="philogreen">
+      <section class="philo">
+        <img src="img/logowho/pink.png" alt="sponsorship" width="400px">
+        <h2>Notre philosophie</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum saepe laborum optio recusandae, nihil deserunt tempore iusto quod distinctio, pariatur et quaerat! Quasi deleniti mollitia et aliquam ratione, fugit quo!</p>
+      </section>
+      
+      <section class="green">
+        <img src="img/logowho/greengreen.png" alt="countryside" width="100px">
+        <h2>Mettez vous au vert</h2>
+        <p>Le temps de quelques heures.... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis corporis magnam tenetur, consectetur deserunt provident voluptatem commodi error eos aperiam maxime excepturi non quo magni. Deserunt autem recusandae officia lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis corporis magnam tenetur, </p>
+      </section>
+    </div>
   
-    <div w3-include-html="footer.html"></div>
-	<script>
-		includeHTML();
-	</script>
+    <section class="farm">
+      <h2>Activités de la ferme</h2>
+          <article>
+            <div class="farmer">
+              <img src="img/logowho/farmer.png" alt="farmer" width="100px">
+              <button class="btn" type="button" onclick="window.location.href='contact.html';">Fermier d'un jour</button>
+            </div>
+            <div class="chicken">
+              <img src="img/logowho/chicken.png" alt="chicken" width="100px">
+              <button class="btn" type="button"  onclick="window.location.href='residentes.html';">Rencontrez nos poules</button>
+            </div>
+            <div class="heart">
+              <img src="img/logowho/heart.png" alt="sponsorship" width="100px">
+              <button class="btn" type="button"  onclick="window.location.href='parrainages.html';">Devenez parrain</button>
+            </div>
+            <div class="bar">
+              <img src="img/logowho/bar.png" alt="Bar à cocottes" width="100px">
+              <button class="btn" type="button"  onclick="window.location.href='menu.html';">Bar à cocottes</button>
+            </div>
+            <div class="shop">
+              <img src="img/logowho/shop.png" alt="Shop" width="100px">
+              <button class="btn" type="button"  onclick="window.location.href='boutique.html';">La boutique</button>
+            </div>
+          </article>
+    </section>
+  </main>
+<!-----------------------------------  FIN QUI SOMMES-NOUS ------------------------------------->   
+  <div w3-include-html="footer.html"></div>
+  
+	<script>includeHTML();</script>
   <script type="text/javascript" src="script/actualites.js"></script>
+  <script src="script/darkMode.js"></script>
+  
 </body>
 </html>

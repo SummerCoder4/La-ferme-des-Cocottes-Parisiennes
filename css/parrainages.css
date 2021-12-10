@@ -483,7 +483,7 @@ display: flex;
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
  */
 
-@media screen and (max-width: 650px) { 
+@media screen and (max-width: 1050px) { 
 
 html, body {
 overflow-x: hidden;
@@ -504,13 +504,15 @@ padding: 20px 20px 00px 20px;
 
 .laFormule1 {
 justify-content: center;
+padding-top: 20px;
 
 }
 .texteFormule1 {
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-margin:  20px;
+margin:  20px 0px 20px 0px;
+width: 100%;
 }
 
 .descriFormule1 {
@@ -523,7 +525,7 @@ display: block;
 }
 
 .lePrix {
-margin: 20px 0px 20px 0px;
+margin: 5px 0px 5px 0px;
 font-size: 30px;
 }
 
@@ -533,8 +535,37 @@ justify-content: flex-end;
 }
 
 .addToCartformule1 {
-display: flex;
-justify-content: flex-end;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.btnEtTexte {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+}
+
+#btnParrainer {
+
+margin: 0px 0px 10px 0px;
+
+}
+
+.merciParrainage  {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0px;
+}
+
+..merciAdopter  {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0px;
 }
 
 .imgPouleParrainage {
@@ -553,15 +584,17 @@ align-self: center;
 .textareaNomPoule {
 display: flex;
 flex-direction: row;
+justify-content: center;
+
 }
 
 .textareaNomPoule input {
-max-width: 200px;
 height: 40px;
 resize: none;
 justify-content: flex-start;
 font-family: var(--font-content);
 align-self: center;
+
 }
 
 .textareaNomPoule button {
@@ -572,12 +605,18 @@ align-self: center;
 font-family: var(--font-content);
 }
 
+.textareaMailParraiange {
 
+  display: flex;
+  justify-content: center;
+
+}
 
 
 
 .textareaMailParraiange input {
 width: 100%;
+max-width: 300px;
 height: 40px;
 resize: none;
 justify-content: flex-start;
@@ -609,12 +648,12 @@ display: none;
 }
 
 .texteFormule2 {
-margin: 0px 0px 0px 0px;
+margin: 10px 0px 0px 0px;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-margin: 20px;
-}
+/* margin: 20px;
+ */}
 
 .texteFormule2 a{
 display: flex;
@@ -623,6 +662,12 @@ justify-content: flex-start;
 
 .addToCartformule3 {
 margin-top: 20px;
+}
+
+#btnAdopter {
+
+  margin:  20px 0px 20px 0px;
+
 }
 
 .filleulesMalheureusement {
@@ -711,6 +756,8 @@ overflow: hidden;
 }
 
 .boiteRose2 {
+  display: none;
+
 position: absolute;
 height: 400px;
 width: 400px;
@@ -739,6 +786,8 @@ right: 0px;
 top: 1440px;
 z-index: -1;
 overflow: hidden;
+display: none;
+
 }
 
 .rondJaune2 {
